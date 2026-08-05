@@ -1,10 +1,10 @@
 name: Relatório do canal do YouTube
 
 on:
-  # 11:00 UTC = 08:00 em America/Fortaleza (UTC-3).
+  # 15:30 UTC = 12:30 no horário de Brasília (UTC-3, sem horário de verão).
   # Atenção: o GitHub só dispara agendamentos a partir da branch padrão do repositório.
   schedule:
-    - cron: "0 11 * * *"
+    - cron: "30 15 * * *"
   workflow_dispatch:
     inputs:
       channel_url:

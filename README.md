@@ -70,7 +70,8 @@ python scripts/test_parsers.py
 
 - **Sob demanda:** aba *Actions* → *Relatório do canal do YouTube* → *Run workflow*
   (dá para trocar o canal e a quantidade de vídeos na hora).
-- **Agendado:** todo dia às **08:00** de Brasília (`0 11 * * *` em UTC).
+- **Agendado:** todo dia às **12:30** de Brasília (`30 15 * * *`, já que o cron do
+  GitHub é sempre em UTC e Brasília é UTC-3).
 
 O workflow commita o relatório de volta na branch em que roda. Ele precisa de
 `permissions: contents: write`, já declarado no arquivo.
