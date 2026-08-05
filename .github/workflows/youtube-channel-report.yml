@@ -1,0 +1,96 @@
+name: Relatório do canal do YouTube
+
+on:
+  # 11:00 UTC = 08:00 em America/Fortaleza (UTC-3).
+  # Atenção: o GitHub só dispara agendamentos a partir da branch padrão do repositório.
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      channel_url:
+        description: "URL ou @handle do canal"
+        required: false
+        default: "https://youtube.com/@patrickson_plays"
+      max_videos:
+        description: "Quantos vídeos recentes detalhar"
+        required: false
+        default: "10"
+      sem_comentarios:
+        description: "Pular a contagem de comentários (coleta mais rápida)"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-channel-report
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    name: Coletar e publicar o relatório
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      YT_CHANNEL_URL: ${{ inputs.channel_url || 'https://youtube.com/@patrickson_plays' }}
+      YT_MAX_VIDEOS: ${{ inputs.max_videos || '10' }}
+      YT_OUTPUT_DIR: reports/youtube
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Instalar dependências
+        run: pip install -r scripts/requirements.txt
+
+      - name: Testar as funções de parsing
+        run: python scripts/test_parsers.py
+
+      - name: Instalar o Chromium do Playwright
+        run: python -m playwright install --with-deps chromium
+
+      - name: Coletar os dados do canal
+        run: |
+          python scripts/youtube_channel_scraper.py \
+            --channel "$YT_CHANNEL_URL" \
+            --max-videos "$YT_MAX_VIDEOS" \
+            --output-dir "$YT_OUTPUT_DIR" \
+            ${{ inputs.sem_comentarios && '--sem-comentarios' || '' }}
+
+      - name: Publicar o relatório no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$YT_OUTPUT_DIR"
+          if git diff --staged --quiet; then
+            echo "Nenhuma mudança no relatório — nada a commitar."
+            exit 0
+          fi
+          git commit -m "docs(youtube): relatório do canal em $(TZ=America/Fortaleza date +%Y-%m-%d)"
+          for tentativa in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && \
+              git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            echo "Push falhou (tentativa $tentativa); nova tentativa em $((2 ** tentativa))s."
+            sleep $((2 ** tentativa))
+          done
+          echo "Não foi possível publicar o relatório após 4 tentativas." >&2
+          exit 1
+
+      - name: Guardar o relatório como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-youtube
+          path: reports/youtube/
+          if-no-files-found: warn
+          retention-days: 30
