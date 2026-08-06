@@ -37,6 +37,11 @@ CASOS_NUMERO = [
     ("1,234 views", 1_234),
     ('1 marcação "Gostei"', 1),
     ("2 Comentários", 2),
+    ("1.234 Comentários", 1_234),
+    # Regressão: o cabeçalho dos comentários aparece sem número enquanto a
+    # contagem não carrega. Não pode ser confundido com uma contagem válida.
+    ("Comentários", None),
+    ("Seja o primeiro a comentar", None),
     ("Os comentários estão desativados.", None),
     ("", None),
     (None, None),

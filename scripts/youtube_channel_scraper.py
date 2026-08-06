@@ -457,7 +457,7 @@ class ColetorYouTube:
             dados, player = await self.abrir(pagina, video["url"])
             detalhes = parse_pagina_video(dados or {}, player)
             if com_comentarios:
-                detalhes.update(await self._contagem_comentarios(pagina))
+                detalhes.update(await self._contagem_comentarios(pagina, video["video_id"]))
             return {**video, **detalhes}
         except (PlaywrightError, PlaywrightTimeout) as erro:
             self.avisos.append(f"Falha ao coletar o vídeo {video['video_id']}: {erro}")
@@ -465,28 +465,51 @@ class ColetorYouTube:
         finally:
             await pagina.close()
 
-    async def _contagem_comentarios(self, pagina) -> dict:
+    # O cabeçalho dos comentários é renderizado antes da contagem chegar, e nesse
+    # meio-tempo mostra só a palavra "Comentários". Por isso o texto só é aceito
+    # quando realmente contém um número.
+    SELETORES_CONTAGEM = (
+        "ytd-comments-header-renderer #count",
+        "ytd-comments-header-renderer #title",
+        "ytd-comments #count",
+    )
+    SELETORES_SEM_COMENTARIOS = (
+        "ytd-item-section-renderer[section-identifier='comment-item-section'] ytd-message-renderer",
+        "ytd-comments ytd-message-renderer",
+    )
+
+    async def _contagem_comentarios(self, pagina, video_id: str) -> dict:
         """Os comentários só chegam depois do scroll — daí a necessidade do navegador."""
         try:
-            for _ in range(6):
-                await pagina.mouse.wheel(0, 1200)
-                await pagina.wait_for_timeout(700)
-                contador = pagina.locator("ytd-comments-header-renderer #count")
-                if await contador.count():
-                    texto = (await contador.first.inner_text()).strip()
-                    return {"comentarios_texto": texto, "comentarios": parse_numero(texto)}
-                desativado = pagina.locator(
-                    "ytd-item-section-renderer[section-identifier='comment-item-section'] "
-                    "ytd-message-renderer"
-                )
-                if await desativado.count():
-                    return {
-                        "comentarios_texto": (await desativado.first.inner_text()).strip(),
-                        "comentarios": 0,
-                    }
-            self.avisos.append("Contagem de comentários não carregou dentro do tempo previsto.")
+            for tentativa in range(12):
+                await pagina.mouse.wheel(0, 1500)
+                await pagina.wait_for_timeout(800)
+
+                for seletor in self.SELETORES_CONTAGEM:
+                    alvo = pagina.locator(seletor)
+                    if not await alvo.count():
+                        continue
+                    texto = (await alvo.first.inner_text()).strip()
+                    quantidade = parse_numero(texto)
+                    if quantidade is not None:
+                        return {"comentarios_texto": texto, "comentarios": quantidade}
+
+                # Só depois de dar tempo à contagem: se há mensagem no lugar da lista,
+                # é vídeo sem comentários ou com comentários desativados.
+                if tentativa >= 3:
+                    for seletor in self.SELETORES_SEM_COMENTARIOS:
+                        alvo = pagina.locator(seletor)
+                        if not await alvo.count():
+                            continue
+                        texto = (await alvo.first.inner_text()).strip()
+                        if texto:
+                            return {"comentarios_texto": texto, "comentarios": 0}
+
+            self.avisos.append(
+                f"Contagem de comentários não carregou a tempo no vídeo {video_id}."
+            )
         except (PlaywrightError, PlaywrightTimeout) as erro:
-            self.avisos.append(f"Falha ao ler os comentários: {erro}")
+            self.avisos.append(f"Falha ao ler os comentários do vídeo {video_id}: {erro}")
         return {}
 
 
