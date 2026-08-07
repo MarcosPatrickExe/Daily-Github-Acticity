@@ -633,10 +633,12 @@ def renderiza_tendencia(tendencia: dict, crescimento: dict) -> list[str]:
     ganho = (mais_longa.get("deltas") or {}).get("visualizacoes_totais")
     dias = mais_longa.get("dias") or 0
     if ganho is not None and dias > 0:
+        media = round(ganho / dias, 1)
         linhas += [
             "",
-            f"📈 Média de **{formata(round(ganho / dias, 1))}** "
-            f"{plural(ganho, 'visualização', 'visualizações')} por dia nos últimos "
+            # A concordância segue a média exibida, não o total do período.
+            f"📈 Média de **{formata(media)}** "
+            f"{plural(media, 'visualização', 'visualizações')} por dia nos últimos "
             f"{dias} {plural(dias, 'dia', 'dias')}.",
         ]
 
