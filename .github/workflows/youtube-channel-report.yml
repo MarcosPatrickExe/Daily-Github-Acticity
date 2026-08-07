@@ -23,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  issues: write  # usada só para avisar quando o diagnóstico acusa problema
 
 concurrency:
   group: youtube-channel-report
@@ -53,21 +54,29 @@ jobs:
       - name: Instalar dependências
         run: pip install -r scripts/requirements.txt
 
-      - name: Testar as funções de parsing
-        run: python scripts/test_parsers.py
+      - name: Testar as funções puras
+        run: |
+          python scripts/test_parsers.py
+          python scripts/test_historico.py
 
       - name: Instalar o Chromium do Playwright
         run: python -m playwright install --with-deps chromium
 
+      # `continue-on-error` para que o relatório e o histórico sejam publicados
+      # mesmo com problemas — quem reprova a execução é o passo de diagnóstico.
       - name: Coletar os dados do canal
+        id: coleta
+        continue-on-error: true
         run: |
           python scripts/youtube_channel_scraper.py \
             --channel "$YT_CHANNEL_URL" \
             --max-videos "$YT_MAX_VIDEOS" \
             --output-dir "$YT_OUTPUT_DIR" \
+            --falhar-com-problemas \
             ${{ inputs.sem_comentarios && '--sem-comentarios' || '' }}
 
       - name: Publicar o relatório no repositório
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -94,3 +103,44 @@ jobs:
           path: reports/youtube/
           if-no-files-found: warn
           retention-days: 30
+
+      # Uma coleta pode terminar "verde" publicando dados vazios. Quando o
+      # diagnóstico acusa isso, a execução reprova e o aviso vira uma issue.
+      - name: Avisar sobre problemas na coleta
+        if: always() && steps.coleta.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITULO: "⚠️ Coleta do canal do YouTube com problemas"
+          # Busca sem emoji: a pesquisa do GitHub tokeniza melhor só com texto.
+          BUSCA: "Coleta do canal do YouTube com problemas"
+        run: |
+          problemas=$(jq -r '.diagnostico.problemas[]? | "- \(.)"' \
+            "$YT_OUTPUT_DIR/latest.json" 2>/dev/null || true)
+          if [ -z "$problemas" ]; then
+            problemas="- A coleta falhou antes de gerar o diagnóstico. Veja os logs da execução."
+          fi
+
+          execucao="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          corpo=$(printf '%s\n' \
+            "A coleta de $(TZ=America/Fortaleza date +%d/%m/%Y) terminou com problemas:" \
+            "" \
+            "$problemas" \
+            "" \
+            "Execução: $execucao" \
+            "" \
+            "O relatório do dia foi publicado assim mesmo — confira os números antes de usá-los." \
+            "" \
+            "_Issue aberta automaticamente pelo workflow \`${GITHUB_WORKFLOW}\`._")
+
+          echo "$corpo" >> "$GITHUB_STEP_SUMMARY"
+
+          existente=$(gh issue list --state open --search "\"$BUSCA\" in:title" \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$existente" ]; then
+            gh issue comment "$existente" --body "$corpo"
+          else
+            gh issue create --title "$TITULO" --body "$corpo"
+          fi
+
+          echo "::error::A coleta reprovou no diagnóstico." >&2
+          exit 1

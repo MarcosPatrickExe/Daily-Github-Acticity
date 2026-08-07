@@ -9,9 +9,13 @@ Coleta diária de métricas públicas do canal usando **Playwright + GitHub Acti
 | Caminho | O que é |
 |---|---|
 | `scripts/youtube_channel_scraper.py` | O coletor: abre o canal em um Chromium headless e extrai os dados |
+| `scripts/historico.py` | Série temporal em CSV e cálculo das tendências |
+| `scripts/diagnostico.py` | Verificações de sanidade sobre o relatório coletado |
+| `scripts/reconstroi_historico.py` | Recria os CSVs de histórico a partir dos JSONs diários |
 | `scripts/test_parsers.py` | Testes das funções de parsing (offline, sem navegador) |
+| `scripts/test_historico.py` | Testes do histórico e do diagnóstico (offline) |
 | `.github/workflows/youtube-channel-report.yml` | Workflow que roda a coleta e publica o relatório |
-| `reports/youtube/` | Onde os relatórios são gravados |
+| `reports/youtube/` | Onde os relatórios e o histórico são gravados |
 
 ### O que é coletado
 
@@ -28,6 +32,10 @@ taxa de engajamento e destaques (vídeo mais visto e mais curtido).
 > A contagem de curtidas e comentários existe por vídeo — o YouTube não expõe um
 > total de curtidas no nível do canal. Por isso o relatório soma os vídeos analisados.
 
+**Tendência:** cada coleta é comparada com as de 1, 7 e 30 dias atrás — quantos
+inscritos e visualizações o canal ganhou, o ritmo médio por dia e quais vídeos
+mais cresceram desde a coleta anterior.
+
 ### Saída
 
 Para cada execução, em `reports/youtube/`:
@@ -35,6 +43,30 @@ Para cada execução, em `reports/youtube/`:
 - `AAAA-MM-DD.md` — relatório legível
 - `AAAA-MM-DD.json` — dados estruturados
 - `latest.json` — cópia do último JSON, para consumo por outras automações
+- `historico.csv` — uma linha por coleta, com as métricas do canal
+- `historico_videos.csv` — uma linha por vídeo por coleta
+
+Os dois CSVs são acumulativos e reexecutar a coleta no mesmo dia **atualiza** a
+linha do dia em vez de duplicá-la. Eles são derivados dos JSONs diários — se
+algum se perder, `python scripts/reconstroi_historico.py` reconstrói ambos.
+
+### Diagnóstico da coleta
+
+Uma coleta pode terminar sem erro e ainda assim publicar dados errados — foi o
+que aconteceu quando a contagem de comentários passou a voltar vazia para todos
+os vídeos e o workflow seguiu verde. Por isso todo relatório passa por
+verificações de sanidade antes de ser considerado bom:
+
+- o canal veio sem inscritos, total de vídeos ou visualizações totais;
+- nenhum vídeo foi coletado, ou parte deles falhou;
+- mais da metade da amostra está sem alguma métrica (sinal de mudança de layout);
+- a coleta registrou avisos;
+- as visualizações totais **caíram** — esse número só deveria crescer.
+
+Achando qualquer um desses, o coletor termina com código 2 (com
+`--falhar-com-problemas`), a execução do Actions fica vermelha e o workflow abre
+uma issue com a lista de problemas. O relatório do dia é publicado mesmo assim,
+com a seção *Diagnóstico da coleta* explicando o que destoou.
 
 ### Rodando localmente
 
@@ -55,15 +87,17 @@ Opções úteis:
 | `--max-videos` | `10` | Quantos vídeos recentes detalhar |
 | `--output-dir` | `reports/youtube` | Onde gravar o relatório |
 | `--sem-comentarios` | desligado | Pula a contagem de comentários (bem mais rápido) |
+| `--falhar-com-problemas` | desligado | Termina com código 2 se o diagnóstico acusar problema |
 | `--com-imagens` | desligado | Carrega imagens/fontes/mídia (por padrão são bloqueadas) |
 | `--headful` | desligado | Abre o navegador com interface, para depurar |
 | `--lang` | `pt-BR` | Idioma da interface do YouTube |
 | `--timeout` | `60000` | Timeout de navegação, em milissegundos |
 
-Os testes de parsing rodam sem rede e sem navegador:
+Os testes rodam sem rede e sem navegador:
 
 ```bash
-python scripts/test_parsers.py
+python scripts/test_parsers.py    # parsing das páginas do YouTube
+python scripts/test_historico.py  # histórico, tendências e diagnóstico
 ```
 
 ### Rodando pelo GitHub Actions

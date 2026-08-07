@@ -7,9 +7,14 @@ seletores CSS) e complementa com leitura do DOM onde o dado só existe depois
 que a página carrega dinamicamente — é o caso da contagem de comentários.
 
 Saídas geradas no diretório de relatórios:
-  - <data>.json  -> dados brutos estruturados
-  - <data>.md    -> relatório legível
-  - latest.json  -> cópia do último JSON gerado
+  - <data>.json           -> dados brutos estruturados
+  - <data>.md             -> relatório legível, com tendência e diagnóstico
+  - latest.json           -> cópia do último JSON gerado
+  - historico.csv         -> série temporal das métricas do canal
+  - historico_videos.csv  -> série temporal das métricas por vídeo
+
+Códigos de saída: 0 sucesso, 1 falha na coleta, 2 relatório gravado mas com
+problemas no diagnóstico (só com `--falhar-com-problemas`).
 
 Uso:
     python scripts/youtube_channel_scraper.py \
@@ -32,6 +37,9 @@ from typing import Any, Iterator
 from playwright.async_api import Error as PlaywrightError
 from playwright.async_api import TimeoutError as PlaywrightTimeout
 from playwright.async_api import async_playwright
+
+import diagnostico
+import historico
 
 CANAL_PADRAO = "https://youtube.com/@patrickson_plays"
 FUSO_LOCAL = timezone(timedelta(hours=-3))  # America/Fortaleza
@@ -565,8 +573,109 @@ def formata(valor: Any) -> str:
     return str(valor)
 
 
+def formata_delta(valor: Any) -> str:
+    """Variação com sinal explícito: '+153', '-4', 'estável'."""
+    if valor is None:
+        return "—"
+    if valor == 0:
+        return "estável"
+    return f"+{formata(valor)}" if valor > 0 else f"-{formata(abs(valor))}"
+
+
+def formata_data(data: str | None) -> str:
+    """'2026-08-06' vira '06/08' — o ano só polui a tabela de tendência."""
+    if not data:
+        return "—"
+    partes = data.split("-")
+    return f"{partes[2]}/{partes[1]}" if len(partes) == 3 else data
+
+
 def plural(quantidade: Any, singular: str, plural_: str) -> str:
     return singular if quantidade == 1 else plural_
+
+
+def renderiza_tendencia(tendencia: dict, crescimento: dict) -> list[str]:
+    """Seção de evolução: sem histórico suficiente, explica em vez de sumir."""
+    comparacoes = tendencia.get("comparacoes") or []
+    if not comparacoes:
+        return [
+            "## Tendência",
+            "",
+            "_Ainda não há coleta anterior para comparar. A partir da próxima "
+            "execução esta seção mostra a evolução do canal._",
+            "",
+        ]
+
+    atual = tendencia.get("atual") or {}
+    rotulos = {
+        "inscritos": "Inscritos",
+        "total_videos": "Vídeos publicados",
+        "visualizacoes_totais": "Visualizações totais",
+    }
+
+    cabecalho = "| Métrica | Atual |" + "".join(
+        f" vs. {formata_data(c['data'])} ({c['dias']}d) |" for c in comparacoes
+    )
+    linhas = [
+        "## Tendência",
+        "",
+        cabecalho,
+        "|---|---:|" + "---:|" * len(comparacoes),
+    ]
+    for campo, rotulo in rotulos.items():
+        celulas = "".join(
+            f" {formata_delta((c.get('deltas') or {}).get(campo))} |" for c in comparacoes
+        )
+        linhas.append(f"| {rotulo} | {formata(atual.get(campo))} |{celulas}")
+
+    # Ritmo médio de visualizações na janela mais longa disponível.
+    mais_longa = max(comparacoes, key=lambda c: c.get("dias") or 0)
+    ganho = (mais_longa.get("deltas") or {}).get("visualizacoes_totais")
+    dias = mais_longa.get("dias") or 0
+    if ganho is not None and dias > 0:
+        linhas += [
+            "",
+            f"📈 Média de **{formata(round(ganho / dias, 1))}** "
+            f"{plural(ganho, 'visualização', 'visualizações')} por dia nos últimos "
+            f"{dias} {plural(dias, 'dia', 'dias')}.",
+        ]
+
+    linhas.append("")
+
+    destaques = crescimento.get("destaques") or []
+    if destaques:
+        linhas += [
+            f"### Vídeos que mais cresceram desde {formata_data(crescimento.get('referencia'))}",
+            "",
+            "| Vídeo | Visualizações | Δ views | Δ curtidas |",
+            "|---|---:|---:|---:|",
+        ]
+        for video in destaques:
+            titulo = (video.get("titulo") or video.get("video_id") or "—").replace("|", "\\|")
+            url = f"https://www.youtube.com/watch?v={video.get('video_id')}"
+            linhas.append(
+                f"| [{titulo}]({url}) | {formata(video.get('visualizacoes'))} | "
+                f"{formata_delta(video.get('delta_visualizacoes'))} | "
+                f"{formata_delta(video.get('delta_curtidas'))} |"
+            )
+        linhas.append("")
+
+    novos = crescimento.get("novos") or []
+    if novos:
+        linhas += [
+            f"🆕 **{len(novos)} {plural(len(novos), 'vídeo novo', 'vídeos novos')} "
+            "na amostra desde a coleta anterior:**",
+            "",
+        ]
+        linhas += [
+            f"- [{(v.get('titulo') or v.get('video_id')).replace('|', chr(92) + '|')}]"
+            f"(https://www.youtube.com/watch?v={v.get('video_id')}) — "
+            f"{formata(v.get('visualizacoes'))} {plural(v.get('visualizacoes'), 'visualização', 'visualizações')}"
+            for v in novos
+        ]
+        linhas.append("")
+
+    return linhas
 
 
 def renderiza_markdown(relatorio: dict) -> str:
@@ -604,6 +713,10 @@ def renderiza_markdown(relatorio: dict) -> str:
         linhas += ["### Links do canal", ""]
         linhas += [f"- **{l['titulo'] or 'Link'}** — {l['url'] or '—'}" for l in canal["links"]]
         linhas.append("")
+
+    linhas += renderiza_tendencia(
+        relatorio.get("tendencia") or {}, relatorio.get("crescimento_videos") or {}
+    )
 
     linhas += [
         f"## Últimos {len(videos)} vídeos",
@@ -652,6 +765,9 @@ def renderiza_markdown(relatorio: dict) -> str:
     if relatorio.get("avisos"):
         linhas += ["", "## Avisos da coleta", ""]
         linhas += [f"- {a}" for a in relatorio["avisos"]]
+
+    if relatorio.get("diagnostico"):
+        linhas += ["", diagnostico.resumo_texto(relatorio["diagnostico"])]
 
     linhas += [
         "",
@@ -748,6 +864,25 @@ async def executar(args: argparse.Namespace) -> int:
     destino.mkdir(parents=True, exist_ok=True)
     data = agora.astimezone(FUSO_LOCAL).strftime("%Y-%m-%d")
 
+    # A série histórica é atualizada antes da tendência: reexecutar a coleta no
+    # mesmo dia substitui a linha do dia em vez de duplicá-la.
+    caminho_hist = destino / historico.ARQUIVO_CANAL
+    caminho_hist_videos = destino / historico.ARQUIVO_VIDEOS
+    serie = historico.upsert(
+        historico.le_csv(caminho_hist), [historico.linha_do_canal(relatorio, data)], ("data",)
+    )
+    serie_videos = historico.upsert(
+        historico.le_csv(caminho_hist_videos),
+        historico.linhas_dos_videos(relatorio, data),
+        ("data", "video_id"),
+    )
+    historico.grava_csv(caminho_hist, historico.COLUNAS_CANAL, serie)
+    historico.grava_csv(caminho_hist_videos, historico.COLUNAS_VIDEOS, serie_videos)
+
+    relatorio["tendencia"] = historico.monta_tendencia(serie, data)
+    relatorio["crescimento_videos"] = historico.crescimento_videos(serie_videos, data)
+    relatorio["diagnostico"] = diagnostico.avalia_saude(relatorio, relatorio["tendencia"])
+
     caminho_json = destino / f"{data}.json"
     caminho_md = destino / f"{data}.md"
     conteudo_json = json.dumps(relatorio, ensure_ascii=False, indent=2) + "\n"
@@ -756,11 +891,35 @@ async def executar(args: argparse.Namespace) -> int:
     (destino / "latest.json").write_text(conteudo_json, encoding="utf-8")
 
     print(f"\nRelatório gravado em:\n  {caminho_md}\n  {caminho_json}")
+    print(f"Histórico atualizado: {caminho_hist} ({len(serie)} coletas)")
     if avisos:
         print("\nAvisos:")
         for aviso in avisos:
             print(f"  - {aviso}")
+
+    saude = relatorio["diagnostico"]
+    publica_resumo_actions(diagnostico.resumo_texto(saude))
+    if not saude["ok"]:
+        print("\nProblemas detectados:", file=sys.stderr)
+        for problema in saude["problemas"]:
+            print(f"  - {problema}", file=sys.stderr)
+        if args.falhar_com_problemas:
+            # Código próprio: o relatório foi gravado, mas os dados não são confiáveis.
+            return 2
+
     return 0
+
+
+def publica_resumo_actions(texto: str) -> None:
+    """Escreve no resumo da execução do GitHub Actions, quando rodando lá."""
+    caminho = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not caminho:
+        return
+    try:
+        with open(caminho, "a", encoding="utf-8") as arquivo:
+            arquivo.write(texto + "\n")
+    except OSError as erro:
+        print(f"Não foi possível escrever o resumo do Actions: {erro}", file=sys.stderr)
 
 
 def monta_parser() -> argparse.ArgumentParser:
@@ -776,6 +935,8 @@ def monta_parser() -> argparse.ArgumentParser:
     parser.add_argument("--timeout", type=int, default=60_000, help="Timeout em milissegundos.")
     parser.add_argument("--sem-comentarios", action="store_true",
                         help="Pula a contagem de comentários (coleta bem mais rápida).")
+    parser.add_argument("--falhar-com-problemas", action="store_true",
+                        help="Encerra com código 2 se o diagnóstico apontar problemas.")
     parser.add_argument("--com-imagens", action="store_true",
                         help="Carrega imagens, fontes e mídia (por padrão são bloqueadas).")
     parser.add_argument("--headful", action="store_true", help="Abre o navegador com interface.")
