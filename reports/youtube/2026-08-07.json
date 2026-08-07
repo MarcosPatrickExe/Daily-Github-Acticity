@@ -1,6 +1,6 @@
 {
-  "gerado_em": "2026-08-07T13:01:12.090271+00:00",
-  "gerado_em_local": "07/08/2026 10:01:12",
+  "gerado_em": "2026-08-07T13:17:05.765640+00:00",
+  "gerado_em_local": "07/08/2026 10:17:05",
   "url_origem": "https://www.youtube.com/@patrickson_plays",
   "canal": {
     "nome": "PTK_Joga",
@@ -50,6 +50,7 @@
   "videos": [
     {
       "video_id": "2V_ErQ4xX6g",
+      "tipo": "video",
       "titulo": "A JUÍZA me colocou à prova! ⚖️🔥 | Hollow Knight: Silksong",
       "url": "https://www.youtube.com/watch?v=2V_ErQ4xX6g",
       "thumbnail": "https://i.ytimg.com/vi/2V_ErQ4xX6g/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDT-dJXZyVSuzf5D0neViT3ZTXT-Q",
@@ -64,6 +65,7 @@
     },
     {
       "video_id": "7s4YjjhDvxI",
+      "tipo": "video",
       "titulo": "A BESTA ALADA SELVAGEM em Hollow Knight: Silksong! 🐛🔥 | Melhores Momentos da Live",
       "url": "https://www.youtube.com/watch?v=7s4YjjhDvxI",
       "thumbnail": "https://i.ytimg.com/vi/7s4YjjhDvxI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAZKWfQDNTixMTeGVufcErETWRnmg",
@@ -78,6 +80,7 @@
     },
     {
       "video_id": "mR-69h2Ohb0",
+      "tipo": "video",
       "titulo": "DERROTEI OS 2 MUSGO-MÃE AO MESMO TEMPO! 🌿🔥 | Hollow Knight: Silksong | Melhores Momentos da Live",
       "url": "https://www.youtube.com/watch?v=mR-69h2Ohb0",
       "thumbnail": "https://i.ytimg.com/vi/mR-69h2Ohb0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCkdUL3jQbRY-TKWMlPE59OPZL-lQ",
@@ -92,6 +95,7 @@
     },
     {
       "video_id": "JlJQsxFHUwA",
+      "tipo": "video",
       "titulo": "DERROTEI A VIÚVA em Hollow Knight: Silksong! 🕷️🔥 | Melhores Momentos da Live",
       "url": "https://www.youtube.com/watch?v=JlJQsxFHUwA",
       "thumbnail": "https://i.ytimg.com/vi/JlJQsxFHUwA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCnf6AbomNceprlKNPW4eVp0SUcuw",
@@ -106,6 +110,7 @@
     },
     {
       "video_id": "GA9c9-F7Lok",
+      "tipo": "video",
       "titulo": "EU NÃO ESTAVA PREPARADO PARA O ASA DO PÂNTANO... | Hollow Knight: Silksong",
       "url": "https://www.youtube.com/watch?v=GA9c9-F7Lok",
       "thumbnail": "https://i.ytimg.com/vi/GA9c9-F7Lok/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB1CROYR228szT8b0WX0TFi7kWopg",
@@ -120,6 +125,7 @@
     },
     {
       "video_id": "TXKbSCGmtyA",
+      "tipo": "video",
       "titulo": "Quando eu enfrentei a TESSELA pela 1a VEZ!  #cortesdalive",
       "url": "https://www.youtube.com/watch?v=TXKbSCGmtyA",
       "thumbnail": "https://i.ytimg.com/vi/TXKbSCGmtyA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBCRd1HGxiyNBXo_Z1ok-afeNDH-w",
@@ -134,6 +140,7 @@
     },
     {
       "video_id": "4y2L5Iz7Y70",
+      "tipo": "video",
       "titulo": "a COZINHEIRA do SILKSONG! a tão TEMIDA LUGOLI",
       "url": "https://www.youtube.com/watch?v=4y2L5Iz7Y70",
       "thumbnail": "https://i.ytimg.com/vi/4y2L5Iz7Y70/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDCGgfcv_8gzchVAEUgEIR-DYnaGQ",
@@ -148,6 +155,7 @@
     },
     {
       "video_id": "vqe2uhBtjrI",
+      "tipo": "video",
       "titulo": "A MELHOR ROTA para a ENTREGA DO NACO DE ENTREGADOR - Hollow Knight Silksong",
       "url": "https://www.youtube.com/watch?v=vqe2uhBtjrI",
       "thumbnail": "https://i.ytimg.com/vi/vqe2uhBtjrI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAttAB4O_Yuo8-TNTlIe3JMRmsqSg",
@@ -162,6 +170,7 @@
     },
     {
       "video_id": "C8uZd8NAyU8",
+      "tipo": "video",
       "titulo": "👽 ENTREI NO FORTNITE COMO O CHAMA DO BEN 10! 🔥",
       "url": "https://www.youtube.com/watch?v=C8uZd8NAyU8",
       "thumbnail": "https://i.ytimg.com/vi/C8uZd8NAyU8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBVZbBw6r7VE-0v4BSWSR7zYRakNQ",
@@ -176,6 +185,7 @@
     },
     {
       "video_id": "JD_fMWlWChY",
+      "tipo": "video",
       "titulo": "BEN 10 NO FORTNITE! minhas PRIMEIRAS IMPRESSÕES! 👽",
       "url": "https://www.youtube.com/watch?v=JD_fMWlWChY",
       "thumbnail": "https://i.ytimg.com/vi/JD_fMWlWChY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCyDJN3zL_YhJX2B5tonPpTbbddJA",
@@ -187,26 +197,339 @@
       "curtidas": 6,
       "comentarios_texto": "0 comentários",
       "comentarios": 0
+    },
+    {
+      "video_id": "yF46_VMGp_8",
+      "tipo": "short",
+      "titulo": "QUASE QUE VACILO NO FINAL 😂 LIVE AMANHÃ(12-07) ÀS 19H",
+      "url": "https://www.youtube.com/watch?v=yF46_VMGp_8",
+      "thumbnail": "https://i.ytimg.com/vi/yF46_VMGp_8/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC1_6pXzuJNe8ojFpoARjHhBjmyKg&usqp=CCk",
+      "visualizacoes_texto": "862 visualizações",
+      "visualizacoes": 862,
+      "curtidas_texto": "21",
+      "curtidas": 21,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    },
+    {
+      "video_id": "ElqaFU5slEo",
+      "tipo": "short",
+      "titulo": "🦎 FIQUEI INVISÍVEL! A camuflagem de Meccha Chameleon é absurda 😂",
+      "url": "https://www.youtube.com/watch?v=ElqaFU5slEo",
+      "thumbnail": "https://i.ytimg.com/vi/ElqaFU5slEo/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC0BEea8wGvNQs4qXO2n3z6wIaRrQ&usqp=CCk",
+      "visualizacoes_texto": "1.217 visualizações",
+      "visualizacoes": 1217,
+      "curtidas_texto": "33",
+      "curtidas": 33,
+      "comentarios_texto": "2 comentários",
+      "comentarios": 2
+    },
+    {
+      "video_id": "ylnIZ9f6plo",
+      "tipo": "short",
+      "titulo": "DOIS CHEFÕES DE UMA SÓ VEZ!",
+      "url": "https://www.youtube.com/watch?v=ylnIZ9f6plo",
+      "thumbnail": "https://i.ytimg.com/vi/ylnIZ9f6plo/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCi6vXdXTlg28tctlowofu4wNAE3A&usqp=CCk",
+      "visualizacoes_texto": "32 visualizações",
+      "visualizacoes": 32,
+      "curtidas_texto": "3",
+      "curtidas": 3,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    },
+    {
+      "video_id": "qX8vnhnLe_E",
+      "tipo": "short",
+      "titulo": "A VIÚVA NÃO AGUENTOU! 🕷️🔥 #Silksong #Shorts",
+      "url": "https://www.youtube.com/watch?v=qX8vnhnLe_E",
+      "thumbnail": "https://i.ytimg.com/vi/qX8vnhnLe_E/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA45d2O1egIYY82PPC78jJJCQty8A&usqp=CCk",
+      "visualizacoes_texto": "1.021 visualizações",
+      "visualizacoes": 1021,
+      "curtidas_texto": "21",
+      "curtidas": 21,
+      "comentarios_texto": "2 comentários",
+      "comentarios": 2
+    },
+    {
+      "video_id": "gABpXuAj3ho",
+      "tipo": "short",
+      "titulo": "DERROTEI ELAAAAAA",
+      "url": "https://www.youtube.com/watch?v=gABpXuAj3ho",
+      "thumbnail": "https://i.ytimg.com/vi/gABpXuAj3ho/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCWJY4eBdF8bR6SJuWZMwj0PU38OA&usqp=CCk",
+      "visualizacoes_texto": "1.114 visualizações",
+      "visualizacoes": 1114,
+      "curtidas_texto": "27",
+      "curtidas": 27,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    },
+    {
+      "video_id": "aEcjx8abslo",
+      "tipo": "live",
+      "titulo": "SABADOU COM GAMEPLAY! 🔥 Cola aí e bora bater um papo ao vivo!",
+      "url": "https://www.youtube.com/watch?v=aEcjx8abslo",
+      "thumbnail": "https://i.ytimg.com/vi/aEcjx8abslo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAS_G-4j3hhWSMlS8N_2pX7OgSlMQ",
+      "visualizacoes_texto": "26 visualizações",
+      "visualizacoes": 26,
+      "publicado_texto": "Transmitido há 12 dias",
+      "duracao": "3:59:03",
+      "curtidas_texto": "2",
+      "curtidas": 2,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    },
+    {
+      "video_id": "0CwAfmb2uV8",
+      "tipo": "live",
+      "titulo": "🔴JOGANDO A NOVA SEASON DO BF 6 🔥",
+      "url": "https://www.youtube.com/watch?v=0CwAfmb2uV8",
+      "thumbnail": "https://i.ytimg.com/vi/0CwAfmb2uV8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCn7bpxFRS6hnbvDeBhwIYRWoWP9A",
+      "visualizacoes_texto": "4 visualizações",
+      "visualizacoes": 4,
+      "publicado_texto": "Transmitido há 2 semanas",
+      "duracao": "19:20",
+      "curtidas_texto": "0",
+      "curtidas": 0,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    },
+    {
+      "video_id": "e9RJq1wRcos",
+      "tipo": "live",
+      "titulo": "🔴DOMINGOU com MUITA GAMEPLAY com os amigos 🤣",
+      "url": "https://www.youtube.com/watch?v=e9RJq1wRcos",
+      "thumbnail": "https://i.ytimg.com/vi/e9RJq1wRcos/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCxCY3EHHxsNTnzPCm5-sdVHMxoeQ",
+      "visualizacoes_texto": "7 visualizações",
+      "visualizacoes": 7,
+      "publicado_texto": "Transmitido há 3 semanas",
+      "duracao": "1:07:11",
+      "curtidas_texto": "3",
+      "curtidas": 3,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    }
+  ],
+  "playlists": [
+    {
+      "playlist_id": "PLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA",
+      "titulo": "Elden Ring NIGHTREIGN",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA",
+      "videos_texto": "Um vídeo",
+      "total_videos": 1
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy",
+      "titulo": "Minecraft",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy",
+      "videos_texto": "Um vídeo",
+      "total_videos": 1
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0",
+      "titulo": "CALL OF DUTY WARZONE",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoasiHHAeBSVIPBTGN5GdmKC",
+      "titulo": "Call of Duty Mobile",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoasiHHAeBSVIPBTGN5GdmKC",
+      "videos_texto": "Um vídeo",
+      "total_videos": 1
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoake4hdHsP5k6Bpaf-w1fWh",
+      "titulo": "PEAK",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoake4hdHsP5k6Bpaf-w1fWh",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoaTA7JTQaARqKAsZ5gGzpQ1",
+      "titulo": "burglin' gnomes",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoaTA7JTQaARqKAsZ5gGzpQ1",
+      "videos_texto": "Um vídeo",
+      "total_videos": 1
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHob8RY7KixjdguYqTZ3dpyNu",
+      "titulo": "State of decay 2",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHob8RY7KixjdguYqTZ3dpyNu",
+      "videos_texto": "Um vídeo",
+      "total_videos": 1
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoZ5sh0BH1fljI895VDY02v-",
+      "titulo": "PRAGMATA",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoZ5sh0BH1fljI895VDY02v-",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoayotu94qxi-oaELxdaIVig",
+      "titulo": "Shorts do canal",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoayotu94qxi-oaELxdaIVig",
+      "videos_texto": "31 vídeos",
+      "total_videos": 31
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoZ5O43kJ2IKzovux8BUW8ab",
+      "titulo": "Resident evil 3 remake",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoZ5O43kJ2IKzovux8BUW8ab",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoYJGvm4JoyXn45rhYs8OXek",
+      "titulo": "Devour",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYJGvm4JoyXn45rhYs8OXek",
+      "videos_texto": "3 vídeos",
+      "total_videos": 3
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHobtnYqjqESlOkkubE5oZSYz",
+      "titulo": "Resident Evil Requiem",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHobtnYqjqESlOkkubE5oZSYz",
+      "videos_texto": "10 vídeos",
+      "total_videos": 10
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoYy5uVre9bqQhmoPZiNDLND",
+      "titulo": "Resident Evil 5",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYy5uVre9bqQhmoPZiNDLND",
+      "videos_texto": "5 vídeos",
+      "total_videos": 5
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoZLIF2fpPALPvKqKzQB_BW1",
+      "titulo": "Resident Evil 2 Remake",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoZLIF2fpPALPvKqKzQB_BW1",
+      "videos_texto": "10 vídeos",
+      "total_videos": 10
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoYetlssF4QPIKiVJ-NNtrgb",
+      "titulo": "Dead by Daylight",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYetlssF4QPIKiVJ-NNtrgb",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoaf0vmwSieYzo0KpJ5xehGL",
+      "titulo": "Overcooked",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoaf0vmwSieYzo0KpJ5xehGL",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoZb9RkhUHl5eYPKezaMnuUq",
+      "titulo": "REPO",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoZb9RkhUHl5eYPKezaMnuUq",
+      "videos_texto": "5 vídeos",
+      "total_videos": 5
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoYRcr2ozxaYNXLqpnWvO8eY",
+      "titulo": "Outros",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYRcr2ozxaYNXLqpnWvO8eY",
+      "videos_texto": "8 vídeos",
+      "total_videos": 8
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoYSbV_ZO1OnnrZ0M9tfbtir",
+      "titulo": "Hollow Knight Silksong",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYSbV_ZO1OnnrZ0M9tfbtir",
+      "videos_texto": "58 vídeos",
+      "total_videos": 58
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHobjl_Y81cjIT5IHLkCDmsco",
+      "titulo": "Counter Strike 2",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHobjl_Y81cjIT5IHLkCDmsco",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoZWOBT7TT9xqo5H8X-kP7lU",
+      "titulo": "Black Ops 7",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoZWOBT7TT9xqo5H8X-kP7lU",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoaGcDFiJ18pyWfV5VGdIOKL",
+      "titulo": "Fortnite",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoaGcDFiJ18pyWfV5VGdIOKL",
+      "videos_texto": "8 vídeos",
+      "total_videos": 8
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoYD89X0pG2F2XUJzaUauNrz",
+      "titulo": "VALORANT",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYD89X0pG2F2XUJzaUauNrz",
+      "videos_texto": "2 vídeos",
+      "total_videos": 2
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoaod8OT733jlrIc0P4GR6RP",
+      "titulo": "Battlefield 6",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoaod8OT733jlrIc0P4GR6RP",
+      "videos_texto": "13 vídeos",
+      "total_videos": 13
+    },
+    {
+      "playlist_id": "PLn1eC3WaPHoYYjM8gZB7gH9VAKqEgoW_v",
+      "titulo": "CoD Black Ops 6",
+      "url": "https://www.youtube.com/playlist?list=PLn1eC3WaPHoYYjM8gZB7gH9VAKqEgoW_v",
+      "videos_texto": "5 vídeos",
+      "total_videos": 5
     }
   ],
   "resumo": {
-    "videos_analisados": 10,
-    "visualizacoes_soma": 400,
-    "curtidas_soma": 24,
-    "comentarios_soma": 6,
-    "visualizacoes_media": 40.0,
-    "curtidas_media": 2.4,
+    "por_tipo": {
+      "video": {
+        "quantidade": 10,
+        "visualizacoes_soma": 400,
+        "curtidas_soma": 24,
+        "comentarios_soma": 6,
+        "visualizacoes_media": 40.0,
+        "taxa_engajamento_pct": 7.5
+      },
+      "short": {
+        "quantidade": 5,
+        "visualizacoes_soma": 4246,
+        "curtidas_soma": 105,
+        "comentarios_soma": 4,
+        "visualizacoes_media": 849.2,
+        "taxa_engajamento_pct": 2.57
+      },
+      "live": {
+        "quantidade": 3,
+        "visualizacoes_soma": 37,
+        "curtidas_soma": 5,
+        "comentarios_soma": 0,
+        "visualizacoes_media": 12.3,
+        "taxa_engajamento_pct": 13.51
+      }
+    },
+    "videos_analisados": 18,
+    "visualizacoes_soma": 4683,
+    "curtidas_soma": 134,
+    "comentarios_soma": 10,
+    "visualizacoes_media": 260.2,
+    "curtidas_media": 7.4,
     "comentarios_media": 0.6,
-    "taxa_engajamento_pct": 7.5,
+    "taxa_engajamento_pct": 3.07,
     "video_mais_visto": {
-      "titulo": "BEN 10 NO FORTNITE! minhas PRIMEIRAS IMPRESSÕES! 👽",
-      "url": "https://www.youtube.com/watch?v=JD_fMWlWChY",
-      "visualizacoes": 166
+      "titulo": "🦎 FIQUEI INVISÍVEL! A camuflagem de Meccha Chameleon é absurda 😂",
+      "url": "https://www.youtube.com/watch?v=ElqaFU5slEo",
+      "visualizacoes": 1217
     },
     "video_mais_curtido": {
-      "titulo": "BEN 10 NO FORTNITE! minhas PRIMEIRAS IMPRESSÕES! 👽",
-      "url": "https://www.youtube.com/watch?v=JD_fMWlWChY",
-      "curtidas": 6
+      "titulo": "🦎 FIQUEI INVISÍVEL! A camuflagem de Meccha Chameleon é absurda 😂",
+      "url": "https://www.youtube.com/watch?v=ElqaFU5slEo",
+      "curtidas": 33
     }
   },
   "avisos": [],
@@ -218,7 +541,7 @@
     },
     "comparacoes": [
       {
-        "rotulo": "1 dia",
+        "janela": "1 dia",
         "data": "2026-08-05",
         "dias": 2,
         "deltas": {
@@ -232,7 +555,48 @@
   "crescimento_videos": {
     "referencia": "2026-08-05",
     "destaques": [],
-    "novos": []
+    "novos": [
+      {
+        "video_id": "0CwAfmb2uV8",
+        "titulo": "🔴JOGANDO A NOVA SEASON DO BF 6 🔥",
+        "visualizacoes": 4
+      },
+      {
+        "video_id": "ElqaFU5slEo",
+        "titulo": "🦎 FIQUEI INVISÍVEL! A camuflagem de Meccha Chameleon é absurda 😂",
+        "visualizacoes": 1217
+      },
+      {
+        "video_id": "aEcjx8abslo",
+        "titulo": "SABADOU COM GAMEPLAY! 🔥 Cola aí e bora bater um papo ao vivo!",
+        "visualizacoes": 26
+      },
+      {
+        "video_id": "e9RJq1wRcos",
+        "titulo": "🔴DOMINGOU com MUITA GAMEPLAY com os amigos 🤣",
+        "visualizacoes": 7
+      },
+      {
+        "video_id": "gABpXuAj3ho",
+        "titulo": "DERROTEI ELAAAAAA",
+        "visualizacoes": 1114
+      },
+      {
+        "video_id": "qX8vnhnLe_E",
+        "titulo": "A VIÚVA NÃO AGUENTOU! 🕷️🔥 #Silksong #Shorts",
+        "visualizacoes": 1021
+      },
+      {
+        "video_id": "yF46_VMGp_8",
+        "titulo": "QUASE QUE VACILO NO FINAL 😂 LIVE AMANHÃ(12-07) ÀS 19H",
+        "visualizacoes": 862
+      },
+      {
+        "video_id": "ylnIZ9f6plo",
+        "titulo": "DOIS CHEFÕES DE UMA SÓ VEZ!",
+        "visualizacoes": 32
+      }
+    ]
   },
   "diagnostico": {
     "ok": true,
