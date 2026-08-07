@@ -14,6 +14,7 @@ Coleta diária de métricas públicas do canal usando **Playwright + GitHub Acti
 | `scripts/reconstroi_historico.py` | Recria os CSVs de histórico a partir dos JSONs diários |
 | `scripts/test_parsers.py` | Testes das funções de parsing (offline, sem navegador) |
 | `scripts/test_historico.py` | Testes do histórico e do diagnóstico (offline) |
+| `scripts/fixtures/` | Recorte real do `ytInitialData` das abas, usado nos testes |
 | `.github/workflows/youtube-channel-report.yml` | Workflow que roda a coleta e publica o relatório |
 | `reports/youtube/` | Onde os relatórios e o histórico são gravados |
 
@@ -23,11 +24,22 @@ Coleta diária de métricas públicas do canal usando **Playwright + GitHub Acti
 visualizações totais, descrição completa, país, data de criação, links externos
 (Twitch, Instagram, TikTok…), avatar e banner.
 
-**De cada vídeo recente:** título, URL, duração, data de publicação, visualizações,
-curtidas, número de comentários, descrição, tags e categoria.
+**De cada item recente:** título, URL, duração, data de publicação, visualizações,
+curtidas, número de comentários, descrição, tags e categoria. São coletados os três
+formatos, cada um da sua aba e marcados com um `tipo`:
+
+| Formato | Aba | `tipo` | Padrão |
+|---|---|---|---|
+| Vídeos longos | `/videos` | `video` | 10 |
+| Shorts | `/shorts` | `short` | 5 |
+| Lives e transmissões | `/streams` | `live` | 3 |
+
+**Playlists:** título, link e quantidade de vídeos de cada uma (aba `/playlists`).
 
 **Consolidado da amostra:** somas e médias de visualizações/curtidas/comentários,
-taxa de engajamento e destaques (vídeo mais visto e mais curtido).
+taxa de engajamento, destaques (mais visto e mais curtido) e uma quebra **por
+formato** — um Short e um vídeo longo rendem números muito diferentes, e a média
+conjunta esconde isso.
 
 > A contagem de curtidas e comentários existe por vídeo — o YouTube não expõe um
 > total de curtidas no nível do canal. Por isso o relatório soma os vídeos analisados.
@@ -60,6 +72,7 @@ verificações de sanidade antes de ser considerado bom:
 - o canal veio sem inscritos, total de vídeos ou visualizações totais;
 - nenhum vídeo foi coletado, ou parte deles falhou;
 - mais da metade da amostra está sem alguma métrica (sinal de mudança de layout);
+- um formato inteiro sumiu — havia Shorts na coleta anterior e nenhum nesta;
 - a coleta registrou avisos;
 - as visualizações totais **caíram** — esse número só deveria crescer.
 
@@ -84,7 +97,10 @@ Opções úteis:
 | Flag | Padrão | Para que serve |
 |---|---|---|
 | `--channel` | `@patrickson_plays` | URL ou `@handle` do canal |
-| `--max-videos` | `10` | Quantos vídeos recentes detalhar |
+| `--max-videos` | `10` | Quantos vídeos longos detalhar (`0` desliga a aba) |
+| `--max-shorts` | `5` | Quantos Shorts detalhar (`0` desliga) |
+| `--max-lives` | `3` | Quantas lives detalhar (`0` desliga) |
+| `--max-playlists` | `25` | Quantas playlists listar (`0` desliga) |
 | `--output-dir` | `reports/youtube` | Onde gravar o relatório |
 | `--sem-comentarios` | desligado | Pula a contagem de comentários (bem mais rápido) |
 | `--falhar-com-problemas` | desligado | Termina com código 2 se o diagnóstico acusar problema |

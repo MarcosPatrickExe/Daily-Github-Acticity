@@ -60,6 +60,18 @@ MULTIPLICADORES = {
 
 RE_NUMERO = re.compile(r"(\d[\d.,\u00a0\u202f ]*)\s*(mil|mi|bi|k|m|b)?\b", re.IGNORECASE)
 RE_INITIAL_DATA = re.compile(r"var ytInitialData\s*=\s*(\{.*?\});</script>", re.S)
+RE_ID_SHORT = re.compile(r"/shorts/([\w-]+)")
+RE_CONTA_VIDEOS = re.compile(r"v[\u00edi]deos?\b", re.IGNORECASE)
+PREFIXO_ENTIDADE_SHORT = "shorts-shelf-item-"
+
+# Abas de v\u00eddeo coletadas do canal. Os t\u00edtulos v\u00eam prontos no singular e no
+# plural porque o g\u00eanero muda entre os formatos ("o v\u00eddeo", "a live").
+ABAS_VIDEO = (
+    # caminho,   tipo,    r\u00f3tulo,   t\u00edtulo com 1 item,  t\u00edtulo com v\u00e1rios
+    ("videos",  "video", "v\u00eddeos", "\u00daltimo v\u00eddeo",  "\u00daltimos {n} v\u00eddeos"),
+    ("shorts",  "short", "Shorts", "\u00daltimo Short",  "\u00daltimos {n} Shorts"),
+    ("streams", "live",  "lives",  "\u00daltima live",   "\u00daltimas {n} lives"),
+)
 
 
 # ---------------------------------------------------------------------------
@@ -236,8 +248,12 @@ def parse_sobre_canal(dados: dict) -> dict:
     return {k: v for k, v in info.items() if v not in (None, "", [])}
 
 
-def parse_aba_videos(dados: dict, limite: int) -> list[dict]:
-    """Lê a aba de vídeos (formato `lockupViewModel`) e devolve a lista ordenada."""
+def parse_aba_videos(dados: dict, limite: int, tipo: str = "video") -> list[dict]:
+    """Lê uma aba de vídeos (formato `lockupViewModel`) e devolve a lista ordenada.
+
+    Serve tanto para /videos quanto para /streams — as duas abas usam o mesmo
+    renderer; o que muda é o `tipo` com que os itens são marcados.
+    """
     videos: list[dict] = []
     vistos: set[str] = set()
 
@@ -256,6 +272,7 @@ def parse_aba_videos(dados: dict, limite: int) -> list[dict]:
         meta = lockup.get("metadata", {}).get("lockupMetadataViewModel", {})
         video: dict[str, Any] = {
             "video_id": video_id,
+            "tipo": tipo,
             "titulo": texto_de(meta.get("title")),
             "url": f"https://www.youtube.com/watch?v={video_id}",
             "thumbnail": maior_imagem(primeiro(busca_profunda(lockup.get("contentImage", {}), "sources"))),
@@ -287,6 +304,99 @@ def parse_aba_videos(dados: dict, limite: int) -> list[dict]:
             break
 
     return videos
+
+
+def parse_aba_shorts(dados: dict, limite: int) -> list[dict]:
+    """Lê a aba /shorts, que usa um renderer próprio (`shortsLockupViewModel`).
+
+    Diferente dos vídeos comuns, o card do Short não traz duração nem data de
+    publicação — só título e visualizações.
+    """
+    itens: list[dict] = []
+    vistos: set[str] = set()
+
+    for lockup in busca_profunda(dados, "shortsLockupViewModel"):
+        if len(itens) >= limite:
+            break
+        if not isinstance(lockup, dict):
+            continue
+
+        video_id = primeiro(busca_profunda(lockup.get("onTap", {}), "videoId"))
+        if not video_id:
+            # Caminhos alternativos: a URL do card ou o próprio entityId.
+            url = str(primeiro(busca_profunda(lockup.get("onTap", {}), "url")) or "")
+            achado = RE_ID_SHORT.search(url)
+            entidade = str(lockup.get("entityId") or "")
+            video_id = (
+                achado.group(1) if achado
+                else entidade.split(PREFIXO_ENTIDADE_SHORT, 1)[1]
+                if entidade.startswith(PREFIXO_ENTIDADE_SHORT) else None
+            )
+        if not video_id or video_id in vistos:
+            continue
+        vistos.add(video_id)
+
+        overlay = lockup.get("overlayMetadata", {}) or {}
+        item: dict[str, Any] = {
+            "video_id": video_id,
+            "tipo": "short",
+            "titulo": texto_de(overlay.get("primaryText")),
+            # watch?v= abre o Short normalmente e é o mesmo caminho usado na
+            # coleta de detalhes — um só formato de URL em todo o relatório.
+            "url": f"https://www.youtube.com/watch?v={video_id}",
+            "thumbnail": maior_imagem(
+                primeiro(busca_profunda(lockup.get("thumbnailViewModel", {}), "sources"))
+            ),
+        }
+
+        visualizacoes = texto_de(overlay.get("secondaryText"))
+        if visualizacoes:
+            item["visualizacoes_texto"] = visualizacoes
+            item["visualizacoes"] = parse_numero(visualizacoes)
+
+        itens.append(item)
+
+    return itens
+
+
+def parse_aba_playlists(dados: dict, limite: int) -> list[dict]:
+    """Lê a aba /playlists: título, quantidade de vídeos e link."""
+    playlists: list[dict] = []
+    vistos: set[str] = set()
+
+    for lockup in busca_profunda(dados, "lockupViewModel"):
+        if len(playlists) >= limite:
+            break
+        if not isinstance(lockup, dict):
+            continue
+        if lockup.get("contentType") != "LOCKUP_CONTENT_TYPE_PLAYLIST":
+            continue
+        playlist_id = lockup.get("contentId")
+        if not playlist_id or playlist_id in vistos:
+            continue
+        vistos.add(playlist_id)
+
+        meta = lockup.get("metadata", {}).get("lockupMetadataViewModel", {})
+        item: dict[str, Any] = {
+            "playlist_id": playlist_id,
+            "titulo": texto_de(meta.get("title")),
+            "url": f"https://www.youtube.com/playlist?list={playlist_id}",
+        }
+
+        for badge in busca_profunda(lockup.get("contentImage", {}), "thumbnailBadgeViewModel"):
+            texto = badge.get("text") if isinstance(badge, dict) else None
+            if not texto or not RE_CONTA_VIDEOS.search(texto):
+                continue
+            item["videos_texto"] = texto
+            # O YouTube escreve "Um vídeo" por extenso quando há só um.
+            item["total_videos"] = parse_numero(texto) or (
+                1 if texto.strip().lower().startswith(("um ", "one ")) else None
+            )
+            break
+
+        playlists.append(item)
+
+    return playlists
 
 
 def parse_pagina_video(dados: dict, player: dict | None) -> dict:
@@ -391,7 +501,27 @@ class ColetorYouTube:
         finally:
             await pagina.close()
 
+    async def coleta_aba(self, url_canal: str, aba: str, limite: int, parser) -> list[dict]:
+        """Lê uma aba que cabe no payload inicial (shorts, streams, playlists).
+
+        Diferente de /videos, essas abas entregam dezenas de itens já no
+        `ytInitialData`, então não precisam da rolagem paginada.
+        """
+        if limite <= 0:
+            return []
+        pagina = await self.contexto.new_page()
+        try:
+            dados, _ = await self.abrir(pagina, f"{url_canal.rstrip('/')}/{aba}")
+            return parser(dados or {}, limite)
+        except (PlaywrightError, PlaywrightTimeout) as erro:
+            self.avisos.append(f"Falha ao ler a aba /{aba}: {erro}")
+            return []
+        finally:
+            await pagina.close()
+
     async def coleta_videos(self, url_canal: str, limite: int) -> list[dict]:
+        if limite <= 0:
+            return []
         pagina = await self.contexto.new_page()
         try:
             dados, _ = await self.abrir(pagina, f"{url_canal.rstrip('/')}/videos")
@@ -445,6 +575,7 @@ class ColetorYouTube:
                 continue
             video = {
                 "video_id": bruto["video_id"],
+                "tipo": "video",  # o fallback de DOM só é usado na aba /videos
                 "titulo": bruto.get("titulo"),
                 "url": f"https://www.youtube.com/watch?v={bruto['video_id']}",
             }
@@ -526,6 +657,30 @@ class ColetorYouTube:
 # ---------------------------------------------------------------------------
 
 
+def resumo_por_tipo(videos: list[dict]) -> dict:
+    """Quebra a amostra por formato: vídeo longo, Short e live rendem números
+    muito diferentes, e a média conjunta esconde isso."""
+    saida: dict[str, dict] = {}
+    for _, tipo, *_ in ABAS_VIDEO:
+        itens = [v for v in videos if v.get("tipo", "video") == tipo and "erro" not in v]
+        if not itens:
+            continue
+        views = sum(v.get("visualizacoes") or 0 for v in itens)
+        curtidas = sum(v.get("curtidas") or 0 for v in itens)
+        comentarios = sum(v.get("comentarios") or 0 for v in itens)
+        saida[tipo] = {
+            "quantidade": len(itens),
+            "visualizacoes_soma": views,
+            "curtidas_soma": curtidas,
+            "comentarios_soma": comentarios,
+            "visualizacoes_media": round(views / len(itens), 1),
+            "taxa_engajamento_pct": (
+                round((curtidas + comentarios) / views * 100, 2) if views else None
+            ),
+        }
+    return saida
+
+
 def monta_resumo(videos: list[dict]) -> dict:
     analisados = [v for v in videos if "erro" not in v]
     soma = lambda chave: sum(v.get(chave) or 0 for v in analisados)  # noqa: E731
@@ -538,6 +693,7 @@ def monta_resumo(videos: list[dict]) -> dict:
     mais_curtido = max(analisados, key=lambda v: v.get("curtidas") or 0, default=None)
 
     return {
+        "por_tipo": resumo_por_tipo(videos),
         "videos_analisados": len(analisados),
         "visualizacoes_soma": total_views,
         "curtidas_soma": total_likes,
@@ -592,6 +748,24 @@ def formata_data(data: str | None) -> str:
 
 def plural(quantidade: Any, singular: str, plural_: str) -> str:
     return singular if quantidade == 1 else plural_
+
+
+def renderiza_tabela_videos(titulo: str, itens: list[dict]) -> list[str]:
+    linhas = [
+        f"## {titulo}",
+        "",
+        "| # | Vídeo | Visualizações | Curtidas | Comentários | Publicado |",
+        "|---:|---|---:|---:|---:|---|",
+    ]
+    for i, v in enumerate(itens, 1):
+        nome = (v.get("titulo") or v["video_id"]).replace("|", "\\|")
+        linhas.append(
+            f"| {i} | [{nome}]({v['url']}) | {formata(v.get('visualizacoes'))} | "
+            f"{formata(v.get('curtidas'))} | {formata(v.get('comentarios'))} | "
+            f"{v.get('publicado_texto') or v.get('publicado_em') or '—'} |"
+        )
+    linhas.append("")
+    return linhas
 
 
 def renderiza_tendencia(tendencia: dict, crescimento: dict) -> list[str]:
@@ -720,19 +894,28 @@ def renderiza_markdown(relatorio: dict) -> str:
         relatorio.get("tendencia") or {}, relatorio.get("crescimento_videos") or {}
     )
 
-    linhas += [
-        f"## Últimos {len(videos)} vídeos",
-        "",
-        "| # | Vídeo | Visualizações | Curtidas | Comentários | Publicado |",
-        "|---:|---|---:|---:|---:|---|",
-    ]
-    for i, v in enumerate(videos, 1):
-        titulo = (v.get("titulo") or v["video_id"]).replace("|", "\\|")
-        linhas.append(
-            f"| {i} | [{titulo}]({v['url']}) | {formata(v.get('visualizacoes'))} | "
-            f"{formata(v.get('curtidas'))} | {formata(v.get('comentarios'))} | "
-            f"{v.get('publicado_texto') or v.get('publicado_em') or '—'} |"
-        )
+    for _, tipo, _, titulo_um, titulo_varios in ABAS_VIDEO:
+        do_tipo = [v for v in videos if v.get("tipo", "video") == tipo]
+        if do_tipo:
+            titulo = titulo_um if len(do_tipo) == 1 else titulo_varios.format(n=len(do_tipo))
+            linhas += renderiza_tabela_videos(titulo, do_tipo)
+
+    playlists = relatorio.get("playlists") or []
+    if playlists:
+        total = sum(p.get("total_videos") or 0 for p in playlists)
+        linhas += [
+            f"## Playlists ({len(playlists)})",
+            "",
+            f"{formata(total)} {plural(total, 'vídeo organizado', 'vídeos organizados')} "
+            f"em {len(playlists)} {plural(len(playlists), 'playlist', 'playlists')}.",
+            "",
+            "| Playlist | Vídeos |",
+            "|---|---:|",
+        ]
+        for p in sorted(playlists, key=lambda p: p.get("total_videos") or 0, reverse=True):
+            titulo = (p.get("titulo") or p["playlist_id"]).replace("|", "\\|")
+            linhas.append(f"| [{titulo}]({p['url']}) | {formata(p.get('total_videos'))} |")
+        linhas.append("")
 
     linhas += [
         "",
@@ -740,7 +923,7 @@ def renderiza_markdown(relatorio: dict) -> str:
         "",
         "| Métrica | Valor |",
         "|---|---|",
-        f"| Vídeos analisados | {formata(resumo['videos_analisados'])} |",
+        f"| Itens analisados | {formata(resumo['videos_analisados'])} |",
         f"| Visualizações (soma) | {formata(resumo['visualizacoes_soma'])} |",
         f"| Curtidas (soma) | {formata(resumo['curtidas_soma'])} |",
         f"| Comentários (soma) | {formata(resumo['comentarios_soma'])} |",
@@ -750,6 +933,25 @@ def renderiza_markdown(relatorio: dict) -> str:
         f"| Taxa de engajamento | {formata(resumo['taxa_engajamento_pct'])}% |",
         "",
     ]
+
+    por_tipo = resumo.get("por_tipo") or {}
+    if len(por_tipo) > 1:
+        # Só vale mostrar a quebra quando há mais de um formato na amostra.
+        rotulos = {tipo: rotulo for _, tipo, rotulo, *_ in ABAS_VIDEO}
+        linhas += [
+            "### Por formato",
+            "",
+            "| Formato | Itens | Visualizações | Média | Curtidas | Comentários | Engajamento |",
+            "|---|---:|---:|---:|---:|---:|---:|",
+        ]
+        for tipo, dados in por_tipo.items():
+            linhas.append(
+                f"| {rotulos.get(tipo, tipo).capitalize()} | {formata(dados['quantidade'])} | "
+                f"{formata(dados['visualizacoes_soma'])} | {formata(dados['visualizacoes_media'])} | "
+                f"{formata(dados['curtidas_soma'])} | {formata(dados['comentarios_soma'])} | "
+                f"{formata(dados['taxa_engajamento_pct'])}% |"
+            )
+        linhas.append("")
 
     if resumo.get("video_mais_visto"):
         mv = resumo["video_mais_visto"]
@@ -843,9 +1045,21 @@ async def executar(args: argparse.Namespace) -> int:
                 return 1
 
             videos = await coletor.coleta_videos(url_canal, args.max_videos)
+            videos += await coletor.coleta_aba(
+                url_canal, "shorts", args.max_shorts, parse_aba_shorts
+            )
+            videos += await coletor.coleta_aba(
+                url_canal, "streams", args.max_lives,
+                lambda dados, limite: parse_aba_videos(dados, limite, tipo="live"),
+            )
+            playlists = await coletor.coleta_aba(
+                url_canal, "playlists", args.max_playlists, parse_aba_playlists
+            )
+
             detalhados: list[dict] = []
             for i, video in enumerate(videos, 1):
-                print(f"[{i}/{len(videos)}] {video.get('titulo') or video['video_id']}", flush=True)
+                rotulo = video.get("titulo") or video["video_id"]
+                print(f"[{i}/{len(videos)}] {video.get('tipo', 'video')} · {rotulo}", flush=True)
                 detalhados.append(
                     await coletor.coleta_detalhes_video(video, com_comentarios=not args.sem_comentarios)
                 )
@@ -858,6 +1072,7 @@ async def executar(args: argparse.Namespace) -> int:
         "url_origem": url_canal,
         "canal": canal,
         "videos": detalhados,
+        "playlists": playlists,
         "resumo": monta_resumo(detalhados),
         "avisos": avisos,
     }
@@ -883,7 +1098,13 @@ async def executar(args: argparse.Namespace) -> int:
 
     relatorio["tendencia"] = historico.monta_tendencia(serie, data)
     relatorio["crescimento_videos"] = historico.crescimento_videos(serie_videos, data)
-    relatorio["diagnostico"] = diagnostico.avalia_saude(relatorio, relatorio["tendencia"])
+
+    anterior = historico.data_anterior(serie_videos, data)
+    relatorio["diagnostico"] = diagnostico.avalia_saude(
+        relatorio,
+        relatorio["tendencia"],
+        historico.contagem_por_tipo(serie_videos, anterior) if anterior else None,
+    )
 
     caminho_json = destino / f"{data}.json"
     caminho_md = destino / f"{data}.md"
@@ -930,7 +1151,16 @@ def monta_parser() -> argparse.ArgumentParser:
                         help="URL ou @handle do canal.")
     parser.add_argument("--max-videos", type=int,
                         default=int(os.environ.get("YT_MAX_VIDEOS", "10")),
-                        help="Quantidade de vídeos recentes a detalhar (padrão: 10).")
+                        help="Quantidade de vídeos longos a detalhar (padrão: 10; 0 desliga).")
+    parser.add_argument("--max-shorts", type=int,
+                        default=int(os.environ.get("YT_MAX_SHORTS", "5")),
+                        help="Quantidade de Shorts a detalhar (padrão: 5; 0 desliga).")
+    parser.add_argument("--max-lives", type=int,
+                        default=int(os.environ.get("YT_MAX_LIVES", "3")),
+                        help="Quantidade de lives a detalhar (padrão: 3; 0 desliga).")
+    parser.add_argument("--max-playlists", type=int,
+                        default=int(os.environ.get("YT_MAX_PLAYLISTS", "25")),
+                        help="Quantidade de playlists a listar (padrão: 25; 0 desliga).")
     parser.add_argument("--output-dir", default=os.environ.get("YT_OUTPUT_DIR", "reports/youtube"),
                         help="Diretório onde o relatório será gravado.")
     parser.add_argument("--lang", default="pt-BR", help="Idioma da interface do YouTube.")

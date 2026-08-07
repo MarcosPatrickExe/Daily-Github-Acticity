@@ -1,0 +1,1050 @@
+{
+ "shorts": [
+  {
+   "shortsLockupViewModel": {
+    "entityId": "shorts-shelf-item-yF46_VMGp_8",
+    "onTap": {
+     "innertubeCommand": {
+      "commandMetadata": {
+       "webCommandMetadata": {
+        "url": "/shorts/yF46_VMGp_8",
+        "webPageType": "WEB_PAGE_TYPE_SHORTS",
+        "rootVe": 37414
+       }
+      },
+      "reelWatchEndpoint": {
+       "videoId": "yF46_VMGp_8",
+       "thumbnail": {
+        "thumbnails": [
+         {
+          "url": "https://i.ytimg.com/vi/yF46_VMGp_8/frame0.jpg",
+          "width": 1080,
+          "height": 1920
+         }
+        ],
+        "isOriginalAspectRatio": true
+       },
+       "ustreamerConfig": "CAw="
+      }
+     }
+    },
+    "indexInCollection": 0,
+    "overlayMetadata": {
+     "primaryText": {
+      "content": "QUASE QUE VACILO NO FINAL 😂 LIVE AMANHÃ(12-07) ÀS 19H"
+     },
+     "secondaryText": {
+      "content": "862 visualizações"
+     }
+    },
+    "thumbnailViewModel": {
+     "thumbnailViewModel": {
+      "image": {
+       "sources": [
+        {
+         "url": "https://i.ytimg.com/vi/yF46_VMGp_8/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLD5OoTXstpBOEXhPvrWdzTMrynQfA&usqp=CCk",
+         "width": 405,
+         "height": 720
+        },
+        {
+         "url": "https://i.ytimg.com/vi/yF46_VMGp_8/oar2.jpg?sqp=-oaymwEgCJUDEOAESFWQAgHyq4qpAw8IARUAAIhCcAHAAQbIAQE=&rs=AOn4CLAWcjBWN1JANh97e4FM4risWK5O9Q&usqp=CCk",
+         "width": 405,
+         "height": 608
+        }
+       ]
+      }
+     }
+    },
+    "titleTruncationStyle": "SHORTS_LOCKUP_TITLE_TRUNCATION_STYLE_UNKNOWN"
+   }
+  },
+  {
+   "shortsLockupViewModel": {
+    "entityId": "shorts-shelf-item-ElqaFU5slEo",
+    "onTap": {
+     "innertubeCommand": {
+      "commandMetadata": {
+       "webCommandMetadata": {
+        "url": "/shorts/ElqaFU5slEo",
+        "webPageType": "WEB_PAGE_TYPE_SHORTS",
+        "rootVe": 37414
+       }
+      },
+      "reelWatchEndpoint": {
+       "videoId": "ElqaFU5slEo",
+       "thumbnail": {
+        "thumbnails": [
+         {
+          "url": "https://i.ytimg.com/vi/ElqaFU5slEo/frame0.jpg",
+          "width": 1080,
+          "height": 1920
+         }
+        ],
+        "isOriginalAspectRatio": true
+       },
+       "ustreamerConfig": "CAw="
+      }
+     }
+    },
+    "indexInCollection": 0,
+    "overlayMetadata": {
+     "primaryText": {
+      "content": "🦎 FIQUEI INVISÍVEL! A camuflagem de Meccha Chameleon é absurda 😂"
+     },
+     "secondaryText": {
+      "content": "1,2 mil visualizações"
+     }
+    },
+    "thumbnailViewModel": {
+     "thumbnailViewModel": {
+      "image": {
+       "sources": [
+        {
+         "url": "https://i.ytimg.com/vi/ElqaFU5slEo/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLCak9TshdnqzXNIxmJx_W8F45Ly6g&usqp=CCk",
+         "width": 405,
+         "height": 720
+        },
+        {
+         "url": "https://i.ytimg.com/vi/ElqaFU5slEo/oar2.jpg?sqp=-oaymwEgCJUDEOAESFWQAgHyq4qpAw8IARUAAIhCcAHAAQbIAQE=&rs=AOn4CLBRZvtFZE0nvblFx5fW9_km9r6jgQ&usqp=CCk",
+         "width": 405,
+         "height": 608
+        }
+       ]
+      }
+     }
+    },
+    "titleTruncationStyle": "SHORTS_LOCKUP_TITLE_TRUNCATION_STYLE_UNKNOWN"
+   }
+  }
+ ],
+ "playlists": [
+  {
+   "lockupViewModel": {
+    "contentImage": {
+     "collectionThumbnailViewModel": {
+      "primaryThumbnail": {
+       "thumbnailViewModel": {
+        "image": {
+         "sources": [
+          {
+           "url": "https://i.ytimg.com/vi/GOKTb-9W_Lo/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjVcXYucdY4ypjBlGvwK2QimzHRw",
+           "width": 480,
+           "height": 270
+          }
+         ]
+        },
+        "overlays": [
+         {
+          "thumbnailOverlayBadgeViewModel": {
+           "thumbnailBadges": [
+            {
+             "thumbnailBadgeViewModel": {
+              "icon": {
+               "sources": [
+                {
+                 "clientResource": {
+                  "imageName": "PLAYLISTS"
+                 }
+                }
+               ]
+              },
+              "text": "Um vídeo",
+              "badgeStyle": "THUMBNAIL_OVERLAY_BADGE_STYLE_DEFAULT",
+              "backgroundColor": {
+               "lightTheme": 1777203,
+               "darkTheme": 1777203
+              }
+             }
+            }
+           ],
+           "position": "THUMBNAIL_OVERLAY_BADGE_POSITION_BOTTOM_END"
+          }
+         },
+         {
+          "thumbnailHoverOverlayViewModel": {
+           "icon": {
+            "sources": [
+             {
+              "clientResource": {
+               "imageName": "PLAY_ALL"
+              }
+             }
+            ]
+           },
+           "text": {
+            "content": "Reproduzir tudo",
+            "styleRuns": [
+             {
+              "startIndex": 0,
+              "length": 15
+             }
+            ]
+           },
+           "style": "THUMBNAIL_HOVER_OVERLAY_STYLE_COVER"
+          }
+         }
+        ],
+        "backgroundColor": {
+         "lightTheme": 2698828,
+         "darkTheme": 2698828
+        }
+       }
+      },
+      "stackColor": {
+       "lightTheme": 7041433,
+       "darkTheme": 7764627
+      }
+     }
+    },
+    "metadata": {
+     "lockupMetadataViewModel": {
+      "title": {
+       "content": "Elden Ring NIGHTREIGN"
+      },
+      "metadata": {
+       "contentMetadataViewModel": {
+        "metadataRows": [
+         {
+          "metadataParts": [
+           {
+            "text": {
+             "content": "Ver playlist completa",
+             "commandRuns": [
+              {
+               "startIndex": 0,
+               "length": 21,
+               "onTap": {
+                "innertubeCommand": {
+                 "commandMetadata": {
+                  "webCommandMetadata": {
+                   "url": "/playlist?list=PLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA",
+                   "webPageType": "WEB_PAGE_TYPE_PLAYLIST",
+                   "rootVe": 5754,
+                   "apiUrl": "/youtubei/v1/browse"
+                  }
+                 },
+                 "browseEndpoint": {
+                  "browseId": "VLPLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA"
+                 }
+                }
+               }
+              }
+             ],
+             "styleRuns": [
+              {
+               "startIndex": 0,
+               "length": 21,
+               "weightLabel": "FONT_WEIGHT_MEDIUM"
+              }
+             ]
+            }
+           }
+          ]
+         }
+        ],
+        "delimiter": " • "
+       }
+      }
+     }
+    },
+    "contentId": "PLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA",
+    "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST",
+    "itemPlayback": {
+     "inlinePlayerData": {
+      "onSelect": {
+       "innertubeCommand": {
+        "commandMetadata": {
+         "webCommandMetadata": {
+          "url": "/watch?v=GOKTb-9W_Lo&list=PLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA",
+          "webPageType": "WEB_PAGE_TYPE_WATCH",
+          "rootVe": 3832
+         }
+        },
+        "watchEndpoint": {
+         "videoId": "GOKTb-9W_Lo",
+         "playlistId": "PLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA",
+         "watchEndpointSupportedOnesieConfig": {
+          "html5PlaybackOnesieConfig": {
+           "commonConfig": {
+            "url": "https://rr3---sn-aj4g55-52.googlevideo.com/initplayback?source=youtube&oeis=1&c=WEB&oad=3200&ovd=3200&oaad=11000&oavd=11000&ocs=700&oewis=1&oputc=1&olis=1&ofpcc=1&msp=1&odepv=1&id=18e2936fef56fcba&ip=fda3%3Ae722%3Aac3%3A10%3A211%3A7450%3Afefe%3Ac63c&mt=1786107297&oweuc=&pxtags=Cg4KAnR4Egg1MTg3NTMwMA&rxtags=Cg4KAnR4Egg1MTg3NTI5OA%2CCg4KAnR4Egg1MTg3NTI5OQ%2CCg4KAnR4Egg1MTg3NTMwMA%2CCg4KAnR4Egg1MTg3NTMwMQ%2CCg4KAnR4Egg1MTg3NTMwMg"
+           }
+          }
+         }
+        }
+       }
+      },
+      "onVisible": {
+       "innertubeCommand": {
+        "commandMetadata": {
+         "webCommandMetadata": {
+          "url": "/watch?v=GOKTb-9W_Lo&list=PLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA&pp=YAHIAQHwBAD4BACiBhUBrf4zj20yysj8iQsnujwvFtCBFe_SBwkJKQE4KixY2Kc%3D",
+          "webPageType": "WEB_PAGE_TYPE_WATCH",
+          "rootVe": 3832
+         }
+        },
+        "watchEndpoint": {
+         "videoId": "GOKTb-9W_Lo",
+         "playlistId": "PLn1eC3WaPHoYCZbN3dD6BUodnVNnQioXA",
+         "watchEndpointSupportedOnesieConfig": {
+          "html5PlaybackOnesieConfig": {
+           "commonConfig": {
+            "url": "https://rr3---sn-aj4g55-52.googlevideo.com/initplayback?source=youtube&oeis=1&c=WEB&oad=3200&ovd=3200&oaad=11000&oavd=11000&ocs=700&oewis=1&oputc=1&olis=1&ofpcc=1&msp=1&odepv=1&id=18e2936fef56fcba&ip=fda3%3Ae722%3Aac3%3A10%3A211%3A7450%3Afefe%3Ac63c&mt=1786107297&oweuc=&pxtags=Cg4KAnR4Egg1MTg3NTMwMA&rxtags=Cg4KAnR4Egg1MTg3NTI5OA%2CCg4KAnR4Egg1MTg3NTI5OQ%2CCg4KAnR4Egg1MTg3NTMwMA%2CCg4KAnR4Egg1MTg3NTMwMQ%2CCg4KAnR4Egg1MTg3NTMwMg"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "lockupViewModel": {
+    "contentImage": {
+     "collectionThumbnailViewModel": {
+      "primaryThumbnail": {
+       "thumbnailViewModel": {
+        "image": {
+         "sources": [
+          {
+           "url": "https://i.ytimg.com/vi/MNL-1ADjGGE/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBU2wI04WvInDw2FgLRuvoMRmqHQA",
+           "width": 480,
+           "height": 270
+          }
+         ]
+        },
+        "overlays": [
+         {
+          "thumbnailOverlayBadgeViewModel": {
+           "thumbnailBadges": [
+            {
+             "thumbnailBadgeViewModel": {
+              "icon": {
+               "sources": [
+                {
+                 "clientResource": {
+                  "imageName": "PLAYLISTS"
+                 }
+                }
+               ]
+              },
+              "text": "Um vídeo",
+              "badgeStyle": "THUMBNAIL_OVERLAY_BADGE_STYLE_DEFAULT",
+              "backgroundColor": {
+               "lightTheme": 464179,
+               "darkTheme": 464179
+              }
+             }
+            }
+           ],
+           "position": "THUMBNAIL_OVERLAY_BADGE_POSITION_BOTTOM_END"
+          }
+         },
+         {
+          "thumbnailHoverOverlayViewModel": {
+           "icon": {
+            "sources": [
+             {
+              "clientResource": {
+               "imageName": "PLAY_ALL"
+              }
+             }
+            ]
+           },
+           "text": {
+            "content": "Reproduzir tudo",
+            "styleRuns": [
+             {
+              "startIndex": 0,
+              "length": 15
+             }
+            ]
+           },
+           "style": "THUMBNAIL_HOVER_OVERLAY_STYLE_COVER"
+          }
+         }
+        ],
+        "backgroundColor": {
+         "lightTheme": 861529,
+         "darkTheme": 861529
+        }
+       }
+      },
+      "stackColor": {
+       "lightTheme": 7043481,
+       "darkTheme": 7765907
+      }
+     }
+    },
+    "metadata": {
+     "lockupMetadataViewModel": {
+      "title": {
+       "content": "Minecraft"
+      },
+      "metadata": {
+       "contentMetadataViewModel": {
+        "metadataRows": [
+         {
+          "metadataParts": [
+           {
+            "text": {
+             "content": "Ver playlist completa",
+             "commandRuns": [
+              {
+               "startIndex": 0,
+               "length": 21,
+               "onTap": {
+                "innertubeCommand": {
+                 "commandMetadata": {
+                  "webCommandMetadata": {
+                   "url": "/playlist?list=PLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy",
+                   "webPageType": "WEB_PAGE_TYPE_PLAYLIST",
+                   "rootVe": 5754,
+                   "apiUrl": "/youtubei/v1/browse"
+                  }
+                 },
+                 "browseEndpoint": {
+                  "browseId": "VLPLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy"
+                 }
+                }
+               }
+              }
+             ],
+             "styleRuns": [
+              {
+               "startIndex": 0,
+               "length": 21,
+               "weightLabel": "FONT_WEIGHT_MEDIUM"
+              }
+             ]
+            }
+           }
+          ]
+         }
+        ],
+        "delimiter": " • "
+       }
+      }
+     }
+    },
+    "contentId": "PLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy",
+    "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST",
+    "itemPlayback": {
+     "inlinePlayerData": {
+      "onSelect": {
+       "innertubeCommand": {
+        "commandMetadata": {
+         "webCommandMetadata": {
+          "url": "/watch?v=MNL-1ADjGGE&list=PLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy",
+          "webPageType": "WEB_PAGE_TYPE_WATCH",
+          "rootVe": 3832
+         }
+        },
+        "watchEndpoint": {
+         "videoId": "MNL-1ADjGGE",
+         "playlistId": "PLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy",
+         "watchEndpointSupportedOnesieConfig": {
+          "html5PlaybackOnesieConfig": {
+           "commonConfig": {
+            "url": "https://rr3---sn-4g5e6nzl.googlevideo.com/initplayback?source=youtube&oeis=1&c=WEB&oad=3200&ovd=3200&oaad=11000&oavd=11000&ocs=700&oewis=1&oputc=1&olis=1&ofpcc=1&msp=1&odepv=1&id=30d2fed400e31861&ip=fda3%3Ae722%3Aac3%3A10%3A211%3A7450%3Afefe%3Ac63c&mt=1786107297&oweuc=&pxtags=Cg4KAnR4Egg1MTg3NTMwMA&rxtags=Cg4KAnR4Egg1MTg3NTI5OA%2CCg4KAnR4Egg1MTg3NTI5OQ%2CCg4KAnR4Egg1MTg3NTMwMA%2CCg4KAnR4Egg1MTg3NTMwMQ%2CCg4KAnR4Egg1MTg3NTMwMg"
+           }
+          }
+         }
+        }
+       }
+      },
+      "onVisible": {
+       "innertubeCommand": {
+        "commandMetadata": {
+         "webCommandMetadata": {
+          "url": "/watch?v=MNL-1ADjGGE&list=PLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy&pp=YAHIAQHwBAD4BACiBhUBrf4zj4qXjEdLgSg4WwY7CfjpSAc%3D",
+          "webPageType": "WEB_PAGE_TYPE_WATCH",
+          "rootVe": 3832
+         }
+        },
+        "watchEndpoint": {
+         "videoId": "MNL-1ADjGGE",
+         "playlistId": "PLn1eC3WaPHoYhqcBAoAHzBUVa6CmSPRMy",
+         "watchEndpointSupportedOnesieConfig": {
+          "html5PlaybackOnesieConfig": {
+           "commonConfig": {
+            "url": "https://rr3---sn-4g5e6nzl.googlevideo.com/initplayback?source=youtube&oeis=1&c=WEB&oad=3200&ovd=3200&oaad=11000&oavd=11000&ocs=700&oewis=1&oputc=1&olis=1&ofpcc=1&msp=1&odepv=1&id=30d2fed400e31861&ip=fda3%3Ae722%3Aac3%3A10%3A211%3A7450%3Afefe%3Ac63c&mt=1786107297&oweuc=&pxtags=Cg4KAnR4Egg1MTg3NTMwMA&rxtags=Cg4KAnR4Egg1MTg3NTI5OA%2CCg4KAnR4Egg1MTg3NTI5OQ%2CCg4KAnR4Egg1MTg3NTMwMA%2CCg4KAnR4Egg1MTg3NTMwMQ%2CCg4KAnR4Egg1MTg3NTMwMg"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "lockupViewModel": {
+    "contentImage": {
+     "collectionThumbnailViewModel": {
+      "primaryThumbnail": {
+       "thumbnailViewModel": {
+        "image": {
+         "sources": [
+          {
+           "url": "https://i.ytimg.com/vi/BpLVy0e92vs/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDEK3xPSE4dEJdh2ozYGAZzW6Tkwg",
+           "width": 480,
+           "height": 270
+          }
+         ]
+        },
+        "overlays": [
+         {
+          "thumbnailOverlayBadgeViewModel": {
+           "thumbnailBadges": [
+            {
+             "thumbnailBadgeViewModel": {
+              "icon": {
+               "sources": [
+                {
+                 "clientResource": {
+                  "imageName": "PLAYLISTS"
+                 }
+                }
+               ]
+              },
+              "text": "2 vídeos",
+              "badgeStyle": "THUMBNAIL_OVERLAY_BADGE_STYLE_DEFAULT",
+              "backgroundColor": {
+               "lightTheme": 3349784,
+               "darkTheme": 3349784
+              }
+             }
+            }
+           ],
+           "position": "THUMBNAIL_OVERLAY_BADGE_POSITION_BOTTOM_END"
+          }
+         },
+         {
+          "thumbnailHoverOverlayViewModel": {
+           "icon": {
+            "sources": [
+             {
+              "clientResource": {
+               "imageName": "PLAY_ALL"
+              }
+             }
+            ]
+           },
+           "text": {
+            "content": "Reproduzir tudo",
+            "styleRuns": [
+             {
+              "startIndex": 0,
+              "length": 15
+             }
+            ]
+           },
+           "style": "THUMBNAIL_HOVER_OVERLAY_STYLE_COVER"
+          }
+         }
+        ],
+        "backgroundColor": {
+         "lightTheme": 4992036,
+         "darkTheme": 4992036
+        }
+       }
+      },
+      "stackColor": {
+       "lightTheme": 10056811,
+       "darkTheme": 9665654
+      }
+     }
+    },
+    "metadata": {
+     "lockupMetadataViewModel": {
+      "title": {
+       "content": "CALL OF DUTY WARZONE"
+      },
+      "metadata": {
+       "contentMetadataViewModel": {
+        "metadataRows": [
+         {
+          "metadataParts": [
+           {
+            "text": {
+             "content": "Ver playlist completa",
+             "commandRuns": [
+              {
+               "startIndex": 0,
+               "length": 21,
+               "onTap": {
+                "innertubeCommand": {
+                 "commandMetadata": {
+                  "webCommandMetadata": {
+                   "url": "/playlist?list=PLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0",
+                   "webPageType": "WEB_PAGE_TYPE_PLAYLIST",
+                   "rootVe": 5754,
+                   "apiUrl": "/youtubei/v1/browse"
+                  }
+                 },
+                 "browseEndpoint": {
+                  "browseId": "VLPLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0"
+                 }
+                }
+               }
+              }
+             ],
+             "styleRuns": [
+              {
+               "startIndex": 0,
+               "length": 21,
+               "weightLabel": "FONT_WEIGHT_MEDIUM"
+              }
+             ]
+            }
+           }
+          ]
+         }
+        ],
+        "delimiter": " • "
+       }
+      }
+     }
+    },
+    "contentId": "PLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0",
+    "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST",
+    "itemPlayback": {
+     "inlinePlayerData": {
+      "onSelect": {
+       "innertubeCommand": {
+        "commandMetadata": {
+         "webCommandMetadata": {
+          "url": "/watch?v=BpLVy0e92vs&list=PLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0",
+          "webPageType": "WEB_PAGE_TYPE_WATCH",
+          "rootVe": 3832
+         }
+        },
+        "watchEndpoint": {
+         "videoId": "BpLVy0e92vs",
+         "playlistId": "PLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0",
+         "watchEndpointSupportedOnesieConfig": {
+          "html5PlaybackOnesieConfig": {
+           "commonConfig": {
+            "url": "https://rr1---sn-4g5lznsl.googlevideo.com/initplayback?source=youtube&oeis=1&c=WEB&oad=3200&ovd=3200&oaad=11000&oavd=11000&ocs=700&oewis=1&oputc=1&olis=1&ofpcc=1&msp=1&odepv=1&id=0692d5cb47bddafb&ip=fda3%3Ae722%3Aac3%3A10%3A211%3A7450%3Afefe%3Ac63c&mt=1786107297&oweuc=&pxtags=Cg4KAnR4Egg1MTg3NTMwMA&rxtags=Cg4KAnR4Egg1MTg3NTI5OA%2CCg4KAnR4Egg1MTg3NTI5OQ%2CCg4KAnR4Egg1MTg3NTMwMA%2CCg4KAnR4Egg1MTg3NTMwMQ%2CCg4KAnR4Egg1MTg3NTMwMg"
+           }
+          }
+         }
+        }
+       }
+      },
+      "onVisible": {
+       "innertubeCommand": {
+        "commandMetadata": {
+         "webCommandMetadata": {
+          "url": "/watch?v=BpLVy0e92vs&list=PLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0&pp=YAHIAQHwBAD4BACiBhUBrf4zjykmOY4iW2JFBvLGwbEvo4o%3D",
+          "webPageType": "WEB_PAGE_TYPE_WATCH",
+          "rootVe": 3832
+         }
+        },
+        "watchEndpoint": {
+         "videoId": "BpLVy0e92vs",
+         "playlistId": "PLn1eC3WaPHoZb2uNbx8_jYlxX2jkb3Xq0",
+         "watchEndpointSupportedOnesieConfig": {
+          "html5PlaybackOnesieConfig": {
+           "commonConfig": {
+            "url": "https://rr1---sn-4g5lznsl.googlevideo.com/initplayback?source=youtube&oeis=1&c=WEB&oad=3200&ovd=3200&oaad=11000&oavd=11000&ocs=700&oewis=1&oputc=1&olis=1&ofpcc=1&msp=1&odepv=1&id=0692d5cb47bddafb&ip=fda3%3Ae722%3Aac3%3A10%3A211%3A7450%3Afefe%3Ac63c&mt=1786107297&oweuc=&pxtags=Cg4KAnR4Egg1MTg3NTMwMA&rxtags=Cg4KAnR4Egg1MTg3NTI5OA%2CCg4KAnR4Egg1MTg3NTI5OQ%2CCg4KAnR4Egg1MTg3NTMwMA%2CCg4KAnR4Egg1MTg3NTMwMQ%2CCg4KAnR4Egg1MTg3NTMwMg"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ ],
+ "streams": [
+  {
+   "lockupViewModel": {
+    "contentImage": {
+     "thumbnailViewModel": {
+      "image": {
+       "sources": [
+        {
+         "url": "https://i.ytimg.com/vi/aEcjx8abslo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCUqrlRBrD1ZbhGTqpMGvAijfVlMw",
+         "width": 168,
+         "height": 94
+        },
+        {
+         "url": "https://i.ytimg.com/vi/aEcjx8abslo/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB3kWFwfLnnAQ6IAb2svCy91v5rMQ",
+         "width": 196,
+         "height": 110
+        }
+       ]
+      },
+      "overlays": [
+       {
+        "thumbnailBottomOverlayViewModel": {
+         "badges": [
+          {
+           "thumbnailBadgeViewModel": {
+            "text": "3:59:03",
+            "badgeStyle": "THUMBNAIL_OVERLAY_BADGE_STYLE_DEFAULT",
+            "animationActivationTargetId": "aEcjx8abslo",
+            "animationActivationEntityKey": "Eh8veW91dHViZS9hcHAvd2F0Y2gvcGxheWVyX3N0YXRlIMMCKAE%3D",
+            "lottieData": {
+             "url": "https://www.gstatic.com/youtube/img/lottie/audio_indicator/audio_indicator_v2.json",
+             "settings": {
+              "loop": true,
+              "autoplay": true
+             }
+            },
+            "animatedText": "Tocando agora",
+            "animationActivationEntitySelectorType": "THUMBNAIL_BADGE_ANIMATION_ENTITY_SELECTOR_TYPE_PLAYER_STATE"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "animatedThumbnailOverlayViewModel": {
+         "thumbnail": {
+          "sources": [
+           {
+            "url": "https://i.ytimg.com/an_webp/aEcjx8abslo/mqdefault_6s.webp?du=3000&sqp=CP7-1tMG&rs=AOn4CLBL87vBLTY4a3mdOy6MCRVnUGGy5g",
+            "width": 320,
+            "height": 180
+           }
+          ]
+         }
+        }
+       },
+       {
+        "thumbnailHoverOverlayToggleActionsViewModel": {
+         "buttons": [
+          {
+           "toggleButtonViewModel": {
+            "defaultButtonViewModel": {
+             "buttonViewModel": {
+              "iconName": "WATCH_LATER",
+              "onTap": {
+               "innertubeCommand": {
+                "commandMetadata": {
+                 "webCommandMetadata": {
+                  "sendPost": true,
+                  "apiUrl": "/youtubei/v1/browse/edit_playlist"
+                 }
+                },
+                "playlistEditEndpoint": {
+                 "playlistId": "WL",
+                 "actions": [
+                  {
+                   "addedVideoId": "aEcjx8abslo",
+                   "action": "ACTION_ADD_VIDEO"
+                  }
+                 ]
+                }
+               }
+              },
+              "style": "BUTTON_VIEW_MODEL_STYLE_OVERLAY_DARK",
+              "type": "BUTTON_VIEW_MODEL_TYPE_TONAL",
+              "buttonSize": "BUTTON_VIEW_MODEL_SIZE_COMPACT",
+              "state": "BUTTON_VIEW_MODEL_STATE_ACTIVE"
+             }
+            },
+            "toggledButtonViewModel": {
+             "buttonViewModel": {
+              "iconName": "CHECK",
+              "onTap": {
+               "innertubeCommand": {
+                "commandMetadata": {
+                 "webCommandMetadata": {
+                  "sendPost": true,
+                  "apiUrl": "/youtubei/v1/browse/edit_playlist"
+                 }
+                },
+                "playlistEditEndpoint": {
+                 "playlistId": "WL",
+                 "actions": [
+                  {
+                   "action": "ACTION_REMOVE_VIDEO_BY_VIDEO_ID",
+                   "removedVideoId": "aEcjx8abslo"
+                  }
+                 ]
+                }
+               }
+              },
+              "style": "BUTTON_VIEW_MODEL_STYLE_OVERLAY_DARK",
+              "type": "BUTTON_VIEW_MODEL_TYPE_TONAL",
+              "buttonSize": "BUTTON_VIEW_MODEL_SIZE_COMPACT",
+              "state": "BUTTON_VIEW_MODEL_STATE_ACTIVE"
+             }
+            },
+            "isToggled": false
+           }
+          },
+          {
+           "toggleButtonViewModel": {
+            "defaultButtonViewModel": {
+             "buttonViewModel": {
+              "iconName": "ADD_TO_QUEUE_TAIL",
+              "onTap": {
+               "innertubeCommand": {
+                "commandMetadata": {
+                 "webCommandMetadata": {
+                  "sendPost": true
+                 }
+                },
+                "signalServiceEndpoint": {
+                 "signal": "CLIENT_SIGNAL",
+                 "actions": [
+                  {
+                   "addToPlaylistCommand": {
+                    "openMiniplayer": true,
+                    "videoId": "aEcjx8abslo",
+                    "listType": "PLAYLIST_EDIT_LIST_TYPE_QUEUE",
+                    "onCreateListCommand": {
+                     "commandMetadata": {
+                      "webCommandMetadata": {
+                       "sendPost": true,
+                       "apiUrl": "/youtubei/v1/playlist/create"
+                      }
+                     },
+                     "createPlaylistServiceEndpoint": {
+                      "videoIds": [
+                       "aEcjx8abslo"
+                      ]
+                     }
+                    },
+                    "videoIds": [
+                     "aEcjx8abslo"
+                    ],
+                    "videoCommand": {
+                     "commandMetadata": {
+                      "webCommandMetadata": {
+                       "url": "/watch?v=aEcjx8abslo",
+                       "webPageType": "WEB_PAGE_TYPE_WATCH",
+                       "rootVe": 3832
+                      }
+                     },
+                     "watchEndpoint": {
+                      "videoId": "aEcjx8abslo",
+                      "watchEndpointSupportedOnesieConfig": {
+                       "html5PlaybackOnesieConfig": {
+                        "commonConfig": {
+                         "url": "https://rr5---sn-4g5edn6y.googlevideo.com/initplayback?source=youtube&oeis=1&c=WEB&oad=3200&ovd=3200&oaad=11000&oavd=11000&ocs=700&oewis=1&oputc=1&olis=1&ofpcc=1&msp=1&odepv=1&id=684723c7c69bb25a&ip=fda3%3Ae722%3Aac3%3A10%3A211%3A7450%3Afefe%3Ac62e&mt=1786107297&oweuc="
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 ]
+                }
+               }
+              },
+              "style": "BUTTON_VIEW_MODEL_STYLE_OVERLAY_DARK",
+              "type": "BUTTON_VIEW_MODEL_TYPE_TONAL",
+              "buttonSize": "BUTTON_VIEW_MODEL_SIZE_COMPACT",
+              "state": "BUTTON_VIEW_MODEL_STATE_ACTIVE"
+             }
+            },
+            "toggledButtonViewModel": {
+             "buttonViewModel": {
+              "iconName": "CHECK",
+              "style": "BUTTON_VIEW_MODEL_STYLE_OVERLAY_DARK",
+              "type": "BUTTON_VIEW_MODEL_TYPE_TONAL",
+              "buttonSize": "BUTTON_VIEW_MODEL_SIZE_COMPACT",
+              "state": "BUTTON_VIEW_MODEL_STATE_ACTIVE"
+             }
+            },
+            "isToggled": false
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "metadata": {
+     "lockupMetadataViewModel": {
+      "title": {
+       "content": "SABADOU COM GAMEPLAY! 🔥 Cola aí e bora bater um papo ao vivo!"
+      },
+      "metadata": {
+       "contentMetadataViewModel": {
+        "metadataRows": [
+         {
+          "metadataParts": [
+           {
+            "text": {
+             "content": "25 visualizações"
+            }
+           },
+           {
+            "text": {
+             "content": "Transmitido há 12 dias"
+            },
+            "accessibilityLabel": "Transmitido há 12 dias"
+           }
+          ]
+         }
+        ],
+        "delimiter": " • "
+       }
+      },
+      "menuButton": {
+       "buttonViewModel": {
+        "iconName": "MORE_VERT",
+        "onTap": {
+         "innertubeCommand": {
+          "showSheetCommand": {
+           "panelLoadingStrategy": {
+            "inlineContent": {
+             "sheetViewModel": {
+              "content": {
+               "listViewModel": {
+                "listItems": [
+                 {
+                  "listItemViewModel": {
+                   "title": {
+                    "content": "Adicionar à fila"
+                   },
+                   "leadingImage": {
+                    "sources": [
+                     {
+                      "clientResource": {
+                       "imageName": "ADD_TO_QUEUE_TAIL"
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 },
+                 {
+                  "listItemViewModel": {
+                   "title": {
+                    "content": "Salvar na playlist"
+                   },
+                   "leadingImage": {
+                    "sources": [
+                     {
+                      "clientResource": {
+                       "imageName": "BOOKMARK_BORDER"
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 },
+                 {
+                  "downloadListItemViewModel": {}
+                 },
+                 {
+                  "listItemViewModel": {
+                   "title": {
+                    "content": "Compartilhar"
+                   },
+                   "leadingImage": {
+                    "sources": [
+                     {
+                      "clientResource": {
+                       "imageName": "SHARE"
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 }
+                ]
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        },
+        "style": "BUTTON_VIEW_MODEL_STYLE_MONO",
+        "type": "BUTTON_VIEW_MODEL_TYPE_TEXT",
+        "buttonSize": "BUTTON_VIEW_MODEL_SIZE_DEFAULT",
+        "state": "BUTTON_VIEW_MODEL_STATE_ACTIVE"
+       }
+      }
+     }
+    },
+    "contentId": "aEcjx8abslo",
+    "contentType": "LOCKUP_CONTENT_TYPE_VIDEO",
+    "themedPalette": {
+     "lightThemePalette": {
+      "baseBackground": 4294964976,
+      "raisedBackground": 4294964976,
+      "additiveBackground": 567770680,
+      "textPrimary": 4282064132,
+      "textSecondary": 4287647000,
+      "outline": 861416457,
+      "keyLight": 4294033304,
+      "collectionStack": 4293238631,
+      "invertedBackground": 4287647000,
+      "textPrimaryInverse": 4294964976,
+      "textDisabled": 2136484873,
+      "dropShadow": 433552952,
+      "cardOutline": 181894712,
+      "overlayBackground": 3426426116,
+      "overlayTextPrimary": 4294964976,
+      "solidWash": 4287647000,
+      "solidRim": 872012738,
+      "tonalWash": 872412912,
+      "tonalRim": 871481240,
+      "outlineRim": 1291843312,
+      "solidWashInverse": 4294564802,
+      "solidRimInverse": 2147347421,
+      "tonalWashInverse": 654309104,
+      "tonalRimInverse": 654175197,
+      "outlineRimInverse": 654309104,
+      "solidBackground": 4283968521,
+      "solidBackgroundInverse": 4293238631,
+      "tonalBackground": 870686567,
+      "tonalBackgroundInverse": 435805122,
+      "outlineInverse": 872279005,
+      "lowLight": 16640989
+     },
+     "darkThemePalette": {
+      "baseBackground": 4280159745,
+      "raisedBackground": 4282064132,
+      "additiveBackground": 735542840,
+      "textPrimary": 4294831069,
+      "textSecondary": 4294033304,
+      "outline": 1073339330,
+      "keyLight": 4285807889,
+      "collectionStack": 4287647000,
+      "invertedBackground": 4293438072,
+      "textPrimaryInverse": 4280159745,
+      "textDisabled": 2147081154,
+      "dropShadow": 433552952,
+      "cardOutline": 181894712,
+      "overlayBackground": 3426426116,
+      "overlayTextPrimary": 4294964976,
+      "solidWash": 4294564802,
+      "solidRim": 2147347421,
+      "tonalWash": 654309104,
+      "tonalRim": 654175197,
+      "outlineRim": 654309104,
+      "solidWashInverse": 4287647000,
+      "solidRimInverse": 872012738,
+      "tonalWashInverse": 872412912,
+      "tonalRimInverse": 871481240,
+      "outlineRimInverse": 1291843312,
+      "solidBackground": 4293238631,
+      "solidBackgroundInverse": 4283968521,
+      "tonalBackground": 435805122,
+      "tonalBackgroundInverse": 870686567,
+      "outlineInverse": 861416457,
+      "lowLight": 4280159745
+     }
+    }
+   }
+  }
+ ]
+}

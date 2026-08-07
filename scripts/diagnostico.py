@@ -36,7 +36,11 @@ def _menor_comparacao(tendencia: dict | None) -> dict | None:
     return min(comparacoes, key=lambda c: c.get("dias") or 0) if comparacoes else None
 
 
-def avalia_saude(relatorio: dict, tendencia: dict | None = None) -> dict[str, Any]:
+def avalia_saude(
+    relatorio: dict,
+    tendencia: dict | None = None,
+    tipos_anteriores: dict[str, int] | None = None,
+) -> dict[str, Any]:
     """Devolve {"ok": bool, "problemas": [...]} com o que destoou nesta coleta."""
     problemas: list[str] = []
 
@@ -62,6 +66,21 @@ def avalia_saude(relatorio: dict, tendencia: dict | None = None) -> dict[str, An
                 problemas.append(
                     f"{len(faltando)} de {len(analisados)} vídeos sem {rotulo} — "
                     "provável mudança no layout do YouTube."
+                )
+
+    # Um formato que existia e sumiu por inteiro indica aba quebrada, não canal
+    # sem conteúdo — o caso isolado (0 desde sempre) não gera ruído.
+    if tipos_anteriores:
+        agora: dict[str, int] = {}
+        for video in videos:
+            if "erro" not in video:
+                tipo = video.get("tipo") or "video"
+                agora[tipo] = agora.get(tipo, 0) + 1
+        for tipo, quantidade in tipos_anteriores.items():
+            if quantidade > 0 and not agora.get(tipo):
+                problemas.append(
+                    f"A coleta anterior trouxe {quantidade} item(ns) do tipo '{tipo}' "
+                    "e esta não trouxe nenhum."
                 )
 
     avisos = relatorio.get("avisos") or []

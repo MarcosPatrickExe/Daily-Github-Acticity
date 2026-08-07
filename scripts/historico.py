@@ -36,6 +36,7 @@ COLUNAS_CANAL = (
 COLUNAS_VIDEOS = (
     "data",
     "video_id",
+    "tipo",
     "titulo",
     "visualizacoes",
     "curtidas",
@@ -140,6 +141,7 @@ def linhas_dos_videos(relatorio: dict, data: str) -> list[dict[str, Any]]:
         linhas.append({
             "data": data,
             "video_id": video["video_id"],
+            "tipo": video.get("tipo") or "video",
             "titulo": video.get("titulo"),
             "visualizacoes": video.get("visualizacoes"),
             "curtidas": video.get("curtidas"),
@@ -222,6 +224,26 @@ def monta_tendencia(historico: list[dict], data_atual: str) -> dict:
         "atual": {campo: numero(linha_atual.get(campo)) for campo in CAMPOS_TENDENCIA},
         "comparacoes": comparacoes,
     }
+
+
+def contagem_por_tipo(historico_videos: list[dict], data: str) -> dict[str, int]:
+    """Quantos itens de cada formato a coleta daquela data trouxe."""
+    contagem: dict[str, int] = {}
+    for linha in historico_videos:
+        if _texto(linha.get("data")) != data:
+            continue
+        tipo = _texto(linha.get("tipo")) or "video"
+        contagem[tipo] = contagem.get(tipo, 0) + 1
+    return contagem
+
+
+def data_anterior(historico: list[dict], data_atual: str) -> str | None:
+    """Data da coleta imediatamente anterior à informada."""
+    atual = _data(data_atual)
+    if not atual:
+        return None
+    anteriores = [d for d, _ in _linhas_por_data(historico) if d < atual]
+    return anteriores[-1].isoformat() if anteriores else None
 
 
 def crescimento_videos(

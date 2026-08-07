@@ -20,7 +20,9 @@ from historico import (  # noqa: E402
     COLUNAS_CANAL,
     busca_referencia,
     calcula_deltas,
+    contagem_por_tipo,
     crescimento_videos,
+    data_anterior,
     grava_csv,
     le_csv,
     linha_do_canal,
@@ -155,6 +157,21 @@ def executa() -> int:
     checa("crescimento.novos", [v["video_id"] for v in cresc["novos"]], ["zzz"])
     checa("crescimento.primeira coleta", crescimento_videos(SERIE_VIDEOS, "2026-08-06")["destaques"], [])
 
+    # --- contagem por formato --------------------------------------------
+    com_tipos = [
+        {"data": "2026-08-06", "video_id": "a", "tipo": "video"},
+        {"data": "2026-08-06", "video_id": "b", "tipo": "short"},
+        {"data": "2026-08-06", "video_id": "c", "tipo": "short"},
+        {"data": "2026-08-07", "video_id": "a", "tipo": "video"},
+    ]
+    checa("contagem_por_tipo", contagem_por_tipo(com_tipos, "2026-08-06"),
+          {"video": 1, "short": 2})
+    checa("contagem_por_tipo(sem tipo vira vídeo)",
+          contagem_por_tipo([{"data": "2026-08-07", "video_id": "x"}], "2026-08-07"), {"video": 1})
+    checa("contagem_por_tipo(data sem coleta)", contagem_por_tipo(com_tipos, "2026-01-01"), {})
+    checa("data_anterior", data_anterior(com_tipos, "2026-08-07"), "2026-08-06")
+    checa("data_anterior(primeira coleta)", data_anterior(com_tipos, "2026-08-06"), None)
+
     # --- CSV de ida e volta ----------------------------------------------
     with tempfile.TemporaryDirectory() as pasta:
         caminho = Path(pasta) / "historico.csv"
@@ -200,6 +217,15 @@ def executa() -> int:
     ]})
     checa("saude.detecta queda de views",
           any("caíram" in p for p in regressao["problemas"]), True)
+
+    # Um formato inteiro que some entre uma coleta e outra é aba quebrada.
+    sumiu = avalia_saude(limpo, None, {"video": 2, "short": 5})
+    checa("saude.detecta formato sumido", sumiu["ok"], False)
+    checa("saude.aponta o formato",
+          any("'short'" in p for p in sumiu["problemas"]), True)
+    # Formato que nunca existiu não deve virar alarme todo dia.
+    checa("saude.formato sempre ausente não alarma",
+          avalia_saude(limpo, None, {"video": 2, "short": 0})["ok"], True)
 
     checa("resumo_texto(ok)", "✅" in resumo_texto({"ok": True, "problemas": []}), True)
     checa("resumo_texto(problema)", "⚠️" in resumo_texto(resultado), True)
