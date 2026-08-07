@@ -135,6 +135,16 @@ def executa() -> int:
     )
     checa("tendencia.sem janelas repetidas", len(uma_so["comparacoes"]), 1)
 
+    # Dia sem coleta (runner que não veio, por exemplo): a janela de 1 dia cai na
+    # coleta anterior disponível e `dias` mostra a distância real.
+    com_buraco = monta_tendencia(
+        [{"data": "2026-08-05", "inscritos": "120"}, {"data": "2026-08-07", "inscritos": "122"}],
+        "2026-08-07",
+    )
+    checa("tendencia.buraco.janela", com_buraco["comparacoes"][0]["janela"], "1 dia")
+    checa("tendencia.buraco.data", com_buraco["comparacoes"][0]["data"], "2026-08-05")
+    checa("tendencia.buraco.dias reais", com_buraco["comparacoes"][0]["dias"], 2)
+
     # --- crescimento por vídeo -------------------------------------------
     cresc = crescimento_videos(SERIE_VIDEOS, "2026-08-07")
     checa("crescimento.referencia", cresc["referencia"], "2026-08-06")
@@ -185,7 +195,7 @@ def executa() -> int:
 
     # Visualizações totais são acumulativas: cair indica leitura errada.
     regressao = avalia_saude(limpo, {"comparacoes": [
-        {"rotulo": "1 dia", "data": "2026-08-06", "dias": 1,
+        {"janela": "1 dia", "data": "2026-08-06", "dias": 1,
          "deltas": {"visualizacoes_totais": -500}},
     ]})
     checa("saude.detecta queda de views",

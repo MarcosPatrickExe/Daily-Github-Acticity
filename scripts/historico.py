@@ -209,11 +209,12 @@ def monta_tendencia(historico: list[dict], data_atual: str) -> dict:
         if data_ref in datas_usadas or data_ref == data_atual:
             continue
         datas_usadas.add(data_ref)
-        dias_reais = (hoje - _data(data_ref)).days
         comparacoes.append({
-            "rotulo": rotulo,
+            # `janela` é o intervalo pedido; `dias` é a distância real até a coleta
+            # encontrada, que pode ser maior quando faltam dias no histórico.
+            "janela": rotulo,
             "data": data_ref,
-            "dias": dias_reais,
+            "dias": (hoje - _data(data_ref)).days,
             "deltas": calcula_deltas(linha_atual, referencia, CAMPOS_TENDENCIA),
         })
 
