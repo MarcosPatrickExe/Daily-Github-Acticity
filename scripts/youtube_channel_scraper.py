@@ -39,6 +39,7 @@ from playwright.async_api import TimeoutError as PlaywrightTimeout
 from playwright.async_api import async_playwright
 
 import diagnostico
+import grafico
 import historico
 
 CANAL_PADRAO = "https://youtube.com/@patrickson_plays"
@@ -63,6 +64,7 @@ RE_INITIAL_DATA = re.compile(r"var ytInitialData\s*=\s*(\{.*?\});</script>", re.
 RE_ID_SHORT = re.compile(r"/shorts/([\w-]+)")
 RE_CONTA_VIDEOS = re.compile(r"v[\u00edi]deos?\b", re.IGNORECASE)
 PREFIXO_ENTIDADE_SHORT = "shorts-shelf-item-"
+ARQUIVO_GRAFICO = "evolucao.svg"
 
 # Abas de v\u00eddeo coletadas do canal. Os t\u00edtulos v\u00eam prontos no singular e no
 # plural porque o g\u00eanero muda entre os formatos ("o v\u00eddeo", "a live").
@@ -816,7 +818,8 @@ def renderiza_tendencia(tendencia: dict, crescimento: dict) -> list[str]:
             f"{dias} {plural(dias, 'dia', 'dias')}.",
         ]
 
-    linhas.append("")
+    # O SVG fica na mesma pasta do relatório, então o caminho relativo basta.
+    linhas += ["", f"![Evolução do canal]({ARQUIVO_GRAFICO})", ""]
 
     destaques = crescimento.get("destaques") or []
     if destaques:
@@ -1106,6 +1109,11 @@ async def executar(args: argparse.Namespace) -> int:
         historico.contagem_por_tipo(serie_videos, anterior) if anterior else None,
     )
 
+    caminho_svg = destino / ARQUIVO_GRAFICO
+    caminho_svg.write_text(
+        grafico.monta_svg(serie, relatorio["gerado_em_local"].split(" ")[0]), encoding="utf-8"
+    )
+
     caminho_json = destino / f"{data}.json"
     caminho_md = destino / f"{data}.md"
     conteudo_json = json.dumps(relatorio, ensure_ascii=False, indent=2) + "\n"
@@ -1115,6 +1123,7 @@ async def executar(args: argparse.Namespace) -> int:
 
     print(f"\nRelatório gravado em:\n  {caminho_md}\n  {caminho_json}")
     print(f"Histórico atualizado: {caminho_hist} ({len(serie)} coletas)")
+    print(f"Gráfico atualizado:   {caminho_svg}")
     if avisos:
         print("\nAvisos:")
         for aviso in avisos:

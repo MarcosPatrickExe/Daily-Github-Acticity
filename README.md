@@ -6,11 +6,16 @@ Repositório de automações e relatórios gerados por rotinas do Claude Code.
 
 Coleta diária de métricas públicas do canal usando **Playwright + GitHub Actions**.
 
+![Evolução do canal](reports/youtube/evolucao.svg)
+
+_O gráfico é regerado a cada coleta e cresce conforme os dias passam._
+
 | Caminho | O que é |
 |---|---|
 | `scripts/youtube_channel_scraper.py` | O coletor: abre o canal em um Chromium headless e extrai os dados |
 | `scripts/historico.py` | Série temporal em CSV e cálculo das tendências |
 | `scripts/diagnostico.py` | Verificações de sanidade sobre o relatório coletado |
+| `scripts/grafico.py` | Desenha o SVG de evolução (sem dependências externas) |
 | `scripts/reconstroi_historico.py` | Recria os CSVs de histórico a partir dos JSONs diários |
 | `scripts/test_parsers.py` | Testes das funções de parsing (offline, sem navegador) |
 | `scripts/test_historico.py` | Testes do histórico e do diagnóstico (offline) |
@@ -57,6 +62,7 @@ Para cada execução, em `reports/youtube/`:
 - `latest.json` — cópia do último JSON, para consumo por outras automações
 - `historico.csv` — uma linha por coleta, com as métricas do canal
 - `historico_videos.csv` — uma linha por vídeo por coleta
+- `evolucao.svg` — gráfico de inscritos, visualizações totais e ganho diário
 
 Os dois CSVs são acumulativos e reexecutar a coleta no mesmo dia **atualiza** a
 linha do dia em vez de duplicá-la. Eles são derivados dos JSONs diários — se

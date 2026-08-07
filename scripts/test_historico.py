@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Testes do histórico e do diagnóstico.
+"""Testes do histórico, do diagnóstico e do gráfico.
 
 Não abrem navegador e não acessam a rede — o único I/O é em diretório temporário:
 
@@ -10,12 +10,14 @@ from __future__ import annotations
 
 import sys
 import tempfile
+import xml.etree.ElementTree as ET
 from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from diagnostico import avalia_saude, resumo_texto  # noqa: E402
+from grafico import MAX_PONTOS, _escapa, extrai_serie, ganhos_por_dia, monta_svg  # noqa: E402
 from historico import (  # noqa: E402
     COLUNAS_CANAL,
     busca_referencia,
@@ -229,6 +231,45 @@ def executa() -> int:
 
     checa("resumo_texto(ok)", "✅" in resumo_texto({"ok": True, "problemas": []}), True)
     checa("resumo_texto(problema)", "⚠️" in resumo_texto(resultado), True)
+
+    # --- gráfico ----------------------------------------------------------
+    checa("grafico.extrai_serie", extrai_serie(SERIE, "inscritos"),
+          [(date(2026, 7, 8), 110.0), (date(2026, 7, 31), 115.0),
+           (date(2026, 8, 6), 120.0), (date(2026, 8, 7), 122.0)])
+    checa("grafico.ignora valor vazio",
+          extrai_serie([{"data": "2026-08-07", "inscritos": ""}], "inscritos"), [])
+    checa("grafico.ignora data inválida",
+          extrai_serie([{"data": "ontem", "inscritos": "1"}], "inscritos"), [])
+    checa("grafico.limita pontos",
+          len(extrai_serie(
+              [{"data": f"2026-01-{d:02d}", "inscritos": "1"} for d in range(1, 32)] +
+              [{"data": f"2026-02-{d:02d}", "inscritos": "1"} for d in range(1, 29)] +
+              [{"data": f"2026-03-{d:02d}", "inscritos": "1"} for d in range(1, 10)],
+              "inscritos")), MAX_PONTOS)
+
+    # Um dia sem coleta não pode virar pico: o ganho é dividido pelo intervalo.
+    ganhos = ganhos_por_dia([(date(2026, 8, 1), 100.0), (date(2026, 8, 3), 300.0)])
+    checa("grafico.ganho normalizado por dia", ganhos, [(date(2026, 8, 3), 100.0)])
+    checa("grafico.ganho de série curta", ganhos_por_dia([(date(2026, 8, 1), 1.0)]), [])
+
+    svg_vazio = monta_svg([{"data": "2026-08-05", "inscritos": "120"}])
+    checa("grafico.1 coleta explica em vez de desenhar",
+          "não há coletas suficientes" in svg_vazio, True)
+    checa("grafico.sem coletas", "<svg" in monta_svg([]), True)
+
+    svg = monta_svg(SERIE, "07/08/2026")
+    checa("grafico.desenha inscritos", "Inscritos" in svg, True)
+    checa("grafico.desenha views", "Visualizações totais" in svg, True)
+    checa("grafico.desenha ganho diário", "ganhas por dia" in svg, True)
+    checa("grafico.rodapé", "Atualizado em 07/08/2026" in svg, True)
+    checa("grafico.tema escuro", "prefers-color-scheme: dark" in svg, True)
+    try:
+        ET.fromstring(svg)
+        ET.fromstring(svg_vazio)
+    except ET.ParseError as erro:
+        falhas.append(f"grafico: SVG inválido ({erro})")
+
+    checa("grafico.escapa XML", _escapa('a<b>&"'), "a&lt;b&gt;&amp;&quot;")
 
     if falhas:
         print(f"❌ {len(falhas)} falha(s):")
