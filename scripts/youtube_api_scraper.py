@@ -261,6 +261,74 @@ def duration_para_texto(duration: str) -> str:
     return f"{m}:{s:02d}"
 
 
+def carrega_disparos_historico(destino: Path) -> dict[str, Any]:
+    """Carrega o histórico de disparos do arquivo JSON."""
+    caminho = destino / "disparos-historico.json"
+    if not caminho.exists():
+        return {"disparos": []}
+    try:
+        with open(caminho, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, IOError):
+        return {"disparos": []}
+
+
+def grava_disparos_historico(destino: Path, historico: dict[str, Any]) -> None:
+    """Grava o histórico de disparos no arquivo JSON."""
+    caminho = destino / "disparos-historico.json"
+    try:
+        with open(caminho, "w", encoding="utf-8") as f:
+            json.dump(historico, f, ensure_ascii=False, indent=2)
+    except IOError as e:
+        print(f"Aviso: não foi possível gravar histórico de disparos: {e}", file=sys.stderr)
+
+
+def registra_disparo(destino: Path, video_id: str, titulo: str, tipo: str, views: int, likes: int, comentarios: int) -> None:
+    """Registra um novo disparo no histórico."""
+    historico = carrega_disparos_historico(destino)
+
+    disparo = {
+        "data_disparo": datetime.now(tz=FUSO_LOCAL).isoformat(),
+        "video_id": video_id,
+        "titulo": titulo,
+        "tipo": tipo,
+        "views_no_disparo": views,
+        "likes_no_disparo": likes,
+        "comentarios_no_disparo": comentarios,
+    }
+
+    historico["disparos"].append(disparo)
+    grava_disparos_historico(destino, historico)
+
+
+def compara_alcance(video: dict[str, Any], historico: dict[str, Any]) -> dict[str, Any] | None:
+    """Compara o alcance atual de um vídeo com um disparo anterior."""
+    video_id = video.get("video_id")
+
+    for disparo in reversed(historico.get("disparos", [])):
+        if disparo.get("video_id") == video_id:
+            views_no_disparo = disparo.get("views_no_disparo", 0)
+            likes_no_disparo = disparo.get("likes_no_disparo", 0)
+            comentarios_no_disparo = disparo.get("comentarios_no_disparo", 0)
+
+            views_atual = video.get("visualizacoes", 0)
+            likes_atual = video.get("curtidas", 0)
+            comentarios_atual = video.get("comentarios", 0)
+
+            return {
+                "data_disparo": disparo.get("data_disparo", ""),
+                "tipo": disparo.get("tipo", ""),
+                "views_crescimento": views_atual - views_no_disparo,
+                "views_pct": ((views_atual - views_no_disparo) / max(views_no_disparo, 1)) * 100,
+                "likes_crescimento": likes_atual - likes_no_disparo,
+                "likes_pct": ((likes_atual - likes_no_disparo) / max(likes_no_disparo, 1)) * 100,
+                "comentarios_crescimento": comentarios_atual - comentarios_no_disparo,
+                "comentarios_pct": ((comentarios_atual - comentarios_no_disparo) / max(comentarios_no_disparo, 1)) * 100,
+            }
+
+    return None
+
+
 def coleta_comentarios(channel_id: str, youtube, videos: list[dict[str, Any]], dias: int = 7) -> list[dict[str, Any]]:
     """Coleta comentários de vídeos publicados nos últimos N dias."""
     comentarios = []
@@ -328,6 +396,7 @@ def renderiza_markdown(relatorio: dict) -> str:
     resumo = relatorio["resumo"]
     diagnostico = relatorio["diagnostico"]
     comentarios = relatorio.get("comentarios", [])
+    disparos = relatorio.get("disparos_com_comparacao", [])
 
     linhas = [
         f"# Relatório do canal do YouTube — {data_local}",
@@ -341,16 +410,34 @@ def renderiza_markdown(relatorio: dict) -> str:
         f"- **Vídeos:** {canal['videos_texto']}",
         f"- **Visualizações totais:** {canal['visualizacoes_texto']}",
         "",
-        "## Vídeos recentes",
-        "",
     ]
 
-    for v in relatorio["videos"]:
-        linhas.append(f"- **{v['titulo']}**")
-        linhas.append(f"  - Visualizações: {v.get('visualizacoes_texto', 'N/A')}")
-        linhas.append(f"  - Curtidas: {v.get('curtidas_texto', 'N/A')}")
-        linhas.append(f"  - Duração: {v.get('duracao', 'N/A')}")
-        linhas.append("")
+    # Seção de alcance de vídeos disparados
+    if disparos:
+        linhas.extend([
+            "## Alcance dos vídeos disparados",
+            "",
+        ])
+
+        for disparo in disparos:
+            video = disparo["video"]
+            comparacao = disparo["comparacao"]
+
+            linhas.append(f"### {video['titulo']}")
+            linhas.append(f"**Tipo:** {comparacao['tipo']} | **Disparado em:** {comparacao['data_disparo'][:10]}")
+            linhas.append("")
+
+            linhas.append(f"- **Views:** {video['visualizacoes_texto']} (+{comparacao['views_crescimento']} = +{comparacao['views_pct']:.0f}%)")
+            linhas.append(f"- **Likes:** {video['curtidas_texto']} (+{comparacao['likes_crescimento']} = +{comparacao['likes_pct']:.0f}%)")
+
+            if comparacao["comentarios_crescimento"] > 0:
+                linhas.append(f"- **Comentários:** {video['comentarios']} (+{comparacao['comentarios_crescimento']})")
+            else:
+                linhas.append(f"- **Comentários:** {video['comentarios']}")
+
+            linhas.append("")
+
+    linhas.append("")
 
     # Seção de comentários dos últimos 7 dias
     if comentarios:
@@ -484,6 +571,20 @@ def executar(args) -> int:
         destino = Path(args.output_dir)
         destino.mkdir(parents=True, exist_ok=True)
 
+        # Carrega histórico de disparos e compara alcance
+        historico_disparos = carrega_disparos_historico(destino)
+        disparos_com_comparacao = []
+
+        for video in videos:
+            comparacao = compara_alcance(video, historico_disparos)
+            if comparacao:
+                disparos_com_comparacao.append({
+                    "video": video,
+                    "comparacao": comparacao,
+                })
+
+        relatorio["disparos_com_comparacao"] = disparos_com_comparacao
+
         caminho_json = destino / f"{data_str}.json"
         conteudo_json = json.dumps(relatorio, ensure_ascii=False, indent=2) + "\n"
         caminho_json.write_text(conteudo_json, encoding="utf-8")
@@ -496,6 +597,9 @@ def executar(args) -> int:
         print(f"\n✅ Relatório salvo:")
         print(f"  - {caminho_json}")
         print(f"  - {caminho_md}")
+
+        if disparos_com_comparacao:
+            print(f"  - {len(disparos_com_comparacao)} vídeo(s) com histórico de disparo")
 
         return 0
 
