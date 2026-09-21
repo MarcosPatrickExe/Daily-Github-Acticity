@@ -261,12 +261,73 @@ def duration_para_texto(duration: str) -> str:
     return f"{m}:{s:02d}"
 
 
+def coleta_comentarios(channel_id: str, youtube, videos: list[dict[str, Any]], dias: int = 7) -> list[dict[str, Any]]:
+    """Coleta comentários de vídeos publicados nos últimos N dias."""
+    comentarios = []
+    try:
+        data_limite = datetime.now(tz=FUSO_LOCAL) - timedelta(days=dias)
+
+        for video in videos:
+            # Verifica se o vídeo foi publicado recentemente
+            publicado_str = video.get("publicado_texto", "")
+            try:
+                publicado = datetime.fromisoformat(publicado_str.replace("Z", "+00:00"))
+                # Converter para fuso local para comparação
+                publicado_local = publicado.astimezone(FUSO_LOCAL)
+                if publicado_local < data_limite:
+                    continue
+            except (ValueError, AttributeError):
+                continue
+
+            video_id = video["video_id"]
+
+            # Busca comentários do vídeo
+            try:
+                request = youtube.commentThreads().list(
+                    part="snippet",
+                    videoId=video_id,
+                    maxResults=20,  # Pega até 20 threads de comentários
+                    textFormat="plainText",
+                    order="relevance"
+                )
+
+                while request:
+                    response = request.execute()
+                    for item in response.get("items", []):
+                        snippet = item["snippet"]
+                        comentario_principal = snippet.get("topLevelComment", {}).get("snippet", {})
+
+                        comentarios.append({
+                            "video_id": video_id,
+                            "video_titulo": video.get("titulo", ""),
+                            "autor": comentario_principal.get("authorDisplayName", "Anônimo"),
+                            "texto": comentario_principal.get("textDisplay", ""),
+                            "curtidas": comentario_principal.get("likeCount", 0),
+                            "publicado_em": comentario_principal.get("publishedAt", ""),
+                            "total_respostas": snippet.get("replyCount", 0),
+                        })
+
+                    # Próxima página de comentários
+                    request = youtube.commentThreads().list_next(request, response) if "nextPageToken" in response else None
+
+            except HttpError as e:
+                # Se o vídeo tem comentários desabilitados ou há erro, continua
+                print(f"  ⚠️ Não foi possível coletar comentários de '{video.get('titulo')}': {e}")
+                continue
+
+        return comentarios
+    except Exception as e:
+        print(f"Erro ao coletar comentários: {e}", file=sys.stderr)
+        return []
+
+
 def renderiza_markdown(relatorio: dict) -> str:
     """Renderiza um relatório estruturado em Markdown."""
     data_local = relatorio["gerado_em_local"]
     canal = relatorio["canal"]
     resumo = relatorio["resumo"]
     diagnostico = relatorio["diagnostico"]
+    comentarios = relatorio.get("comentarios", [])
 
     linhas = [
         f"# Relatório do canal do YouTube — {data_local}",
@@ -290,6 +351,47 @@ def renderiza_markdown(relatorio: dict) -> str:
         linhas.append(f"  - Curtidas: {v.get('curtidas_texto', 'N/A')}")
         linhas.append(f"  - Duração: {v.get('duracao', 'N/A')}")
         linhas.append("")
+
+    # Seção de comentários dos últimos 7 dias
+    if comentarios:
+        linhas.extend([
+            "## Comentários dos últimos 7 dias",
+            "",
+            f"**Total:** {len(comentarios)} comentários",
+            "",
+        ])
+
+        comentarios_por_video = {}
+        for c in comentarios:
+            video_id = c["video_id"]
+            if video_id not in comentarios_por_video:
+                comentarios_por_video[video_id] = []
+            comentarios_por_video[video_id].append(c)
+
+        for video_id, comentarios_video in comentarios_por_video.items():
+            video_titulo = comentarios_video[0]["video_titulo"] if comentarios_video else ""
+            linhas.append(f"### {video_titulo}")
+            linhas.append(f"_{len(comentarios_video)} comentário(s)_")
+            linhas.append("")
+
+            for c in comentarios_video[:5]:  # Mostra até 5 comentários por vídeo
+                linhas.append(f"**{c['autor']}** ({c['curtidas']} curtidas)")
+                texto_truncado = c['texto'][:100] + "..." if len(c['texto']) > 100 else c['texto']
+                linhas.append(f"> {texto_truncado}")
+                if c['total_respostas'] > 0:
+                    linhas.append(f"_({c['total_respostas']} resposta(s))_")
+                linhas.append("")
+
+            if len(comentarios_video) > 5:
+                linhas.append(f"_...e mais {len(comentarios_video) - 5} comentário(s)_")
+                linhas.append("")
+    else:
+        linhas.extend([
+            "## Comentários",
+            "",
+            "Nenhum comentário encontrado nos últimos 7 dias.",
+            "",
+        ])
 
     linhas.extend([
         "## Diagnóstico",
@@ -345,6 +447,10 @@ def executar(args) -> int:
         videos = coleta_videos(channel_id, youtube, args.max_videos)
         print(f"  ✓ {len(videos)} vídeos coletados")
 
+        print("Coletando comentários dos últimos 7 dias...")
+        comentarios = coleta_comentarios(channel_id, youtube, videos, dias=7)
+        print(f"  ✓ {len(comentarios)} comentários encontrados")
+
         # Monta estrutura de saída
         data = datetime.now(tz=FUSO_LOCAL)
         data_str = data.strftime("%Y-%m-%d")
@@ -355,6 +461,7 @@ def executar(args) -> int:
             "url_origem": f"https://www.youtube.com/channel/{channel_id}",
             "canal": canal,
             "videos": videos,
+            "comentarios": comentarios,
             "playlists": [],
             "resumo": {
                 "videos_analisados": len(videos),
@@ -365,6 +472,7 @@ def executar(args) -> int:
                 "curtidas_media": sum(v.get("curtidas", 0) for v in videos) / len(videos) if videos else 0,
                 "comentarios_media": sum(v.get("comentarios", 0) for v in videos) / len(videos) if videos else 0,
                 "taxa_engajamento_pct": 0,
+                "comentarios_coletados": len(comentarios),
             },
             "avisos": [],
             "tendencia": {"atual": {}, "comparacoes": []},
