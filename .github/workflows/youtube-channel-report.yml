@@ -8,18 +8,13 @@ on:
   workflow_dispatch:
     inputs:
       channel_url:
-        description: "URL ou @handle do canal"
+        description: "Channel ID, @handle ou URL do canal"
         required: false
-        default: "https://youtube.com/@patrickson_plays"
+        default: "@patrickson_plays"
       max_videos:
         description: "Quantos vídeos recentes detalhar"
         required: false
         default: "10"
-      sem_comentarios:
-        description: "Pular a contagem de comentários (coleta mais rápida)"
-        type: boolean
-        required: false
-        default: false
 
 permissions:
   contents: write
@@ -36,9 +31,10 @@ jobs:
     timeout-minutes: 30
 
     env:
-      YT_CHANNEL_URL: ${{ inputs.channel_url || 'https://youtube.com/@patrickson_plays' }}
+      YT_CHANNEL_URL: ${{ inputs.channel_url || '@patrickson_plays' }}
       YT_MAX_VIDEOS: ${{ inputs.max_videos || '10' }}
       YT_OUTPUT_DIR: reports/youtube
+      YOUTUBE_API_KEY: ${{ secrets.API_CANAL_YOUTUBE_V3 }}
 
     steps:
       - name: Checkout do repositório
@@ -54,26 +50,16 @@ jobs:
       - name: Instalar dependências
         run: pip install -r scripts/requirements.txt
 
-      - name: Testar as funções puras
-        run: |
-          python scripts/test_parsers.py
-          python scripts/test_historico.py
-
-      - name: Instalar o Chromium do Playwright
-        run: python -m playwright install --with-deps chromium
-
-      # `continue-on-error` para que o relatório e o histórico sejam publicados
-      # mesmo com problemas — quem reprova a execução é o passo de diagnóstico.
+      # `continue-on-error` para que o relatório seja publicado mesmo com problemas
+      # — quem reprova a execução é o passo de diagnóstico.
       - name: Coletar os dados do canal
         id: coleta
         continue-on-error: true
         run: |
-          python scripts/youtube_channel_scraper.py \
+          python scripts/youtube_api_scraper.py \
             --channel "$YT_CHANNEL_URL" \
             --max-videos "$YT_MAX_VIDEOS" \
-            --output-dir "$YT_OUTPUT_DIR" \
-            --falhar-com-problemas \
-            ${{ inputs.sem_comentarios && '--sem-comentarios' || '' }}
+            --output-dir "$YT_OUTPUT_DIR"
 
       - name: Publicar o relatório no repositório
         if: always()
