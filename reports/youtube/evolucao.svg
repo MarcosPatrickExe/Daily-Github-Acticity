@@ -33,212 +33,213 @@
 <line class="eixo" x1="62" y1="142.0" x2="802" y2="142.0" />
 <text class="escala" x="54" y="38.0" text-anchor="end">130</text>
 <text class="escala" x="54" y="142.0" text-anchor="end">119</text>
-<polygon class="area inscritos" points="62.0,142.0 62.0,129.5 75.7,120.3 89.4,120.3 103.1,120.3 116.8,111.1 130.5,111.1 144.2,111.1 157.9,111.1 171.6,111.1 185.3,111.1 199.0,111.1 212.7,111.1 226.4,111.1 240.1,111.1 253.9,111.1 267.6,111.1 281.3,111.1 295.0,111.1 308.7,111.1 322.4,111.1 336.1,111.1 349.8,111.1 363.5,111.1 377.2,111.1 390.9,101.8 404.6,101.8 418.3,101.8 432.0,101.8 445.7,101.8 459.4,101.8 473.1,92.6 486.8,92.6 500.5,92.6 514.2,92.6 527.9,92.6 541.6,92.6 555.3,92.6 569.0,92.6 582.7,92.6 596.4,92.6 610.1,92.6 623.9,92.6 637.6,92.6 651.3,92.6 665.0,111.1 678.7,74.2 692.4,74.2 706.1,74.2 719.8,64.9 733.5,64.9 747.2,64.9 760.9,55.7 774.6,46.5 788.3,46.5 802.0,46.5 802.0,142.0" />
-<polyline class="linha inscritos" points="62.0,129.5 75.7,120.3 89.4,120.3 103.1,120.3 116.8,111.1 130.5,111.1 144.2,111.1 157.9,111.1 171.6,111.1 185.3,111.1 199.0,111.1 212.7,111.1 226.4,111.1 240.1,111.1 253.9,111.1 267.6,111.1 281.3,111.1 295.0,111.1 308.7,111.1 322.4,111.1 336.1,111.1 349.8,111.1 363.5,111.1 377.2,111.1 390.9,101.8 404.6,101.8 418.3,101.8 432.0,101.8 445.7,101.8 459.4,101.8 473.1,92.6 486.8,92.6 500.5,92.6 514.2,92.6 527.9,92.6 541.6,92.6 555.3,92.6 569.0,92.6 582.7,92.6 596.4,92.6 610.1,92.6 623.9,92.6 637.6,92.6 651.3,92.6 665.0,111.1 678.7,74.2 692.4,74.2 706.1,74.2 719.8,64.9 733.5,64.9 747.2,64.9 760.9,55.7 774.6,46.5 788.3,46.5 802.0,46.5" />
+<polygon class="area inscritos" points="62.0,142.0 62.0,129.5 75.5,120.3 88.9,120.3 102.4,120.3 115.8,111.1 129.3,111.1 142.7,111.1 156.2,111.1 169.6,111.1 183.1,111.1 196.5,111.1 210.0,111.1 223.5,111.1 236.9,111.1 250.4,111.1 263.8,111.1 277.3,111.1 290.7,111.1 304.2,111.1 317.6,111.1 331.1,111.1 344.5,111.1 358.0,111.1 371.5,111.1 384.9,101.8 398.4,101.8 411.8,101.8 425.3,101.8 438.7,101.8 452.2,101.8 465.6,92.6 479.1,92.6 492.5,92.6 506.0,92.6 519.5,92.6 532.9,92.6 546.4,92.6 559.8,92.6 573.3,92.6 586.7,92.6 600.2,92.6 613.6,92.6 627.1,92.6 640.5,92.6 654.0,111.1 667.5,74.2 680.9,74.2 694.4,74.2 707.8,64.9 721.3,64.9 734.7,64.9 748.2,55.7 761.6,46.5 775.1,46.5 788.5,46.5 802.0,46.5 802.0,142.0" />
+<polyline class="linha inscritos" points="62.0,129.5 75.5,120.3 88.9,120.3 102.4,120.3 115.8,111.1 129.3,111.1 142.7,111.1 156.2,111.1 169.6,111.1 183.1,111.1 196.5,111.1 210.0,111.1 223.5,111.1 236.9,111.1 250.4,111.1 263.8,111.1 277.3,111.1 290.7,111.1 304.2,111.1 317.6,111.1 331.1,111.1 344.5,111.1 358.0,111.1 371.5,111.1 384.9,101.8 398.4,101.8 411.8,101.8 425.3,101.8 438.7,101.8 452.2,101.8 465.6,92.6 479.1,92.6 492.5,92.6 506.0,92.6 519.5,92.6 532.9,92.6 546.4,92.6 559.8,92.6 573.3,92.6 586.7,92.6 600.2,92.6 613.6,92.6 627.1,92.6 640.5,92.6 654.0,111.1 667.5,74.2 680.9,74.2 694.4,74.2 707.8,64.9 721.3,64.9 734.7,64.9 748.2,55.7 761.6,46.5 775.1,46.5 788.5,46.5 802.0,46.5" />
 <circle class="ponto inscritos" cx="62.0" cy="129.5" r="2.6" />
-<circle class="ponto inscritos" cx="75.7" cy="120.3" r="2.6" />
-<circle class="ponto inscritos" cx="89.4" cy="120.3" r="2.6" />
-<circle class="ponto inscritos" cx="103.1" cy="120.3" r="2.6" />
-<circle class="ponto inscritos" cx="116.8" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="130.5" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="144.2" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="157.9" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="171.6" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="185.3" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="199.0" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="212.7" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="226.4" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="240.1" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="253.9" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="267.6" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="281.3" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="295.0" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="308.7" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="322.4" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="336.1" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="349.8" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="363.5" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="377.2" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="390.9" cy="101.8" r="2.6" />
-<circle class="ponto inscritos" cx="404.6" cy="101.8" r="2.6" />
-<circle class="ponto inscritos" cx="418.3" cy="101.8" r="2.6" />
-<circle class="ponto inscritos" cx="432.0" cy="101.8" r="2.6" />
-<circle class="ponto inscritos" cx="445.7" cy="101.8" r="2.6" />
-<circle class="ponto inscritos" cx="459.4" cy="101.8" r="2.6" />
-<circle class="ponto inscritos" cx="473.1" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="486.8" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="500.5" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="514.2" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="527.9" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="541.6" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="555.3" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="569.0" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="582.7" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="596.4" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="610.1" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="623.9" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="637.6" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="651.3" cy="92.6" r="2.6" />
-<circle class="ponto inscritos" cx="665.0" cy="111.1" r="2.6" />
-<circle class="ponto inscritos" cx="678.7" cy="74.2" r="2.6" />
-<circle class="ponto inscritos" cx="692.4" cy="74.2" r="2.6" />
-<circle class="ponto inscritos" cx="706.1" cy="74.2" r="2.6" />
-<circle class="ponto inscritos" cx="719.8" cy="64.9" r="2.6" />
-<circle class="ponto inscritos" cx="733.5" cy="64.9" r="2.6" />
-<circle class="ponto inscritos" cx="747.2" cy="64.9" r="2.6" />
-<circle class="ponto inscritos" cx="760.9" cy="55.7" r="2.6" />
-<circle class="ponto inscritos" cx="774.6" cy="46.5" r="2.6" />
-<circle class="ponto inscritos" cx="788.3" cy="46.5" r="2.6" />
+<circle class="ponto inscritos" cx="75.5" cy="120.3" r="2.6" />
+<circle class="ponto inscritos" cx="88.9" cy="120.3" r="2.6" />
+<circle class="ponto inscritos" cx="102.4" cy="120.3" r="2.6" />
+<circle class="ponto inscritos" cx="115.8" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="129.3" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="142.7" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="156.2" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="169.6" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="183.1" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="196.5" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="210.0" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="223.5" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="236.9" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="250.4" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="263.8" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="277.3" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="290.7" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="304.2" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="317.6" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="331.1" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="344.5" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="358.0" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="371.5" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="384.9" cy="101.8" r="2.6" />
+<circle class="ponto inscritos" cx="398.4" cy="101.8" r="2.6" />
+<circle class="ponto inscritos" cx="411.8" cy="101.8" r="2.6" />
+<circle class="ponto inscritos" cx="425.3" cy="101.8" r="2.6" />
+<circle class="ponto inscritos" cx="438.7" cy="101.8" r="2.6" />
+<circle class="ponto inscritos" cx="452.2" cy="101.8" r="2.6" />
+<circle class="ponto inscritos" cx="465.6" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="479.1" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="492.5" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="506.0" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="519.5" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="532.9" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="546.4" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="559.8" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="573.3" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="586.7" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="600.2" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="613.6" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="627.1" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="640.5" cy="92.6" r="2.6" />
+<circle class="ponto inscritos" cx="654.0" cy="111.1" r="2.6" />
+<circle class="ponto inscritos" cx="667.5" cy="74.2" r="2.6" />
+<circle class="ponto inscritos" cx="680.9" cy="74.2" r="2.6" />
+<circle class="ponto inscritos" cx="694.4" cy="74.2" r="2.6" />
+<circle class="ponto inscritos" cx="707.8" cy="64.9" r="2.6" />
+<circle class="ponto inscritos" cx="721.3" cy="64.9" r="2.6" />
+<circle class="ponto inscritos" cx="734.7" cy="64.9" r="2.6" />
+<circle class="ponto inscritos" cx="748.2" cy="55.7" r="2.6" />
+<circle class="ponto inscritos" cx="761.6" cy="46.5" r="2.6" />
+<circle class="ponto inscritos" cx="775.1" cy="46.5" r="2.6" />
+<circle class="ponto inscritos" cx="788.5" cy="46.5" r="2.6" />
 <circle class="ponto inscritos" cx="802.0" cy="46.5" r="2.6" />
 <text class="valor inscritos" x="802.0" y="37.5" text-anchor="end">129</text>
 <text class="escala" x="62.0" y="157.0" text-anchor="middle">05/08</text>
-<text class="escala" x="144.2" y="157.0" text-anchor="middle">12/08</text>
-<text class="escala" x="226.4" y="157.0" text-anchor="middle">18/08</text>
-<text class="escala" x="308.7" y="157.0" text-anchor="middle">25/08</text>
-<text class="escala" x="390.9" y="157.0" text-anchor="middle">31/08</text>
-<text class="escala" x="473.1" y="157.0" text-anchor="middle">06/09</text>
-<text class="escala" x="555.3" y="157.0" text-anchor="middle">12/09</text>
-<text class="escala" x="637.6" y="157.0" text-anchor="middle">18/09</text>
-<text class="escala" x="719.8" y="157.0" text-anchor="middle">24/09</text>
-<text class="escala" x="802.0" y="157.0" text-anchor="middle">30/09</text>
+<text class="escala" x="156.2" y="157.0" text-anchor="middle">13/08</text>
+<text class="escala" x="250.4" y="157.0" text-anchor="middle">21/08</text>
+<text class="escala" x="344.5" y="157.0" text-anchor="middle">28/08</text>
+<text class="escala" x="438.7" y="157.0" text-anchor="middle">04/09</text>
+<text class="escala" x="532.9" y="157.0" text-anchor="middle">11/09</text>
+<text class="escala" x="627.1" y="157.0" text-anchor="middle">18/09</text>
+<text class="escala" x="721.3" y="157.0" text-anchor="middle">25/09</text>
+<text class="escala" x="802.0" y="157.0" text-anchor="middle">01/10</text>
 <text class="titulo" x="62" y="178.0">Visualizações totais</text>
 <line class="eixo" x1="62" y1="296.0" x2="802" y2="296.0" />
-<text class="escala" x="54" y="192.0" text-anchor="end">41.136</text>
-<text class="escala" x="54" y="296.0" text-anchor="end">38.732</text>
-<polygon class="area views" points="62.0,296.0 62.0,283.5 75.7,283.4 89.4,283.4 103.1,283.3 116.8,281.2 130.5,280.9 144.2,280.6 157.9,280.5 171.6,280.5 185.3,280.2 199.0,279.5 212.7,279.5 226.4,278.5 240.1,278.2 253.9,278.2 267.6,277.5 281.3,277.1 295.0,277.1 308.7,277.2 322.4,276.9 336.1,276.8 349.8,276.8 363.5,275.9 377.2,275.7 390.9,271.3 404.6,270.4 418.3,268.4 432.0,267.6 445.7,267.6 459.4,266.2 473.1,265.8 486.8,265.8 500.5,265.3 514.2,265.1 527.9,246.6 541.6,245.6 555.3,244.7 569.0,244.1 582.7,244.0 596.4,243.9 610.1,243.0 623.9,241.9 637.6,240.5 651.3,240.9 665.0,240.0 678.7,237.2 692.4,225.4 706.1,225.0 719.8,224.4 733.5,221.8 747.2,214.8 760.9,214.0 774.6,211.8 788.3,200.5 802.0,200.5 802.0,296.0" />
-<polyline class="linha views" points="62.0,283.5 75.7,283.4 89.4,283.4 103.1,283.3 116.8,281.2 130.5,280.9 144.2,280.6 157.9,280.5 171.6,280.5 185.3,280.2 199.0,279.5 212.7,279.5 226.4,278.5 240.1,278.2 253.9,278.2 267.6,277.5 281.3,277.1 295.0,277.1 308.7,277.2 322.4,276.9 336.1,276.8 349.8,276.8 363.5,275.9 377.2,275.7 390.9,271.3 404.6,270.4 418.3,268.4 432.0,267.6 445.7,267.6 459.4,266.2 473.1,265.8 486.8,265.8 500.5,265.3 514.2,265.1 527.9,246.6 541.6,245.6 555.3,244.7 569.0,244.1 582.7,244.0 596.4,243.9 610.1,243.0 623.9,241.9 637.6,240.5 651.3,240.9 665.0,240.0 678.7,237.2 692.4,225.4 706.1,225.0 719.8,224.4 733.5,221.8 747.2,214.8 760.9,214.0 774.6,211.8 788.3,200.5 802.0,200.5" />
+<text class="escala" x="54" y="192.0" text-anchor="end">41.207</text>
+<text class="escala" x="54" y="296.0" text-anchor="end">38.722</text>
+<polygon class="area views" points="62.0,296.0 62.0,283.5 75.5,283.5 88.9,283.4 102.4,283.3 115.8,281.3 129.3,281.0 142.7,280.7 156.2,280.6 169.6,280.6 183.1,280.3 196.5,279.6 210.0,279.6 223.5,278.6 236.9,278.4 250.4,278.4 263.8,277.7 277.3,277.3 290.7,277.3 304.2,277.4 317.6,277.1 331.1,277.1 344.5,277.0 358.0,276.1 371.5,275.9 384.9,271.7 398.4,270.8 411.8,268.9 425.3,268.1 438.7,268.1 452.2,266.8 465.6,266.4 479.1,266.3 492.5,265.8 506.0,265.7 519.5,247.8 532.9,246.8 546.4,246.0 559.8,245.4 573.3,245.2 586.7,245.2 600.2,244.3 613.6,243.2 627.1,241.8 640.5,242.3 654.0,241.4 667.5,238.6 680.9,227.3 694.4,226.8 707.8,226.2 721.3,223.8 734.7,217.0 748.2,216.2 761.6,214.1 775.1,203.1 788.5,203.1 802.0,200.5 802.0,296.0" />
+<polyline class="linha views" points="62.0,283.5 75.5,283.5 88.9,283.4 102.4,283.3 115.8,281.3 129.3,281.0 142.7,280.7 156.2,280.6 169.6,280.6 183.1,280.3 196.5,279.6 210.0,279.6 223.5,278.6 236.9,278.4 250.4,278.4 263.8,277.7 277.3,277.3 290.7,277.3 304.2,277.4 317.6,277.1 331.1,277.1 344.5,277.0 358.0,276.1 371.5,275.9 384.9,271.7 398.4,270.8 411.8,268.9 425.3,268.1 438.7,268.1 452.2,266.8 465.6,266.4 479.1,266.3 492.5,265.8 506.0,265.7 519.5,247.8 532.9,246.8 546.4,246.0 559.8,245.4 573.3,245.2 586.7,245.2 600.2,244.3 613.6,243.2 627.1,241.8 640.5,242.3 654.0,241.4 667.5,238.6 680.9,227.3 694.4,226.8 707.8,226.2 721.3,223.8 734.7,217.0 748.2,216.2 761.6,214.1 775.1,203.1 788.5,203.1 802.0,200.5" />
 <circle class="ponto views" cx="62.0" cy="283.5" r="2.6" />
-<circle class="ponto views" cx="75.7" cy="283.4" r="2.6" />
-<circle class="ponto views" cx="89.4" cy="283.4" r="2.6" />
-<circle class="ponto views" cx="103.1" cy="283.3" r="2.6" />
-<circle class="ponto views" cx="116.8" cy="281.2" r="2.6" />
-<circle class="ponto views" cx="130.5" cy="280.9" r="2.6" />
-<circle class="ponto views" cx="144.2" cy="280.6" r="2.6" />
-<circle class="ponto views" cx="157.9" cy="280.5" r="2.6" />
-<circle class="ponto views" cx="171.6" cy="280.5" r="2.6" />
-<circle class="ponto views" cx="185.3" cy="280.2" r="2.6" />
-<circle class="ponto views" cx="199.0" cy="279.5" r="2.6" />
-<circle class="ponto views" cx="212.7" cy="279.5" r="2.6" />
-<circle class="ponto views" cx="226.4" cy="278.5" r="2.6" />
-<circle class="ponto views" cx="240.1" cy="278.2" r="2.6" />
-<circle class="ponto views" cx="253.9" cy="278.2" r="2.6" />
-<circle class="ponto views" cx="267.6" cy="277.5" r="2.6" />
-<circle class="ponto views" cx="281.3" cy="277.1" r="2.6" />
-<circle class="ponto views" cx="295.0" cy="277.1" r="2.6" />
-<circle class="ponto views" cx="308.7" cy="277.2" r="2.6" />
-<circle class="ponto views" cx="322.4" cy="276.9" r="2.6" />
-<circle class="ponto views" cx="336.1" cy="276.8" r="2.6" />
-<circle class="ponto views" cx="349.8" cy="276.8" r="2.6" />
-<circle class="ponto views" cx="363.5" cy="275.9" r="2.6" />
-<circle class="ponto views" cx="377.2" cy="275.7" r="2.6" />
-<circle class="ponto views" cx="390.9" cy="271.3" r="2.6" />
-<circle class="ponto views" cx="404.6" cy="270.4" r="2.6" />
-<circle class="ponto views" cx="418.3" cy="268.4" r="2.6" />
-<circle class="ponto views" cx="432.0" cy="267.6" r="2.6" />
-<circle class="ponto views" cx="445.7" cy="267.6" r="2.6" />
-<circle class="ponto views" cx="459.4" cy="266.2" r="2.6" />
-<circle class="ponto views" cx="473.1" cy="265.8" r="2.6" />
-<circle class="ponto views" cx="486.8" cy="265.8" r="2.6" />
-<circle class="ponto views" cx="500.5" cy="265.3" r="2.6" />
-<circle class="ponto views" cx="514.2" cy="265.1" r="2.6" />
-<circle class="ponto views" cx="527.9" cy="246.6" r="2.6" />
-<circle class="ponto views" cx="541.6" cy="245.6" r="2.6" />
-<circle class="ponto views" cx="555.3" cy="244.7" r="2.6" />
-<circle class="ponto views" cx="569.0" cy="244.1" r="2.6" />
-<circle class="ponto views" cx="582.7" cy="244.0" r="2.6" />
-<circle class="ponto views" cx="596.4" cy="243.9" r="2.6" />
-<circle class="ponto views" cx="610.1" cy="243.0" r="2.6" />
-<circle class="ponto views" cx="623.9" cy="241.9" r="2.6" />
-<circle class="ponto views" cx="637.6" cy="240.5" r="2.6" />
-<circle class="ponto views" cx="651.3" cy="240.9" r="2.6" />
-<circle class="ponto views" cx="665.0" cy="240.0" r="2.6" />
-<circle class="ponto views" cx="678.7" cy="237.2" r="2.6" />
-<circle class="ponto views" cx="692.4" cy="225.4" r="2.6" />
-<circle class="ponto views" cx="706.1" cy="225.0" r="2.6" />
-<circle class="ponto views" cx="719.8" cy="224.4" r="2.6" />
-<circle class="ponto views" cx="733.5" cy="221.8" r="2.6" />
-<circle class="ponto views" cx="747.2" cy="214.8" r="2.6" />
-<circle class="ponto views" cx="760.9" cy="214.0" r="2.6" />
-<circle class="ponto views" cx="774.6" cy="211.8" r="2.6" />
-<circle class="ponto views" cx="788.3" cy="200.5" r="2.6" />
+<circle class="ponto views" cx="75.5" cy="283.5" r="2.6" />
+<circle class="ponto views" cx="88.9" cy="283.4" r="2.6" />
+<circle class="ponto views" cx="102.4" cy="283.3" r="2.6" />
+<circle class="ponto views" cx="115.8" cy="281.3" r="2.6" />
+<circle class="ponto views" cx="129.3" cy="281.0" r="2.6" />
+<circle class="ponto views" cx="142.7" cy="280.7" r="2.6" />
+<circle class="ponto views" cx="156.2" cy="280.6" r="2.6" />
+<circle class="ponto views" cx="169.6" cy="280.6" r="2.6" />
+<circle class="ponto views" cx="183.1" cy="280.3" r="2.6" />
+<circle class="ponto views" cx="196.5" cy="279.6" r="2.6" />
+<circle class="ponto views" cx="210.0" cy="279.6" r="2.6" />
+<circle class="ponto views" cx="223.5" cy="278.6" r="2.6" />
+<circle class="ponto views" cx="236.9" cy="278.4" r="2.6" />
+<circle class="ponto views" cx="250.4" cy="278.4" r="2.6" />
+<circle class="ponto views" cx="263.8" cy="277.7" r="2.6" />
+<circle class="ponto views" cx="277.3" cy="277.3" r="2.6" />
+<circle class="ponto views" cx="290.7" cy="277.3" r="2.6" />
+<circle class="ponto views" cx="304.2" cy="277.4" r="2.6" />
+<circle class="ponto views" cx="317.6" cy="277.1" r="2.6" />
+<circle class="ponto views" cx="331.1" cy="277.1" r="2.6" />
+<circle class="ponto views" cx="344.5" cy="277.0" r="2.6" />
+<circle class="ponto views" cx="358.0" cy="276.1" r="2.6" />
+<circle class="ponto views" cx="371.5" cy="275.9" r="2.6" />
+<circle class="ponto views" cx="384.9" cy="271.7" r="2.6" />
+<circle class="ponto views" cx="398.4" cy="270.8" r="2.6" />
+<circle class="ponto views" cx="411.8" cy="268.9" r="2.6" />
+<circle class="ponto views" cx="425.3" cy="268.1" r="2.6" />
+<circle class="ponto views" cx="438.7" cy="268.1" r="2.6" />
+<circle class="ponto views" cx="452.2" cy="266.8" r="2.6" />
+<circle class="ponto views" cx="465.6" cy="266.4" r="2.6" />
+<circle class="ponto views" cx="479.1" cy="266.3" r="2.6" />
+<circle class="ponto views" cx="492.5" cy="265.8" r="2.6" />
+<circle class="ponto views" cx="506.0" cy="265.7" r="2.6" />
+<circle class="ponto views" cx="519.5" cy="247.8" r="2.6" />
+<circle class="ponto views" cx="532.9" cy="246.8" r="2.6" />
+<circle class="ponto views" cx="546.4" cy="246.0" r="2.6" />
+<circle class="ponto views" cx="559.8" cy="245.4" r="2.6" />
+<circle class="ponto views" cx="573.3" cy="245.2" r="2.6" />
+<circle class="ponto views" cx="586.7" cy="245.2" r="2.6" />
+<circle class="ponto views" cx="600.2" cy="244.3" r="2.6" />
+<circle class="ponto views" cx="613.6" cy="243.2" r="2.6" />
+<circle class="ponto views" cx="627.1" cy="241.8" r="2.6" />
+<circle class="ponto views" cx="640.5" cy="242.3" r="2.6" />
+<circle class="ponto views" cx="654.0" cy="241.4" r="2.6" />
+<circle class="ponto views" cx="667.5" cy="238.6" r="2.6" />
+<circle class="ponto views" cx="680.9" cy="227.3" r="2.6" />
+<circle class="ponto views" cx="694.4" cy="226.8" r="2.6" />
+<circle class="ponto views" cx="707.8" cy="226.2" r="2.6" />
+<circle class="ponto views" cx="721.3" cy="223.8" r="2.6" />
+<circle class="ponto views" cx="734.7" cy="217.0" r="2.6" />
+<circle class="ponto views" cx="748.2" cy="216.2" r="2.6" />
+<circle class="ponto views" cx="761.6" cy="214.1" r="2.6" />
+<circle class="ponto views" cx="775.1" cy="203.1" r="2.6" />
+<circle class="ponto views" cx="788.5" cy="203.1" r="2.6" />
 <circle class="ponto views" cx="802.0" cy="200.5" r="2.6" />
-<text class="valor views" x="802.0" y="191.5" text-anchor="end">40.859</text>
+<text class="valor views" x="802.0" y="191.5" text-anchor="end">40.920</text>
 <text class="escala" x="62.0" y="311.0" text-anchor="middle">05/08</text>
-<text class="escala" x="144.2" y="311.0" text-anchor="middle">12/08</text>
-<text class="escala" x="226.4" y="311.0" text-anchor="middle">18/08</text>
-<text class="escala" x="308.7" y="311.0" text-anchor="middle">25/08</text>
-<text class="escala" x="390.9" y="311.0" text-anchor="middle">31/08</text>
-<text class="escala" x="473.1" y="311.0" text-anchor="middle">06/09</text>
-<text class="escala" x="555.3" y="311.0" text-anchor="middle">12/09</text>
-<text class="escala" x="637.6" y="311.0" text-anchor="middle">18/09</text>
-<text class="escala" x="719.8" y="311.0" text-anchor="middle">24/09</text>
-<text class="escala" x="802.0" y="311.0" text-anchor="middle">30/09</text>
+<text class="escala" x="156.2" y="311.0" text-anchor="middle">13/08</text>
+<text class="escala" x="250.4" y="311.0" text-anchor="middle">21/08</text>
+<text class="escala" x="344.5" y="311.0" text-anchor="middle">28/08</text>
+<text class="escala" x="438.7" y="311.0" text-anchor="middle">04/09</text>
+<text class="escala" x="532.9" y="311.0" text-anchor="middle">11/09</text>
+<text class="escala" x="627.1" y="311.0" text-anchor="middle">18/09</text>
+<text class="escala" x="721.3" y="311.0" text-anchor="middle">25/09</text>
+<text class="escala" x="802.0" y="311.0" text-anchor="middle">01/10</text>
 <text class="titulo" x="62" y="332.0">Visualizações ganhas por dia</text>
 <line class="eixo" x1="62" y1="447.4" x2="802" y2="447.4" />
 <text class="escala" x="54" y="346.0" text-anchor="end">412</text>
-<rect class="barra ganho" x="57.9" y="447.2" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="71.9" y="446.9" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="85.8" y="447.2" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="99.8" y="435.7" width="8.2" height="11.8" rx="2" />
-<rect class="barra ganho" x="113.7" y="445.6" width="8.2" height="1.8" rx="2" />
-<rect class="barra ganho" x="127.7" y="445.6" width="8.2" height="1.8" rx="2" />
-<rect class="barra ganho" x="141.7" y="446.7" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="155.6" y="447.4" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="169.6" y="445.6" width="8.2" height="1.8" rx="2" />
-<rect class="barra ganho" x="183.5" y="443.3" width="8.2" height="4.1" rx="2" />
-<rect class="barra ganho" x="197.5" y="447.4" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="211.5" y="441.8" width="8.2" height="5.6" rx="2" />
-<rect class="barra ganho" x="225.4" y="446.8" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="239.4" y="447.2" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="253.4" y="443.6" width="8.2" height="3.8" rx="2" />
-<rect class="barra ganho" x="267.3" y="445.1" width="8.2" height="2.3" rx="2" />
-<rect class="barra ganho" x="281.3" y="447.4" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="295.2" y="447.4" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="309.2" y="445.6" width="8.2" height="1.8" rx="2" />
-<rect class="barra ganho" x="323.2" y="447.2" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="337.1" y="447.2" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="351.1" y="442.1" width="8.2" height="5.4" rx="2" />
-<rect class="barra ganho" x="365.1" y="446.4" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="379.0" y="422.6" width="8.2" height="24.8" rx="2" />
-<rect class="barra ganho" x="393.0" y="442.3" width="8.2" height="5.1" rx="2" />
-<rect class="barra ganho" x="406.9" y="435.9" width="8.2" height="11.5" rx="2" />
-<rect class="barra ganho" x="420.9" y="443.1" width="8.2" height="4.4" rx="2" />
-<rect class="barra ganho" x="434.9" y="447.4" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="448.8" y="439.3" width="8.2" height="8.2" rx="2" />
-<rect class="barra ganho" x="462.8" y="445.4" width="8.2" height="2.0" rx="2" />
-<rect class="barra ganho" x="476.8" y="446.9" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="490.7" y="444.6" width="8.2" height="2.8" rx="2" />
-<rect class="barra ganho" x="504.7" y="446.7" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="518.6" y="342.0" width="8.2" height="105.4" rx="2" />
-<rect class="barra ganho" x="532.6" y="441.8" width="8.2" height="5.6" rx="2" />
-<rect class="barra ganho" x="546.6" y="442.3" width="8.2" height="5.1" rx="2" />
-<rect class="barra ganho" x="560.5" y="443.9" width="8.2" height="3.6" rx="2" />
-<rect class="barra ganho" x="574.5" y="446.7" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="588.5" y="446.9" width="8.2" height="1.0" rx="2" />
-<rect class="barra ganho" x="602.4" y="442.6" width="8.2" height="4.9" rx="2" />
-<rect class="barra ganho" x="616.4" y="440.8" width="8.2" height="6.7" rx="2" />
-<rect class="barra ganho" x="630.3" y="439.5" width="8.2" height="7.9" rx="2" />
-<rect class="barra ganho" x="644.3" y="447.4" width="8.2" height="2.6" rx="2" />
-<rect class="barra ganho" x="658.3" y="442.3" width="8.2" height="5.1" rx="2" />
-<rect class="barra ganho" x="672.2" y="431.1" width="8.2" height="16.4" rx="2" />
-<rect class="barra ganho" x="686.2" y="380.6" width="8.2" height="66.8" rx="2" />
-<rect class="barra ganho" x="700.2" y="444.9" width="8.2" height="2.6" rx="2" />
-<rect class="barra ganho" x="714.1" y="443.9" width="8.2" height="3.6" rx="2" />
-<rect class="barra ganho" x="728.1" y="433.1" width="8.2" height="14.3" rx="2" />
-<rect class="barra ganho" x="742.0" y="407.3" width="8.2" height="40.2" rx="2" />
-<rect class="barra ganho" x="756.0" y="442.8" width="8.2" height="4.6" rx="2" />
-<rect class="barra ganho" x="770.0" y="435.2" width="8.2" height="12.3" rx="2" />
-<rect class="barra ganho" x="783.9" y="382.7" width="8.2" height="64.7" rx="2" />
-<rect class="barra ganho" x="797.9" y="447.4" width="8.2" height="1.0" rx="2" />
+<rect class="barra ganho" x="58.0" y="447.2" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="71.7" y="446.9" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="85.4" y="447.2" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="99.1" y="435.7" width="8.1" height="11.8" rx="2" />
+<rect class="barra ganho" x="112.8" y="445.6" width="8.1" height="1.8" rx="2" />
+<rect class="barra ganho" x="126.5" y="445.6" width="8.1" height="1.8" rx="2" />
+<rect class="barra ganho" x="140.2" y="446.7" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="153.9" y="447.4" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="167.6" y="445.6" width="8.1" height="1.8" rx="2" />
+<rect class="barra ganho" x="181.3" y="443.3" width="8.1" height="4.1" rx="2" />
+<rect class="barra ganho" x="195.0" y="447.4" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="208.7" y="441.8" width="8.1" height="5.6" rx="2" />
+<rect class="barra ganho" x="222.4" y="446.8" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="236.1" y="447.2" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="249.8" y="443.6" width="8.1" height="3.8" rx="2" />
+<rect class="barra ganho" x="263.5" y="445.1" width="8.1" height="2.3" rx="2" />
+<rect class="barra ganho" x="277.2" y="447.4" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="290.9" y="447.4" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="304.6" y="445.6" width="8.1" height="1.8" rx="2" />
+<rect class="barra ganho" x="318.3" y="447.2" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="332.0" y="447.2" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="345.7" y="442.1" width="8.1" height="5.4" rx="2" />
+<rect class="barra ganho" x="359.4" y="446.4" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="373.1" y="422.6" width="8.1" height="24.8" rx="2" />
+<rect class="barra ganho" x="386.9" y="442.3" width="8.1" height="5.1" rx="2" />
+<rect class="barra ganho" x="400.6" y="435.9" width="8.1" height="11.5" rx="2" />
+<rect class="barra ganho" x="414.3" y="443.1" width="8.1" height="4.4" rx="2" />
+<rect class="barra ganho" x="428.0" y="447.4" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="441.7" y="439.3" width="8.1" height="8.2" rx="2" />
+<rect class="barra ganho" x="455.4" y="445.4" width="8.1" height="2.0" rx="2" />
+<rect class="barra ganho" x="469.1" y="446.9" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="482.8" y="444.6" width="8.1" height="2.8" rx="2" />
+<rect class="barra ganho" x="496.5" y="446.7" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="510.2" y="342.0" width="8.1" height="105.4" rx="2" />
+<rect class="barra ganho" x="523.9" y="441.8" width="8.1" height="5.6" rx="2" />
+<rect class="barra ganho" x="537.6" y="442.3" width="8.1" height="5.1" rx="2" />
+<rect class="barra ganho" x="551.3" y="443.9" width="8.1" height="3.6" rx="2" />
+<rect class="barra ganho" x="565.0" y="446.7" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="578.7" y="446.9" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="592.4" y="442.6" width="8.1" height="4.9" rx="2" />
+<rect class="barra ganho" x="606.1" y="440.8" width="8.1" height="6.7" rx="2" />
+<rect class="barra ganho" x="619.8" y="439.5" width="8.1" height="7.9" rx="2" />
+<rect class="barra ganho" x="633.5" y="447.4" width="8.1" height="2.6" rx="2" />
+<rect class="barra ganho" x="647.2" y="442.3" width="8.1" height="5.1" rx="2" />
+<rect class="barra ganho" x="660.9" y="431.1" width="8.1" height="16.4" rx="2" />
+<rect class="barra ganho" x="674.6" y="380.6" width="8.1" height="66.8" rx="2" />
+<rect class="barra ganho" x="688.3" y="444.9" width="8.1" height="2.6" rx="2" />
+<rect class="barra ganho" x="702.0" y="443.9" width="8.1" height="3.6" rx="2" />
+<rect class="barra ganho" x="715.7" y="433.1" width="8.1" height="14.3" rx="2" />
+<rect class="barra ganho" x="729.4" y="407.3" width="8.1" height="40.2" rx="2" />
+<rect class="barra ganho" x="743.1" y="442.8" width="8.1" height="4.6" rx="2" />
+<rect class="barra ganho" x="756.9" y="435.2" width="8.1" height="12.3" rx="2" />
+<rect class="barra ganho" x="770.6" y="382.7" width="8.1" height="64.7" rx="2" />
+<rect class="barra ganho" x="784.3" y="447.4" width="8.1" height="1.0" rx="2" />
+<rect class="barra ganho" x="798.0" y="431.8" width="8.1" height="15.6" rx="2" />
 <text class="escala" x="62.0" y="465.0" text-anchor="middle">07/08</text>
-<text class="escala" x="145.8" y="465.0" text-anchor="middle">13/08</text>
-<text class="escala" x="229.5" y="465.0" text-anchor="middle">20/08</text>
-<text class="escala" x="313.3" y="465.0" text-anchor="middle">26/08</text>
-<text class="escala" x="397.1" y="465.0" text-anchor="middle">01/09</text>
-<text class="escala" x="480.9" y="465.0" text-anchor="middle">07/09</text>
-<text class="escala" x="564.6" y="465.0" text-anchor="middle">13/09</text>
-<text class="escala" x="648.4" y="465.0" text-anchor="middle">19/09</text>
-<text class="escala" x="732.2" y="465.0" text-anchor="middle">25/09</text>
-<text class="escala" x="802.0" y="465.0" text-anchor="middle">30/09</text>
-<text class="rodape" x="802" y="494" text-anchor="end">Atualizado em 30/09/2026</text>
+<text class="escala" x="144.2" y="465.0" text-anchor="middle">13/08</text>
+<text class="escala" x="226.4" y="465.0" text-anchor="middle">20/08</text>
+<text class="escala" x="308.7" y="465.0" text-anchor="middle">26/08</text>
+<text class="escala" x="390.9" y="465.0" text-anchor="middle">01/09</text>
+<text class="escala" x="473.1" y="465.0" text-anchor="middle">07/09</text>
+<text class="escala" x="555.3" y="465.0" text-anchor="middle">13/09</text>
+<text class="escala" x="637.6" y="465.0" text-anchor="middle">19/09</text>
+<text class="escala" x="719.8" y="465.0" text-anchor="middle">25/09</text>
+<text class="escala" x="802.0" y="465.0" text-anchor="middle">01/10</text>
+<text class="rodape" x="802" y="494" text-anchor="end">Atualizado em 01/10/2026</text>
 </svg>
