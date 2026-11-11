@@ -1,14 +1,14 @@
 {
-  "gerado_em": "2026-11-10T21:23:28.689408+00:00",
-  "gerado_em_local": "10/11/2026 18:23:28",
+  "gerado_em": "2026-11-11T22:09:26.026436+00:00",
+  "gerado_em_local": "11/11/2026 19:09:26",
   "url_origem": "https://www.youtube.com/@patrickson_plays",
   "canal": {
     "nome": "PTK_Joga",
     "handle": "@patrickson_plays",
-    "inscritos_texto": "131 inscritos",
-    "inscritos": 131,
-    "videos_texto": "250 vídeos",
-    "total_videos": 250,
+    "inscritos_texto": "132 inscritos",
+    "inscritos": 132,
+    "videos_texto": "252 vídeos",
+    "total_videos": 252,
     "avatar_url": "https://yt3.googleusercontent.com/IIBGNPctV7kUKpQUSNJMu6_NzF0_XvIrnbwtkETOqhRkCb8w5wd3SxV50HJPK760tdTOUXHDhA=s160-c-k-c0x00ffffff-no-rj",
     "banner_url": "https://yt3.googleusercontent.com/W6ChJKxvDZcmuub2CihQqJFhoCDBXoV5rxOPw8OEH0w33X0Xb4c2dQNWK1IoEIEbHenpQC8D=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
     "descricao": "🎮 Eaaeee! Seja bem-vindo(a)!  Me chamo PTKzin 😎\nJogo há anos e sou viciado em jogos do gênero Metroidvania e Terror 💀🔥\nAqui você verá as minhas melhores gameplays, momentos insanos e aquela zueira que não pode faltar 😂\nEntão senta aí, pega a pipoca e vem acompanhar minhas aventuras!🎮",
@@ -17,8 +17,8 @@
     "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCB0Xu_75SQQIHVjaTmGBYuQ",
     "palavras_chave": "gameplay tiro games \"rocket league\" \"call of duty\" \"black ops\" battlefield \"left for dead\" Fortnite \"gameplay de fortnite\" live \"elden ring\" \"elden ring nightreign\" nightreign \"dark souls\" jogos \"left for dead 2\" patrickson_plays ptk_joga PTK_Joga alanzoka \"pc gamer\" terror \"ptk joga\" \"PTK joga\" \"patrickson plays\" patricksonplays silksong \"jogando silksong\" \"hollow knight\" hollowknight ptk patrickson plays PTK ptkjoga PTKjoga",
     "pais": "Brasil",
-    "visualizacoes_texto": "42.949 visualizações",
-    "visualizacoes_totais": 42949,
+    "visualizacoes_texto": "43.021 visualizações",
+    "visualizacoes_totais": 43021,
     "criado_em_texto": "Inscreveu-se em 29 de dez. de 2021",
     "links": [
       {
@@ -49,14 +49,29 @@
   },
   "videos": [
     {
+      "video_id": "uttFAwqnZ44",
+      "tipo": "video",
+      "titulo": "conheci o Hefesto e apanhei para os Talos 🥲 (parte 2)",
+      "url": "https://www.youtube.com/watch?v=uttFAwqnZ44",
+      "thumbnail": "https://i.ytimg.com/vi/uttFAwqnZ44/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLAr3hAJPyePdwbfxeJpvL60-h3txA",
+      "visualizacoes_texto": "4 visualizações",
+      "visualizacoes": 4,
+      "publicado_texto": "há 23 horas",
+      "duracao": "14:01",
+      "curtidas_texto": "1",
+      "curtidas": 1,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    },
+    {
       "video_id": "43ZjTBKRQA8",
       "tipo": "video",
       "titulo": "CHEGUEI NO SUBMUNDO! 🔥🥵",
       "url": "https://www.youtube.com/watch?v=43ZjTBKRQA8",
-      "thumbnail": "https://i.ytimg.com/vi/43ZjTBKRQA8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCOGpudcGGODqBCDgqAE=&rs=AOn4CLD5VEID8tCJgT9GU19zyELjloYy7w&usqp=CBU",
-      "visualizacoes_texto": "20 visualizações",
-      "visualizacoes": 20,
-      "publicado_texto": "há 3 dias",
+      "thumbnail": "https://i.ytimg.com/vi/43ZjTBKRQA8/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBGKA6sHt7M4ulK4Ni7xqDrU603Cw",
+      "visualizacoes_texto": "22 visualizações",
+      "visualizacoes": 22,
+      "publicado_texto": "há 4 dias",
       "duracao": "20:12",
       "curtidas_texto": "1",
       "curtidas": 1,
@@ -68,41 +83,25 @@
       "tipo": "video",
       "titulo": "Cheguei no CASTELO e ENFRENTEI O GARRADOR - RE4 Remake - parte 9",
       "url": "https://www.youtube.com/watch?v=ivWPfCamb1E",
-      "thumbnail": "https://i.ytimg.com/vi/ivWPfCamb1E/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCPexqdcGGODqBCDgqAE=&rs=AOn4CLAeE6blNyON3PuLRI_zzqjzzQBs9A&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/ivWPfCamb1E/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLDqyqi1NlprG4QjqSeIK8DDlsvJpw",
       "visualizacoes_texto": "42 visualizações",
       "visualizacoes": 42,
-      "publicado_texto": "há 6 dias",
+      "publicado_texto": "há 7 dias",
       "duracao": "23:15",
       "curtidas_texto": "1",
       "curtidas": 1,
-      "duracao_segundos": 1394,
-      "descricao": "🎮 Os melhores momentos da minha live de Resident Evil 4 Remake, com a Ashley no meio das catapultas e a fuga do castelo.\n😅 \"Eita, que bicho é esse?\" — e o Garrador apareceu arrastando corrente bem quando eu achava que ia ter um minuto de paz!\n\nChega junto no chat, deixa o like e bora fazer aquela resenha enquanto o PTK pisa fundo! 🔥\n\n🎮 Jogo: Resident Evil 4 Remake\n🔴 AO VIVO — Vem pra live!\n\n🚀 Segue também nas redes sociais para acompanhar tudo em primeira mão:\n🟢 KICK: https://kick.com/patrickson_plays\n⚫ TikTok: https://www.tiktok.com/@patrickson_plays\n🟣 Twitch: https://www.twitch.tv/patrickson_plays\n🔴 Instagram: https://www.instagram.com/patrickson_plays\n\n👍 Não esquece de deixar o like, se inscrever no canal e ativar o sininho para acompanhar as próximas partes da série!\n\n#residentevil4 #residentevil4remake #resident #leon #gameplay #chefedovilarejo #gamebr #PTK #PTKPlays",
-      "tags": [
-        "Ashley",
-        "Garrador",
-        "Leon Kennedy",
-        "Lord Saddler",
-        "PTK",
-        "PTKPlays",
-        "RE4 Remake",
-        "Resident Evil 4",
-        "Resident Evil 4 Remake",
-        "chefe do vilarejo",
-        "gameplay PT-BR",
-        "melhores momentos"
-      ],
-      "publicado_em": "2026-11-03T15:00:06-08:00",
-      "categoria": "Gaming"
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
     },
     {
       "video_id": "xDEE2JeT9Xs",
       "tipo": "video",
       "titulo": "ENFRENTEI O CHEFE do VILAREJO, BITORES MENDEZ! 🧟  RE 4 REMAKE - Parte 8",
       "url": "https://www.youtube.com/watch?v=xDEE2JeT9Xs",
-      "thumbnail": "https://i.ytimg.com/vi/xDEE2JeT9Xs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCOPmkdcGGODqBCDgqAE=&rs=AOn4CLBj2FWYXq3vX5KB5G8RTxsQy2A14g&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/xDEE2JeT9Xs/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLAKQxVzTu0LpNLDMVREQw1ifZ_gCQ",
       "visualizacoes_texto": "22 visualizações",
       "visualizacoes": 22,
-      "publicado_texto": "há 11 dias",
+      "publicado_texto": "há 12 dias",
       "duracao": "20:10",
       "curtidas_texto": "1",
       "curtidas": 1,
@@ -114,7 +113,7 @@
       "tipo": "video",
       "titulo": "INVADIRAM MINHA CASA! Hora de zumbis cercaram a cabana! Re4 remake (Parte 7)",
       "url": "https://www.youtube.com/watch?v=SZ3T2Jbzafc",
-      "thumbnail": "https://i.ytimg.com/vi/SZ3T2Jbzafc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCJXp1NYGGODqBCDgqAE=&rs=AOn4CLDNMk6c97n3nnezuz4y_eooVz651g&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/SZ3T2Jbzafc/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLCSw4bEzGScYG2el6z0U-B6MqzheQ",
       "visualizacoes_texto": "36 visualizações",
       "visualizacoes": 36,
       "publicado_texto": "há 2 semanas",
@@ -128,30 +127,13 @@
       "tipo": "video",
       "titulo": "ENFRENTANDO as BELLA SISTERS no RE4 remake (Parte 6)",
       "url": "https://www.youtube.com/watch?v=Etk7tzqyl6c",
-      "thumbnail": "https://i.ytimg.com/vi/Etk7tzqyl6c/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCO7i1NYGGODqBCDgqAE=&rs=AOn4CLC4g2MEfMVAEriJuZCVmTuiqXAwEQ&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/Etk7tzqyl6c/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLDCw_p_R-6fTekHZcQqP2cGTuV1oA",
       "visualizacoes_texto": "10 visualizações",
       "visualizacoes": 10,
       "publicado_texto": "há 2 semanas",
       "duracao": "13:41",
       "curtidas_texto": "1",
       "curtidas": 1,
-      "duracao_segundos": 820,
-      "descricao": "🧟 O vídeo agora é TENEBROSO! Enfrentrei as zumbis Bellas Sisters nesse remake maravilhoso de Resident evil 4 (2023)!\n\nChega junto no chat, deixa o like e bora fazer aquela resenha enquanto o PTK pisa fundo! 🔥\n\n🎮 Jogo: Resident Evil 4 Remake\n🔴 AO VIVO — Vem pra live!\n\n🚀 Segue também nas redes sociais para acompanhar tudo em primeira mão:\n🟢 KICK: https://kick.com/patrickson_plays\n⚫ TikTok: https://www.tiktok.com/@patrickson_plays\n🟣 Twitch: https://www.twitch.tv/patrickson_plays\n🔴 Instagram: https://www.instagram.com/patrickson_plays\n\n👍 Não esquece de deixar o like, se inscrever no canal e ativar o sininho para acompanhar as próximas partes da série!\n\n#PTK #PTKPlays #ResidentEvil4 #RE4Remake #ResidentEvil #Ashley #CabecaDePorco #GamePTBR #ZumbiGames #LiveGameplay",
-      "tags": [
-        "Ashley Graham",
-        "Bella Sisters",
-        "PTK",
-        "PTKPlays",
-        "RE4 Remake",
-        "Resident Evil 4",
-        "Resident Evil 4 Remake",
-        "cabeça de porco",
-        "live gameplay",
-        "terror",
-        "zumbis"
-      ],
-      "publicado_em": "2026-10-22T13:30:22-07:00",
-      "categoria": "Gaming",
       "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
@@ -160,31 +142,13 @@
       "tipo": "video",
       "titulo": "CHEGUEI na FAZENDA A NOITE  e ENFRENTEI O PORCO ZUMBI novamente — Re4 remake (Parte 5)",
       "url": "https://www.youtube.com/watch?v=K9fl1boTc6M",
-      "thumbnail": "https://i.ytimg.com/vi/K9fl1boTc6M/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCNjd1NYGGODqBCDgqAE=&rs=AOn4CLAKUXnhXKCcAIGTj0C482lV70rCCg&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/K9fl1boTc6M/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLB4PxgmaPJ8Jh4xrZeTiSKdMknIPg",
       "visualizacoes_texto": "133 visualizações",
       "visualizacoes": 133,
       "publicado_texto": "há 3 semanas",
       "duracao": "8:31",
       "curtidas_texto": "1",
       "curtidas": 1,
-      "duracao_segundos": 510,
-      "descricao": "🧟 Mais um vídeo dos melhores momentos em que passo pela a fazenda a noite no jogo Resident Evil 4 Remake! Enfretei o zumbi cabeça de porco novamente! \n\nChega junto no chat, deixa o like e bora fazer aquela resenha enquanto o PTK pisa fundo! 🔥\n\n🎮 Jogo: Resident Evil 4 Remake\n🔴 AO VIVO — Vem pra live!\n\n🚀 Segue também nas redes sociais para acompanhar tudo em primeira mão:\n🟢 KICK: https://kick.com/patrickson_plays\n⚫ TikTok: https://www.tiktok.com/@patrickson_plays\n🟣 Twitch: https://www.twitch.tv/patrickson_plays\n🔴 Instagram: https://www.instagram.com/patrickson_plays\n\n👍 Não esquece de deixar o like, se inscrever no canal e ativar o sininho para acompanhar as próximas partes da série!\n\n#PTK #PTKPlays #ResidentEvil4 #RE4Remake #ResidentEvil #Ashley #CabecaDePorco #GamePTBR #ZumbiGames #LiveGameplay",
-      "tags": [
-        "Ashley Graham",
-        "Bella Sisters",
-        "PTK",
-        "PTKPlays",
-        "RE4 Remake",
-        "Resident Evil 4",
-        "Resident Evil 4 Remake",
-        "cabeça de porco",
-        "live 3",
-        "live gameplay",
-        "terror",
-        "zumbis"
-      ],
-      "publicado_em": "2026-10-20T13:30:20-07:00",
-      "categoria": "Gaming",
       "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
@@ -193,7 +157,7 @@
       "tipo": "video",
       "titulo": "MATANDO o BOSS ZUMBI GIGANTE pela PRIMEIRA vez! (Parte 4)",
       "url": "https://www.youtube.com/watch?v=F7bM8HJ4XG8",
-      "thumbnail": "https://i.ytimg.com/vi/F7bM8HJ4XG8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCJ3E1NYGGODqBCDgqAE=&rs=AOn4CLDPWFlVfv040Vcrgrhns_H_1lHeWQ&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/F7bM8HJ4XG8/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLA1ndf42BHQ9798W0B2KmoJP-Ltow",
       "visualizacoes_texto": "19 visualizações",
       "visualizacoes": 19,
       "publicado_texto": "há 3 semanas",
@@ -208,37 +172,13 @@
       "tipo": "video",
       "titulo": "VEJA esse SABOR FUTEBOL que vou te mostrar🤣⚽ feat. canal @WePlay-Z  (Parte 2 de 2)",
       "url": "https://www.youtube.com/watch?v=805-MNnXpHk",
-      "thumbnail": "https://i.ytimg.com/vi/805-MNnXpHk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCNDC_NUGGODqBCDgqAE=&rs=AOn4CLCM_WDxNdKad13RcIbvANpGIfpyNA&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/805-MNnXpHk/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLD2Z9HAVeZS3WBzivTx81RknHEPfw",
       "visualizacoes_texto": "42 visualizações",
       "visualizacoes": 42,
       "publicado_texto": "há 1 mês",
       "duracao": "13:33",
       "curtidas_texto": "2",
       "curtidas": 2,
-      "duracao_segundos": 812,
-      "descricao": "Mais uma live de futebol maluco com a galera! ⚽🔥\nPartidas insanas com gols impossíveis, defesas milagrosas e o lendário jogador \"Mordida Azeda\" dominando o campo!\n\nChega junto no chat, deixa o like e bora fazer aquela resenha enquanto o PTK pisa fundo! 🔥\n\n🚀 Segue também nas redes sociais para acompanhar tudo em primeira mão:\n🟢 KICK: https://kick.com/patrickson_plays\n⚫ TikTok: https://www.tiktok.com/@patrickson_plays\n🟣 Twitch: https://www.twitch.tv/patrickson_plays\n🔴 Instagram: https://www.instagram.com/patrickson_plays\n\n👍 Não esquece de deixar o like, se inscrever no canal e ativar o sininho para acompanhar as próximas partes da série!\n\n#PTK #PTKPlays #FutebolMaluco #Multiplayer #Futebol #Soccer #GamingBR #LiveBR #MomentosEngraçados #Gameplay #rematch #sololeveling #anime",
-      "tags": [
-        "PTK",
-        "PTK Plays",
-        "futebol engraçado",
-        "futebol maluco",
-        "gameplay brasileiro",
-        "gaming br",
-        "gols",
-        "live br",
-        "live gameplay",
-        "momentos engraçados",
-        "mordida azeda",
-        "multiplayer",
-        "partidas online",
-        "soccer game",
-        "rematch",
-        "remtach solo leving",
-        "solo leving",
-        "anime"
-      ],
-      "publicado_em": "2026-10-02T13:00:02-07:00",
-      "categoria": "Gaming",
       "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
@@ -247,7 +187,7 @@
       "tipo": "video",
       "titulo": "GOLS IMPOSSÍVEIS e JOGADAS INSANAS no FUTEBOL MALUCO com a galera do @WePlay-Z 🤣⚽ (Parte 1 de 2) ",
       "url": "https://www.youtube.com/watch?v=hHN2z0_pUZI",
-      "thumbnail": "https://i.ytimg.com/vi/hHN2z0_pUZI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCPe19tUGGODqBCDgqAE=&rs=AOn4CLCy-oi5K6C8acE4OPckFxVYP-EfWA&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/hHN2z0_pUZI/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBA-RbPbjAmMLYx_bBUQLCK_5gCLg",
       "visualizacoes_texto": "24 visualizações",
       "visualizacoes": 24,
       "publicado_texto": "há 1 mês",
@@ -258,17 +198,15 @@
       "comentarios": 0
     },
     {
-      "video_id": "L356_SWTc0I",
-      "tipo": "video",
-      "titulo": "MUITA BALA no Resident Evil 4! 🎮💀 (Parte 3)",
-      "url": "https://www.youtube.com/watch?v=L356_SWTc0I",
-      "thumbnail": "https://i.ytimg.com/vi/L356_SWTc0I/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCKXF69UGGODqBCDgqAE=&rs=AOn4CLBOzFpPFtLDLOqO5Lvrix3-irg3Tw&usqp=CBU",
-      "visualizacoes_texto": "34 visualizações",
-      "visualizacoes": 34,
-      "publicado_texto": "há 1 mês",
-      "duracao": "20:01",
-      "curtidas_texto": "1",
-      "curtidas": 1,
+      "video_id": "JtqEweh1dkg",
+      "tipo": "short",
+      "titulo": "a PRIMEIRA MEDUSA 🐍do God of War 3. #godofwar #gow3 #gameplay #gameshorts #shorts",
+      "url": "https://www.youtube.com/watch?v=JtqEweh1dkg",
+      "thumbnail": "https://i.ytimg.com/vi/JtqEweh1dkg/oar2.jpg?sqp=-oaymwEsCJUDENAFSFqQAgHyq4qpAxsIARUAAIhC2AEB4gEKCBgQAhgGOAFAAbgC9xg=&rs=AOn4CLAhh31MdXisN7ph58ehXwK44cxYLA",
+      "visualizacoes_texto": "112 visualizações",
+      "visualizacoes": 112,
+      "curtidas_texto": "6",
+      "curtidas": 6,
       "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
@@ -277,9 +215,9 @@
       "tipo": "short",
       "titulo": "Combate caótico e muita bala! #re4remake #re4",
       "url": "https://www.youtube.com/watch?v=IX9tusRM9sU",
-      "thumbnail": "https://i.ytimg.com/vi/IX9tusRM9sU/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBpW-dLNGQikDJpLZVbrnY69710Rg",
-      "visualizacoes_texto": "835 visualizações",
-      "visualizacoes": 835,
+      "thumbnail": "https://i.ytimg.com/vi/IX9tusRM9sU/oar2.jpg?sqp=-oaymwEsCJUDENAFSFqQAgHyq4qpAxsIARUAAIhC2AEB4gEKCBgQAhgGOAFAAbgC9xg=&rs=AOn4CLABTysIrhHAtU3PT2xBbmGPE21cMg",
+      "visualizacoes_texto": "836 visualizações",
+      "visualizacoes": 836,
       "curtidas_texto": "19",
       "curtidas": 19,
       "comentarios_texto": "0 comentários",
@@ -290,7 +228,7 @@
       "tipo": "short",
       "titulo": "Emboscada BRUTAL 🥵🧟‍♂️.   #re4 #re4remake #re42023",
       "url": "https://www.youtube.com/watch?v=ElB-Tz99WSE",
-      "thumbnail": "https://i.ytimg.com/vi/ElB-Tz99WSE/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCx_TOr7FXY0yjoBlk_X-8Mf_b3og",
+      "thumbnail": "https://i.ytimg.com/vi/ElB-Tz99WSE/oar2.jpg?sqp=-oaymwEsCJUDENAFSFqQAgHyq4qpAxsIARUAAIhC2AEB4gEKCBgQAhgGOAFAAbgC9xg=&rs=AOn4CLAdcYan9Tjn045jgNyzcWIBoB0R3A",
       "visualizacoes_texto": "187 visualizações",
       "visualizacoes": 187,
       "curtidas_texto": "9",
@@ -303,36 +241,11 @@
       "tipo": "short",
       "titulo": "Cabeça de Porco me deu trabalho #shorts",
       "url": "https://www.youtube.com/watch?v=8-5yPQNhKH8",
-      "thumbnail": "https://i.ytimg.com/vi/8-5yPQNhKH8/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC9ughfMeWnPplw8L1GizvYrAo4Ow",
+      "thumbnail": "https://i.ytimg.com/vi/8-5yPQNhKH8/oar2.jpg?sqp=-oaymwEsCJUDENAFSFqQAgHyq4qpAxsIARUAAIhC2AEB4gEKCBgQAhgGOAFAAbgC9xg=&rs=AOn4CLDwM0Hvl6hrlVFmZNtG1lheLwsA0w",
       "visualizacoes_texto": "19 visualizações",
       "visualizacoes": 19,
       "curtidas_texto": "1",
       "curtidas": 1,
-      "duracao_segundos": 54,
-      "descricao": "Cortes dos melhores momentos da minha live de Resident Evil 4 Remake — com boss fight do Del Lago, puzzles impossíveis que bugaram, e a busca épica pela chave da igreja!\n\nChega junto no chat, deixa o like e bora fazer aquela resenha enquanto o PTK pisa fundo! 🔥\n\n🎮 Jogo: Resident Evil 4 Remake\n🔴 AO VIVO — Vem pra live!\n\n🚀 Segue também nas redes sociais para acompanhar tudo em primeira mão:\n🟢 KICK: https://kick.com/patrickson_plays\n⚫ TikTok: https://www.tiktok.com/@patrickson_plays\n🟣 Twitch: https://www.twitch.tv/patrickson_plays\n🔴 Instagram: https://www.instagram.com/patrickson_plays\n\n👍 Não esquece de deixar o like, se inscrever no canal e ativar o sininho para acompanhar as próximas partes da série!\n\n#PTK #PTKPlays #ResidentEvil4 #ResidentEvil4Remake #RE4Remake #DelLago #LeonKennedy #ResidentEvil #LiveDeResident #SurvivalHorror #Gaming",
-      "tags": [
-        "Ashley",
-        "Del Lago",
-        "Leon Kennedy",
-        "PTK",
-        "PTKPlays",
-        "RE4",
-        "RE4 Remake",
-        "Resident Evil 4",
-        "Resident Evil 4 Remake",
-        "boss fight",
-        "capcom",
-        "chave da igreja",
-        "gameplay completa",
-        "gameplay português",
-        "gaming",
-        "live de resident evil",
-        "livestream",
-        "resident evil remake",
-        "survival horror"
-      ],
-      "publicado_em": "2026-10-06T08:40:39-07:00",
-      "categoria": "Gaming",
       "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
@@ -341,7 +254,7 @@
       "tipo": "short",
       "titulo": "GOL comemorado com empolgação! 😂⚽ #shorts",
       "url": "https://www.youtube.com/watch?v=liVxuOOsidI",
-      "thumbnail": "https://i.ytimg.com/vi/liVxuOOsidI/sardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAaLzl_8DDgj8yPzVBhjg6gQg4KgB&rs=AOn4CLAI_Ozzx-ggCjQNCDUL5MBK2toXuw&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/liVxuOOsidI/sardefault.jpg?sqp=-oaymwEsCJUDENAFSFqQAgHyq4qpAxsIARUAAIhC2AEB4gEKCBgQAhgGOAFAAbgC9xg=&rs=AOn4CLCJmqkbIN2umGoE04x_Z1K0dJNdBg",
       "visualizacoes_texto": "111 visualizações",
       "visualizacoes": 111,
       "curtidas_texto": "1",
@@ -350,57 +263,17 @@
       "comentarios": 0
     },
     {
-      "video_id": "T0YdGXVMX4Y",
-      "tipo": "short",
-      "titulo": "O que aconteceu aqui????",
-      "url": "https://www.youtube.com/watch?v=T0YdGXVMX4Y",
-      "thumbnail": "https://i.ytimg.com/vi/T0YdGXVMX4Y/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLByf4PMoAaJ8mR2boLZI4-gDbrmMQ",
-      "visualizacoes_texto": "13 visualizações",
-      "visualizacoes": 13,
-      "curtidas_texto": "2",
-      "curtidas": 2,
-      "duracao_segundos": 57,
-      "descricao": "Cortes dos melhores momentos da minha live jogando Resident Evil 4 Remake pela primeira vez! Tem morte pro cara da serra, faca de combate vendida por engano, e muito desespero com dinamite!\n\nChega junto no chat, deixa o like e bora fazer aquela resenha enquanto o PTK pisa fundo! 🔥\n\n🎮 Jogo: Resident Evil 4 (2023)\n🔴 AO VIVO — Vem pra live!\n\n🚀 Segue também nas redes sociais para acompanhar tudo em primeira mão:\n🟢 KICK: https://kick.com/patrickson_plays\n⚫ TikTok: https://www.tiktok.com/@patrickson_plays\n🟣 Twitch: https://www.twitch.tv/patrickson_plays\n🔴 Instagram: https://www.instagram.com/patrickson_plays\n\n👍 Não esquece de deixar o like, se inscrever no canal e ativar o sininho para acompanhar as próximas partes da série!\n\n#PTK #PTKPlays #residentevil4 #residentevil #re4remake #re4 #residentevil4remake #leonkennedy #gameplay #livestream #capcom #survivalhorror",
-      "tags": [
-        "Ashley",
-        "Capcom",
-        "Leon Kennedy",
-        "Luis Serra",
-        "PTK",
-        "PTKPlays",
-        "RE4 Remake",
-        "Resident Evil 4",
-        "Resident Evil 4 Remake",
-        "gameplay",
-        "ganado",
-        "live",
-        "playthrough",
-        "português",
-        "primeira vez",
-        "remake",
-        "serra elétrica",
-        "survival horror",
-        "terror",
-        "vilarejo",
-        "zumbi"
-      ],
-      "publicado_em": "2026-09-29T08:00:13-07:00",
-      "categoria": "Gaming",
-      "comentarios_texto": "0 comentários",
-      "comentarios": 0
-    },
-    {
       "video_id": "YbxC-HpS-jE",
       "tipo": "live",
       "titulo": "🔴DOMINGÃO NO RE4 REMAKE! 😱🔪 | RESIDENT EVIL 4 REMAKE | Parte 10",
       "url": "https://www.youtube.com/watch?v=YbxC-HpS-jE",
-      "thumbnail": "https://i.ytimg.com/vi/YbxC-HpS-jE/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCIKfxNcGGODqBCDgqAE=&rs=AOn4CLCd0lij8TYfxBfenUIY8FsQjMerxg&usqp=CBU",
-      "visualizacoes_texto": "35 visualizações",
-      "visualizacoes": 35,
-      "publicado_texto": "Transmitido há 1 dia",
+      "thumbnail": "https://i.ytimg.com/vi/YbxC-HpS-jE/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLDXrENbP6QNYlKkad-Eokp_FDu8EQ",
+      "visualizacoes_texto": "36 visualizações",
+      "visualizacoes": 36,
+      "publicado_texto": "Transmitido há 2 dias",
       "duracao": "1:32:47",
-      "curtidas_texto": "2",
-      "curtidas": 2,
+      "curtidas_texto": "3",
+      "curtidas": 3,
       "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
@@ -409,10 +282,10 @@
       "tipo": "live",
       "titulo": "cheguei no SUBMUNDO - GOD OF WAR 3 no PC! 🔥⚔️ | AO VIVO #2",
       "url": "https://www.youtube.com/watch?v=GgHI-GSQUyI",
-      "thumbnail": "https://i.ytimg.com/vi/GgHI-GSQUyI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCOr6ntcGGODqBCDgqAE=&rs=AOn4CLA5NAMatuXqHUJrVKERHLnzP1WZ_A&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/GgHI-GSQUyI/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLAJK3uKxNyLYEG4Sb0xTT2PJgk9Eg",
       "visualizacoes_texto": "81 visualizações",
       "visualizacoes": 81,
-      "publicado_texto": "Transmitido há 8 dias",
+      "publicado_texto": "Transmitido há 9 dias",
       "duracao": "1:46:55",
       "curtidas_texto": "2",
       "curtidas": 2,
@@ -424,10 +297,10 @@
       "tipo": "live",
       "titulo": "LIVE GOD OF WAR 3 #2",
       "url": "https://www.youtube.com/watch?v=tqnsmA6bmUU",
-      "thumbnail": "https://i.ytimg.com/vi/tqnsmA6bmUU/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUABovOX_wMOCPn7ntcGGODqBCDgqAE=&rs=AOn4CLB27KswRtCx3FfuzDbWbxWcV8SW9A&usqp=CBU",
+      "thumbnail": "https://i.ytimg.com/vi/tqnsmA6bmUU/hqdefault.jpg?sqp=-oaymwErCOADEI4CSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLD6iiNHt25pqlVaJfSHuygUBFGpWQ",
       "visualizacoes_texto": "9 visualizações",
       "visualizacoes": 9,
-      "publicado_texto": "Transmitido há 8 dias",
+      "publicado_texto": "Transmitido há 9 dias",
       "duracao": "6:21",
       "curtidas_texto": "1",
       "curtidas": 1,
@@ -440,8 +313,8 @@
       "playlist_id": "PLKzT9u7Y6riA",
       "titulo": "GOD OF WAR 3",
       "url": "https://www.youtube.com/playlist?list=PLKzT9u7Y6riA",
-      "videos_texto": "3 vídeos",
-      "total_videos": 3
+      "videos_texto": "4 vídeos",
+      "total_videos": 4
     },
     {
       "playlist_id": "PLfH79cvSJTto",
@@ -616,41 +489,41 @@
     "por_tipo": {
       "video": {
         "quantidade": 10,
-        "visualizacoes_soma": 382,
+        "visualizacoes_soma": 354,
         "curtidas_soma": 12,
         "comentarios_soma": 0,
-        "visualizacoes_media": 38.2,
-        "taxa_engajamento_pct": 3.14
+        "visualizacoes_media": 35.4,
+        "taxa_engajamento_pct": 3.39
       },
       "short": {
         "quantidade": 5,
-        "visualizacoes_soma": 1165,
-        "curtidas_soma": 32,
+        "visualizacoes_soma": 1265,
+        "curtidas_soma": 36,
         "comentarios_soma": 0,
-        "visualizacoes_media": 233.0,
-        "taxa_engajamento_pct": 2.75
+        "visualizacoes_media": 253.0,
+        "taxa_engajamento_pct": 2.85
       },
       "live": {
         "quantidade": 3,
-        "visualizacoes_soma": 125,
-        "curtidas_soma": 5,
+        "visualizacoes_soma": 126,
+        "curtidas_soma": 6,
         "comentarios_soma": 0,
-        "visualizacoes_media": 41.7,
-        "taxa_engajamento_pct": 4.0
+        "visualizacoes_media": 42.0,
+        "taxa_engajamento_pct": 4.76
       }
     },
     "videos_analisados": 18,
-    "visualizacoes_soma": 1672,
-    "curtidas_soma": 49,
+    "visualizacoes_soma": 1745,
+    "curtidas_soma": 54,
     "comentarios_soma": 0,
-    "visualizacoes_media": 92.9,
-    "curtidas_media": 2.7,
+    "visualizacoes_media": 96.9,
+    "curtidas_media": 3.0,
     "comentarios_media": 0.0,
-    "taxa_engajamento_pct": 2.93,
+    "taxa_engajamento_pct": 3.09,
     "video_mais_visto": {
       "titulo": "Combate caótico e muita bala! #re4remake #re4",
       "url": "https://www.youtube.com/watch?v=IX9tusRM9sU",
-      "visualizacoes": 835
+      "visualizacoes": 836
     },
     "video_mais_curtido": {
       "titulo": "Combate caótico e muita bala! #re4remake #re4",
@@ -658,65 +531,86 @@
       "curtidas": 19
     }
   },
-  "avisos": [
-    "Contagem de comentários não carregou a tempo no vídeo ivWPfCamb1E."
-  ],
+  "avisos": [],
   "tendencia": {
     "atual": {
-      "inscritos": 131,
-      "total_videos": 250,
-      "visualizacoes_totais": 42949
+      "inscritos": 132,
+      "total_videos": 252,
+      "visualizacoes_totais": 43021
     },
     "comparacoes": [
       {
         "janela": "1 dia",
-        "data": "2026-11-09",
+        "data": "2026-11-10",
         "dias": 1,
         "deltas": {
-          "inscritos": 0,
-          "total_videos": 0,
-          "visualizacoes_totais": 4
+          "inscritos": 1,
+          "total_videos": 2,
+          "visualizacoes_totais": 72
         }
       },
       {
         "janela": "7 dias",
-        "data": "2026-11-03",
+        "data": "2026-11-04",
         "dias": 7,
         "deltas": {
-          "inscritos": 3,
-          "total_videos": 5,
-          "visualizacoes_totais": 1234
+          "inscritos": 2,
+          "total_videos": 4,
+          "visualizacoes_totais": 866
         }
       },
       {
         "janela": "30 dias",
-        "data": "2026-10-11",
+        "data": "2026-10-12",
         "dias": 30,
         "deltas": {
           "inscritos": 2,
-          "total_videos": 14,
-          "visualizacoes_totais": 1627
+          "total_videos": 15,
+          "visualizacoes_totais": 1763
         }
       }
     ]
   },
   "crescimento_videos": {
-    "referencia": "2026-11-09",
+    "referencia": "2026-11-10",
     "destaques": [
+      {
+        "video_id": "43ZjTBKRQA8",
+        "titulo": "CHEGUEI NO SUBMUNDO! 🔥🥵",
+        "visualizacoes": 22,
+        "delta_visualizacoes": 2,
+        "delta_curtidas": 0
+      },
+      {
+        "video_id": "IX9tusRM9sU",
+        "titulo": "Combate caótico e muita bala! #re4remake #re4",
+        "visualizacoes": 836,
+        "delta_visualizacoes": 1,
+        "delta_curtidas": 0
+      },
       {
         "video_id": "YbxC-HpS-jE",
         "titulo": "🔴DOMINGÃO NO RE4 REMAKE! 😱🔪 | RESIDENT EVIL 4 REMAKE | Parte 10",
-        "visualizacoes": 35,
+        "visualizacoes": 36,
         "delta_visualizacoes": 1,
-        "delta_curtidas": 0
+        "delta_curtidas": 1
       }
     ],
-    "novos": []
+    "novos": [
+      {
+        "video_id": "JtqEweh1dkg",
+        "titulo": "a PRIMEIRA MEDUSA 🐍do God of War 3. #godofwar #gow3 #gameplay #gameshorts #shorts",
+        "visualizacoes": 112
+      },
+      {
+        "video_id": "uttFAwqnZ44",
+        "titulo": "conheci o Hefesto e apanhei para os Talos 🥲 (parte 2)",
+        "visualizacoes": 4
+      }
+    ]
   },
   "diagnostico": {
-    "ok": false,
-    "problemas": [
-      "A coleta registrou 1 aviso(s) — veja a seção de avisos."
-    ]
+    "ok": true,
+    "problemas": []
   }
 }
