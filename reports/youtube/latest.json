@@ -1,14 +1,14 @@
 {
-  "gerado_em": "2026-11-25T23:44:10.644900+00:00",
-  "gerado_em_local": "25/11/2026 20:44:10",
+  "gerado_em": "2026-11-26T23:57:42.733121+00:00",
+  "gerado_em_local": "26/11/2026 20:57:42",
   "url_origem": "https://www.youtube.com/@patrickson_plays",
   "canal": {
     "nome": "PTK_Joga",
     "handle": "@patrickson_plays",
     "inscritos_texto": "134 inscritos",
     "inscritos": 134,
-    "videos_texto": "263 vídeos",
-    "total_videos": 263,
+    "videos_texto": "264 vídeos",
+    "total_videos": 264,
     "avatar_url": "https://yt3.googleusercontent.com/b2ZUlz1f8YCGHxVC8xFRl9OGkhbr8MV9EJ8zHJXWpM9d6CTzPFwIfHjMchiFW9YpqApeKw04lPo=s160-c-k-c0x00ffffff-no-rj",
     "banner_url": "https://yt3.googleusercontent.com/W6ChJKxvDZcmuub2CihQqJFhoCDBXoV5rxOPw8OEH0w33X0Xb4c2dQNWK1IoEIEbHenpQC8D=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
     "descricao": "🎮 Eaaeee! Seja bem-vindo(a)!  Me chamo PTKzin 😎\nJogo há anos e sou viciado em jogos do gênero Metroidvania e Terror 💀🔥\nAqui você verá as minhas melhores gameplays, momentos insanos e aquela zueira que não pode faltar 😂\nEntão senta aí, pega a pipoca e vem acompanhar minhas aventuras!🎮",
@@ -17,8 +17,8 @@
     "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCB0Xu_75SQQIHVjaTmGBYuQ",
     "palavras_chave": "gameplay tiro games \"rocket league\" \"call of duty\" \"black ops\" battlefield \"left for dead\" Fortnite \"gameplay de fortnite\" live \"elden ring\" \"elden ring nightreign\" nightreign \"dark souls\" jogos \"left for dead 2\" patrickson_plays ptk_joga PTK_Joga alanzoka \"pc gamer\" terror \"ptk joga\" \"PTK joga\" \"patrickson plays\" patricksonplays silksong \"jogando silksong\" \"hollow knight\" hollowknight ptk patrickson plays PTK ptkjoga PTKjoga",
     "pais": "Brasil",
-    "visualizacoes_texto": "44.624 visualizações",
-    "visualizacoes_totais": 44624,
+    "visualizacoes_texto": "44.700 visualizações",
+    "visualizacoes_totais": 44700,
     "criado_em_texto": "Inscreveu-se em 29 de dez. de 2021",
     "links": [
       {
@@ -49,14 +49,29 @@
   },
   "videos": [
     {
+      "video_id": "iIogmqr7Wj8",
+      "tipo": "video",
+      "titulo": "interrompi a CEITA DOS ZUMBIS do CASTELO | Parte 14",
+      "url": "https://www.youtube.com/watch?v=iIogmqr7Wj8",
+      "thumbnail": "https://i.ytimg.com/vi/iIogmqr7Wj8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDNhSSv2VNr4a65qtdpcDREbkf5QQ",
+      "visualizacoes_texto": "1 visualização",
+      "visualizacoes": 1,
+      "publicado_texto": "há 8 horas",
+      "duracao": "24:31",
+      "curtidas_texto": "1",
+      "curtidas": 1,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    },
+    {
       "video_id": "8-2KBxFIoEE",
       "tipo": "video",
       "titulo": "o TEMIDO LABIRINTO do castelo | RE4 remake | Parte 13",
       "url": "https://www.youtube.com/watch?v=8-2KBxFIoEE",
       "thumbnail": "https://i.ytimg.com/vi/8-2KBxFIoEE/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBgJDNsXTMGsinoi2pKxwf3uPUbCg",
-      "visualizacoes_texto": "36 visualizações",
-      "visualizacoes": 36,
-      "publicado_texto": "há 1 dia",
+      "visualizacoes_texto": "50 visualizações",
+      "visualizacoes": 50,
+      "publicado_texto": "há 2 dias",
       "duracao": "11:52",
       "curtidas_texto": "2",
       "curtidas": 2,
@@ -71,7 +86,7 @@
       "thumbnail": "https://i.ytimg.com/vi/okE-BHHgI-U/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBciKdxx86sMRWutfJwYt_ZjqKCrg",
       "visualizacoes_texto": "7 visualizações",
       "visualizacoes": 7,
-      "publicado_texto": "há 4 dias",
+      "publicado_texto": "há 5 dias",
       "duracao": "14:36",
       "curtidas_texto": "1",
       "curtidas": 1,
@@ -86,7 +101,7 @@
       "thumbnail": "https://i.ytimg.com/vi/eIupC7l_GN8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDqJt46Ugb1U28Tb5KYaHDzEmp7hQ",
       "visualizacoes_texto": "49 visualizações",
       "visualizacoes": 49,
-      "publicado_texto": "há 6 dias",
+      "publicado_texto": "há 7 dias",
       "duracao": "11:41",
       "curtidas_texto": "2",
       "curtidas": 2,
@@ -101,7 +116,7 @@
       "thumbnail": "https://i.ytimg.com/vi/jHPLQQb1acQ/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBr7ZQnVg38UG3ewEMCox1oLCB5sg",
       "visualizacoes_texto": "66 visualizações",
       "visualizacoes": 66,
-      "publicado_texto": "há 8 dias",
+      "publicado_texto": "há 9 dias",
       "duracao": "17:33",
       "curtidas_texto": "1",
       "curtidas": 1,
@@ -116,7 +131,7 @@
       "thumbnail": "https://i.ytimg.com/vi/qN4PTYacOFw/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDmccILcC7GarYt45UC1YwSXGt8fQ",
       "visualizacoes_texto": "18 visualizações",
       "visualizacoes": 18,
-      "publicado_texto": "há 13 dias",
+      "publicado_texto": "há 2 semanas",
       "duracao": "13:36",
       "curtidas_texto": "1",
       "curtidas": 1,
@@ -174,26 +189,12 @@
       "titulo": "ENFRENTEI O CHEFE do VILAREJO, BITORES MENDEZ! 🧟  RE 4 REMAKE - Parte 8",
       "url": "https://www.youtube.com/watch?v=xDEE2JeT9Xs",
       "thumbnail": "https://i.ytimg.com/vi/xDEE2JeT9Xs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAdOSGbE-RaypdH3bifl_EfNCSljA",
-      "visualizacoes_texto": "24 visualizações",
-      "visualizacoes": 24,
+      "visualizacoes_texto": "25 visualizações",
+      "visualizacoes": 25,
       "publicado_texto": "há 3 semanas",
       "duracao": "20:10",
       "curtidas_texto": "2",
       "curtidas": 2,
-      "comentarios_texto": "0 comentários",
-      "comentarios": 0
-    },
-    {
-      "video_id": "SZ3T2Jbzafc",
-      "tipo": "video",
-      "titulo": "INVADIRAM MINHA CASA! Hora de zumbis cercaram a cabana! Re4 remake (Parte 7)",
-      "url": "https://www.youtube.com/watch?v=SZ3T2Jbzafc",
-      "thumbnail": "https://i.ytimg.com/vi/SZ3T2Jbzafc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDdYCRr6bdLOs0Atm-GmFACRGKxoQ",
-      "visualizacoes_texto": "36 visualizações",
-      "visualizacoes": 36,
-      "publicado_texto": "há 1 mês",
-      "duracao": "21:23",
-      "curtidas_texto": "0",
       "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
@@ -203,10 +204,10 @@
       "titulo": "meu PRIMEIRO SUPLEX no RE4 remake",
       "url": "https://www.youtube.com/watch?v=RWpB0eyTKRk",
       "thumbnail": "https://i.ytimg.com/vi/RWpB0eyTKRk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAx0qUnWt0Rged_QEqNvVErekLiIA",
-      "visualizacoes_texto": "58 visualizações",
-      "visualizacoes": 58,
-      "curtidas_texto": "3",
-      "curtidas": 3,
+      "visualizacoes_texto": "73 visualizações",
+      "visualizacoes": 73,
+      "curtidas_texto": "5",
+      "curtidas": 5,
       "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
@@ -233,7 +234,7 @@
       "visualizacoes": 326,
       "curtidas_texto": "7",
       "curtidas": 7,
-      "comentarios_texto": "0 comentários\nOrdenar por",
+      "comentarios_texto": "0 comentários",
       "comentarios": 0
     },
     {
@@ -254,7 +255,7 @@
       "tipo": "short",
       "titulo": "a PRIMEIRA MEDUSA 🐍do God of War 3. #godofwar #gow3 #gameplay #gameshorts #shorts",
       "url": "https://www.youtube.com/watch?v=JtqEweh1dkg",
-      "thumbnail": "https://i.ytimg.com/vi/JtqEweh1dkg/oar1.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDrpC6PjLRnvXKKLof2sxEQmFOW_w",
+      "thumbnail": "https://i.ytimg.com/vi/JtqEweh1dkg/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA8cLFtADhBdbNZBGytcgfnO863ag",
       "visualizacoes_texto": "175 visualizações",
       "visualizacoes": 175,
       "curtidas_texto": "10",
@@ -270,7 +271,7 @@
       "thumbnail": "https://i.ytimg.com/vi/GrS9NTTBl1w/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC5dLRFrX5Dp7AKRxQucOdPqcma8A",
       "visualizacoes_texto": "56 visualizações",
       "visualizacoes": 56,
-      "publicado_texto": "Transmitido há 2 dias",
+      "publicado_texto": "Transmitido há 4 dias",
       "duracao": "1:24:50",
       "curtidas_texto": "3",
       "curtidas": 3,
@@ -285,7 +286,7 @@
       "thumbnail": "https://i.ytimg.com/vi/t516-5wVz1A/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAqsOcOrGGQaNseUPkmbXUNQvch8A",
       "visualizacoes_texto": "99 visualizações",
       "visualizacoes": 99,
-      "publicado_texto": "Transmitido há 9 dias",
+      "publicado_texto": "Transmitido há 11 dias",
       "duracao": "2:02:58",
       "curtidas_texto": "2",
       "curtidas": 2,
@@ -327,8 +328,8 @@
       "playlist_id": "PLJORMv1Zhsjc",
       "titulo": "Resident evil 4 remake",
       "url": "https://www.youtube.com/playlist?list=PLJORMv1Zhsjc",
-      "videos_texto": "20 vídeos",
-      "total_videos": 20
+      "videos_texto": "23 vídeos",
+      "total_videos": 23
     },
     {
       "playlist_id": "PLSle1Gk-TCZI",
@@ -489,19 +490,19 @@
     "por_tipo": {
       "video": {
         "quantidade": 10,
-        "visualizacoes_soma": 314,
-        "curtidas_soma": 13,
+        "visualizacoes_soma": 294,
+        "curtidas_soma": 14,
         "comentarios_soma": 0,
-        "visualizacoes_media": 31.4,
-        "taxa_engajamento_pct": 4.14
+        "visualizacoes_media": 29.4,
+        "taxa_engajamento_pct": 4.76
       },
       "short": {
         "quantidade": 5,
-        "visualizacoes_soma": 1285,
-        "curtidas_soma": 29,
+        "visualizacoes_soma": 1300,
+        "curtidas_soma": 31,
         "comentarios_soma": 0,
-        "visualizacoes_media": 257.0,
-        "taxa_engajamento_pct": 2.26
+        "visualizacoes_media": 260.0,
+        "taxa_engajamento_pct": 2.38
       },
       "live": {
         "quantidade": 3,
@@ -513,13 +514,13 @@
       }
     },
     "videos_analisados": 18,
-    "visualizacoes_soma": 1795,
-    "curtidas_soma": 50,
+    "visualizacoes_soma": 1790,
+    "curtidas_soma": 53,
     "comentarios_soma": 0,
-    "visualizacoes_media": 99.7,
-    "curtidas_media": 2.8,
+    "visualizacoes_media": 99.4,
+    "curtidas_media": 2.9,
     "comentarios_media": 0.0,
-    "taxa_engajamento_pct": 2.79,
+    "taxa_engajamento_pct": 2.96,
     "video_mais_visto": {
       "titulo": "God of War: Kratos voa como Pássaro de Fogo e o bicho quase me queima 🔥",
       "url": "https://www.youtube.com/watch?v=U30ocakagZs",
@@ -535,68 +536,74 @@
   "tendencia": {
     "atual": {
       "inscritos": 134,
-      "total_videos": 263,
-      "visualizacoes_totais": 44624
+      "total_videos": 264,
+      "visualizacoes_totais": 44700
     },
     "comparacoes": [
       {
         "janela": "1 dia",
-        "data": "2026-11-24",
+        "data": "2026-11-25",
         "dias": 1,
         "deltas": {
           "inscritos": 0,
-          "total_videos": 0,
-          "visualizacoes_totais": 50
+          "total_videos": 1,
+          "visualizacoes_totais": 76
         }
       },
       {
         "janela": "7 dias",
-        "data": "2026-11-18",
+        "data": "2026-11-19",
         "dias": 7,
         "deltas": {
           "inscritos": 1,
-          "total_videos": 7,
-          "visualizacoes_totais": 725
+          "total_videos": 6,
+          "visualizacoes_totais": 723
         }
       },
       {
         "janela": "30 dias",
-        "data": "2026-10-26",
+        "data": "2026-10-27",
         "dias": 30,
         "deltas": {
           "inscritos": 6,
-          "total_videos": 21,
-          "visualizacoes_totais": 3019
+          "total_videos": 22,
+          "visualizacoes_totais": 3091
         }
       }
     ]
   },
   "crescimento_videos": {
-    "referencia": "2026-11-24",
+    "referencia": "2026-11-25",
     "destaques": [
-      {
-        "video_id": "8-2KBxFIoEE",
-        "titulo": "o TEMIDO LABIRINTO do castelo | RE4 remake | Parte 13",
-        "visualizacoes": 36,
-        "delta_visualizacoes": 34,
-        "delta_curtidas": null
-      },
       {
         "video_id": "RWpB0eyTKRk",
         "titulo": "meu PRIMEIRO SUPLEX no RE4 remake",
-        "visualizacoes": 58,
-        "delta_visualizacoes": 32,
+        "visualizacoes": 73,
+        "delta_visualizacoes": 15,
         "delta_curtidas": 2
       },
       {
-        "video_id": "eWgkQLncILc",
-        "titulo": "o QUE FOI ISSO???? 😱",
-        "visualizacoes": 88,
-        "delta_visualizacoes": 9,
+        "video_id": "8-2KBxFIoEE",
+        "titulo": "o TEMIDO LABIRINTO do castelo | RE4 remake | Parte 13",
+        "visualizacoes": 50,
+        "delta_visualizacoes": 14,
+        "delta_curtidas": 0
+      },
+      {
+        "video_id": "xDEE2JeT9Xs",
+        "titulo": "ENFRENTEI O CHEFE do VILAREJO, BITORES MENDEZ! 🧟  RE 4 REMAKE - Parte 8",
+        "visualizacoes": 25,
+        "delta_visualizacoes": 1,
         "delta_curtidas": 0
       }
     ],
-    "novos": []
+    "novos": [
+      {
+        "video_id": "iIogmqr7Wj8",
+        "titulo": "interrompi a CEITA DOS ZUMBIS do CASTELO | Parte 14",
+        "visualizacoes": 1
+      }
+    ]
   },
   "diagnostico": {
     "ok": true,
