@@ -1,14 +1,14 @@
 {
-  "gerado_em": "2026-11-26T23:57:42.733121+00:00",
-  "gerado_em_local": "26/11/2026 20:57:42",
+  "gerado_em": "2026-11-27T23:39:24.587928+00:00",
+  "gerado_em_local": "27/11/2026 20:39:24",
   "url_origem": "https://www.youtube.com/@patrickson_plays",
   "canal": {
     "nome": "PTK_Joga",
     "handle": "@patrickson_plays",
     "inscritos_texto": "134 inscritos",
     "inscritos": 134,
-    "videos_texto": "264 vídeos",
-    "total_videos": 264,
+    "videos_texto": "265 vídeos",
+    "total_videos": 265,
     "avatar_url": "https://yt3.googleusercontent.com/b2ZUlz1f8YCGHxVC8xFRl9OGkhbr8MV9EJ8zHJXWpM9d6CTzPFwIfHjMchiFW9YpqApeKw04lPo=s160-c-k-c0x00ffffff-no-rj",
     "banner_url": "https://yt3.googleusercontent.com/W6ChJKxvDZcmuub2CihQqJFhoCDBXoV5rxOPw8OEH0w33X0Xb4c2dQNWK1IoEIEbHenpQC8D=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
     "descricao": "🎮 Eaaeee! Seja bem-vindo(a)!  Me chamo PTKzin 😎\nJogo há anos e sou viciado em jogos do gênero Metroidvania e Terror 💀🔥\nAqui você verá as minhas melhores gameplays, momentos insanos e aquela zueira que não pode faltar 😂\nEntão senta aí, pega a pipoca e vem acompanhar minhas aventuras!🎮",
@@ -17,8 +17,8 @@
     "rss": "https://www.youtube.com/feeds/videos.xml?channel_id=UCB0Xu_75SQQIHVjaTmGBYuQ",
     "palavras_chave": "gameplay tiro games \"rocket league\" \"call of duty\" \"black ops\" battlefield \"left for dead\" Fortnite \"gameplay de fortnite\" live \"elden ring\" \"elden ring nightreign\" nightreign \"dark souls\" jogos \"left for dead 2\" patrickson_plays ptk_joga PTK_Joga alanzoka \"pc gamer\" terror \"ptk joga\" \"PTK joga\" \"patrickson plays\" patricksonplays silksong \"jogando silksong\" \"hollow knight\" hollowknight ptk patrickson plays PTK ptkjoga PTKjoga",
     "pais": "Brasil",
-    "visualizacoes_texto": "44.700 visualizações",
-    "visualizacoes_totais": 44700,
+    "visualizacoes_texto": "44.717 visualizações",
+    "visualizacoes_totais": 44717,
     "criado_em_texto": "Inscreveu-se em 29 de dez. de 2021",
     "links": [
       {
@@ -49,14 +49,29 @@
   },
   "videos": [
     {
+      "video_id": "u9cqKmOZxp4",
+      "tipo": "video",
+      "titulo": "lutei contra as ARMADURAS | RE4 REMAKE | Parte 15",
+      "url": "https://www.youtube.com/watch?v=u9cqKmOZxp4",
+      "thumbnail": "https://i.ytimg.com/vi/u9cqKmOZxp4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDJonF3zMgIRbDszw60WE3URNcU0Q",
+      "visualizacoes_texto": "4 visualizações",
+      "visualizacoes": 4,
+      "publicado_texto": "há 8 horas",
+      "duracao": "5:51",
+      "curtidas_texto": "1",
+      "curtidas": 1,
+      "comentarios_texto": "0 comentários",
+      "comentarios": 0
+    },
+    {
       "video_id": "iIogmqr7Wj8",
       "tipo": "video",
       "titulo": "interrompi a CEITA DOS ZUMBIS do CASTELO | Parte 14",
       "url": "https://www.youtube.com/watch?v=iIogmqr7Wj8",
       "thumbnail": "https://i.ytimg.com/vi/iIogmqr7Wj8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDNhSSv2VNr4a65qtdpcDREbkf5QQ",
-      "visualizacoes_texto": "1 visualização",
-      "visualizacoes": 1,
-      "publicado_texto": "há 8 horas",
+      "visualizacoes_texto": "2 visualizações",
+      "visualizacoes": 2,
+      "publicado_texto": "há 1 dia",
       "duracao": "24:31",
       "curtidas_texto": "1",
       "curtidas": 1,
@@ -69,9 +84,9 @@
       "titulo": "o TEMIDO LABIRINTO do castelo | RE4 remake | Parte 13",
       "url": "https://www.youtube.com/watch?v=8-2KBxFIoEE",
       "thumbnail": "https://i.ytimg.com/vi/8-2KBxFIoEE/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBgJDNsXTMGsinoi2pKxwf3uPUbCg",
-      "visualizacoes_texto": "50 visualizações",
-      "visualizacoes": 50,
-      "publicado_texto": "há 2 dias",
+      "visualizacoes_texto": "55 visualizações",
+      "visualizacoes": 55,
+      "publicado_texto": "há 3 dias",
       "duracao": "11:52",
       "curtidas_texto": "2",
       "curtidas": 2,
@@ -86,11 +101,11 @@
       "thumbnail": "https://i.ytimg.com/vi/okE-BHHgI-U/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBciKdxx86sMRWutfJwYt_ZjqKCrg",
       "visualizacoes_texto": "7 visualizações",
       "visualizacoes": 7,
-      "publicado_texto": "há 5 dias",
+      "publicado_texto": "há 6 dias",
       "duracao": "14:36",
       "curtidas_texto": "1",
       "curtidas": 1,
-      "comentarios_texto": "0 comentários",
+      "comentarios_texto": "0 comentários\nOrdenar por",
       "comentarios": 0
     },
     {
@@ -101,7 +116,7 @@
       "thumbnail": "https://i.ytimg.com/vi/eIupC7l_GN8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDqJt46Ugb1U28Tb5KYaHDzEmp7hQ",
       "visualizacoes_texto": "49 visualizações",
       "visualizacoes": 49,
-      "publicado_texto": "há 7 dias",
+      "publicado_texto": "há 8 dias",
       "duracao": "11:41",
       "curtidas_texto": "2",
       "curtidas": 2,
@@ -116,7 +131,7 @@
       "thumbnail": "https://i.ytimg.com/vi/jHPLQQb1acQ/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBr7ZQnVg38UG3ewEMCox1oLCB5sg",
       "visualizacoes_texto": "66 visualizações",
       "visualizacoes": 66,
-      "publicado_texto": "há 9 dias",
+      "publicado_texto": "há 10 dias",
       "duracao": "17:33",
       "curtidas_texto": "1",
       "curtidas": 1,
@@ -161,11 +176,11 @@
       "thumbnail": "https://i.ytimg.com/vi/43ZjTBKRQA8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCEMLsV3FJBJo5jk7ZeNVH4OdUasg",
       "visualizacoes_texto": "22 visualizações",
       "visualizacoes": 22,
-      "publicado_texto": "há 2 semanas",
+      "publicado_texto": "há 3 semanas",
       "duracao": "20:12",
       "curtidas_texto": "1",
       "curtidas": 1,
-      "comentarios_texto": "0 comentários",
+      "comentarios_texto": "0 comentários\nOrdenar por",
       "comentarios": 0
     },
     {
@@ -184,28 +199,13 @@
       "comentarios": 0
     },
     {
-      "video_id": "xDEE2JeT9Xs",
-      "tipo": "video",
-      "titulo": "ENFRENTEI O CHEFE do VILAREJO, BITORES MENDEZ! 🧟  RE 4 REMAKE - Parte 8",
-      "url": "https://www.youtube.com/watch?v=xDEE2JeT9Xs",
-      "thumbnail": "https://i.ytimg.com/vi/xDEE2JeT9Xs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAdOSGbE-RaypdH3bifl_EfNCSljA",
-      "visualizacoes_texto": "25 visualizações",
-      "visualizacoes": 25,
-      "publicado_texto": "há 3 semanas",
-      "duracao": "20:10",
-      "curtidas_texto": "2",
-      "curtidas": 2,
-      "comentarios_texto": "0 comentários",
-      "comentarios": 0
-    },
-    {
       "video_id": "RWpB0eyTKRk",
       "tipo": "short",
       "titulo": "meu PRIMEIRO SUPLEX no RE4 remake",
       "url": "https://www.youtube.com/watch?v=RWpB0eyTKRk",
       "thumbnail": "https://i.ytimg.com/vi/RWpB0eyTKRk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAx0qUnWt0Rged_QEqNvVErekLiIA",
-      "visualizacoes_texto": "73 visualizações",
-      "visualizacoes": 73,
+      "visualizacoes_texto": "75 visualizações",
+      "visualizacoes": 75,
       "curtidas_texto": "5",
       "curtidas": 5,
       "comentarios_texto": "0 comentários",
@@ -243,8 +243,8 @@
       "titulo": "God of War: Kratos voa como Pássaro de Fogo e o bicho quase me queima 🔥",
       "url": "https://www.youtube.com/watch?v=U30ocakagZs",
       "thumbnail": "https://i.ytimg.com/vi/U30ocakagZs/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBMoPIGY9RbSWELdrtppgVkL8KRMg",
-      "visualizacoes_texto": "638 visualizações",
-      "visualizacoes": 638,
+      "visualizacoes_texto": "639 visualizações",
+      "visualizacoes": 639,
       "curtidas_texto": "7",
       "curtidas": 7,
       "comentarios_texto": "0 comentários",
@@ -321,8 +321,8 @@
       "playlist_id": "PLfH79cvSJTto",
       "titulo": "REMATCH",
       "url": "https://www.youtube.com/playlist?list=PLfH79cvSJTto",
-      "videos_texto": "4 vídeos",
-      "total_videos": 4
+      "videos_texto": "3 vídeos",
+      "total_videos": 3
     },
     {
       "playlist_id": "PLJORMv1Zhsjc",
@@ -490,18 +490,18 @@
     "por_tipo": {
       "video": {
         "quantidade": 10,
-        "visualizacoes_soma": 294,
-        "curtidas_soma": 14,
+        "visualizacoes_soma": 279,
+        "curtidas_soma": 13,
         "comentarios_soma": 0,
-        "visualizacoes_media": 29.4,
-        "taxa_engajamento_pct": 4.76
+        "visualizacoes_media": 27.9,
+        "taxa_engajamento_pct": 4.66
       },
       "short": {
         "quantidade": 5,
-        "visualizacoes_soma": 1300,
+        "visualizacoes_soma": 1303,
         "curtidas_soma": 31,
         "comentarios_soma": 0,
-        "visualizacoes_media": 260.0,
+        "visualizacoes_media": 260.6,
         "taxa_engajamento_pct": 2.38
       },
       "live": {
@@ -514,17 +514,17 @@
       }
     },
     "videos_analisados": 18,
-    "visualizacoes_soma": 1790,
-    "curtidas_soma": 53,
+    "visualizacoes_soma": 1778,
+    "curtidas_soma": 52,
     "comentarios_soma": 0,
-    "visualizacoes_media": 99.4,
+    "visualizacoes_media": 98.8,
     "curtidas_media": 2.9,
     "comentarios_media": 0.0,
-    "taxa_engajamento_pct": 2.96,
+    "taxa_engajamento_pct": 2.92,
     "video_mais_visto": {
       "titulo": "God of War: Kratos voa como Pássaro de Fogo e o bicho quase me queima 🔥",
       "url": "https://www.youtube.com/watch?v=U30ocakagZs",
-      "visualizacoes": 638
+      "visualizacoes": 639
     },
     "video_mais_curtido": {
       "titulo": "a PRIMEIRA MEDUSA 🐍do God of War 3. #godofwar #gow3 #gameplay #gameshorts #shorts",
@@ -536,72 +536,79 @@
   "tendencia": {
     "atual": {
       "inscritos": 134,
-      "total_videos": 264,
-      "visualizacoes_totais": 44700
+      "total_videos": 265,
+      "visualizacoes_totais": 44717
     },
     "comparacoes": [
       {
         "janela": "1 dia",
-        "data": "2026-11-25",
+        "data": "2026-11-26",
         "dias": 1,
         "deltas": {
           "inscritos": 0,
           "total_videos": 1,
-          "visualizacoes_totais": 76
+          "visualizacoes_totais": 17
         }
       },
       {
         "janela": "7 dias",
-        "data": "2026-11-19",
+        "data": "2026-11-20",
         "dias": 7,
         "deltas": {
-          "inscritos": 1,
-          "total_videos": 6,
-          "visualizacoes_totais": 723
+          "inscritos": 0,
+          "total_videos": 7,
+          "visualizacoes_totais": 693
         }
       },
       {
         "janela": "30 dias",
-        "data": "2026-10-27",
+        "data": "2026-10-28",
         "dias": 30,
         "deltas": {
           "inscritos": 6,
-          "total_videos": 22,
-          "visualizacoes_totais": 3091
+          "total_videos": 23,
+          "visualizacoes_totais": 3104
         }
       }
     ]
   },
   "crescimento_videos": {
-    "referencia": "2026-11-25",
+    "referencia": "2026-11-26",
     "destaques": [
-      {
-        "video_id": "RWpB0eyTKRk",
-        "titulo": "meu PRIMEIRO SUPLEX no RE4 remake",
-        "visualizacoes": 73,
-        "delta_visualizacoes": 15,
-        "delta_curtidas": 2
-      },
       {
         "video_id": "8-2KBxFIoEE",
         "titulo": "o TEMIDO LABIRINTO do castelo | RE4 remake | Parte 13",
-        "visualizacoes": 50,
-        "delta_visualizacoes": 14,
+        "visualizacoes": 55,
+        "delta_visualizacoes": 5,
         "delta_curtidas": 0
       },
       {
-        "video_id": "xDEE2JeT9Xs",
-        "titulo": "ENFRENTEI O CHEFE do VILAREJO, BITORES MENDEZ! 🧟  RE 4 REMAKE - Parte 8",
-        "visualizacoes": 25,
+        "video_id": "RWpB0eyTKRk",
+        "titulo": "meu PRIMEIRO SUPLEX no RE4 remake",
+        "visualizacoes": 75,
+        "delta_visualizacoes": 2,
+        "delta_curtidas": 0
+      },
+      {
+        "video_id": "U30ocakagZs",
+        "titulo": "God of War: Kratos voa como Pássaro de Fogo e o bicho quase me queima 🔥",
+        "visualizacoes": 639,
+        "delta_visualizacoes": 1,
+        "delta_curtidas": 0
+      },
+      {
+        "video_id": "iIogmqr7Wj8",
+        "titulo": "interrompi a CEITA DOS ZUMBIS do CASTELO | Parte 14",
+        "visualizacoes": 2,
         "delta_visualizacoes": 1,
         "delta_curtidas": 0
       }
     ],
     "novos": [
       {
-        "video_id": "iIogmqr7Wj8",
-        "titulo": "interrompi a CEITA DOS ZUMBIS do CASTELO | Parte 14",
-        "visualizacoes": 1
+        "video_id": "u9cqKmOZxp4",
+        "titulo": "lutei contra as ARMADURAS | RE4 REMAKE | Parte 15",
+        "visualizacoes": 4
       }
     ]
   },
